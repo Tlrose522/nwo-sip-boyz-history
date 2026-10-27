@@ -291,6 +291,85 @@ await write('leaderboards.json', {
     waiver_sp: r1(r.waiver_sp), eff_sum: r.eff_sum === null ? null : Math.round(r.eff_sum * 1000) / 1000,
     bench_sum: r1(r.bench_sum), po_opp_luck: r1(r.po_opp_luck), best_pick_vos: r1(r.best_pick_vos) })),
 });
+/* ------------------------------------------------------------ owner-season cockpits */
+// One file per team-season: game log, roster, draft, moves and the season's rollups.
+const playerSeasonRows = await rows('SELECT * FROM player_seasons');
+const psByTeam = by(playerSeasonRows, (p) => `${p.season}|${p.team_id}`);
+const nflBy = Object.fromEntries(players.map((p) => [`${p.season}|${p.player_id}`, p]));
+const gamesByTeam = by(games, (g) => `${g.season}|${g.team_id}`);
+const draftByTeam = by(draft, (d) => `${d.season}|${d.team_id}`);
+const seasonMeta = Object.fromEntries(seasons.map((s) => [s.season, s]));
+for (const t of teamSeasons) {
+  if (!t.slug) continue;
+  const key = `${t.season}|${t.team_id}`;
+  const meta = seasonMeta[t.season] || {};
+  const peers = tsBySeason[t.season] || [];
+  const avgPf = peers.reduce((a, x) => a + x.points_for, 0) / (peers.length || 1);
+  const log = (gamesByTeam[key] || []).sort((a, b) => a.week - b.week).map((g) => {
+    const call = callByGame[`${g.season}|${g.week}|${g.team_id}`];
+    return { week: g.week, game_type: g.game_type, slug: g.game_slug, opp: g.opp_person, opp_slug: slugOf[g.opp_person] || null,
+      result: g.result, points: r2(g.points), opp_points: r2(g.opp_points), margin: r2(g.margin),
+      rel: r1(g.rel_score), median: r2(g.league_median), optimal: r2(g.optimal_points), bench_lost: r2(g.bench_lost),
+      efficiency: g.efficiency, opp_luck: r2(g.opp_luck), opp_avg: r2(g.opp_season_avg),
+      call: call && call.cost > 0 ? { started: call.started, benched: call.benched, cost: r2(call.cost) } : null };
+  });
+  // Running record through the regular season.
+  let w = 0, l = 0, tt = 0;
+  for (const g of log) {
+    if (g.game_type !== 'regular') { g.record = null; continue; }
+    if (g.result === 'W') w++; else if (g.result === 'L') l++; else tt++;
+    g.record = `${w}-${l}${tt ? '-' + tt : ''}`;
+  }
+  const roster = (psByTeam[key] || []).map((p) => {
+    const n = nflBy[`${p.season}|${p.player_id}`] || {};
+    return { name: p.player_name, pos: p.position, via: p.acquired_via, via_week: p.acquired_week || null,
+      draft_round: p.draft_round || null, draft_overall: p.draft_overall || null, first_week: p.first_week,
+      weeks: p.weeks_rostered, starts: p.starts, sp: r1(p.sp), sp_regular: r1(p.sp_regular), bench: r1(p.bench_points),
+      nfl_team: n.nfl_team || null, finish: n.pos_rank ? `${p.position}${n.pos_rank}` : null, vor: r1(n.vor), pts: r1(n.points) };
+  }).sort((a, b) => b.sp - a.sp || b.weeks - a.weeks);
+  // Lineup grid: player × week, started or benched, with points (two-week rounds already summed).
+  const boxRows = Object.keys(boxByGame).filter((k) => k.startsWith(`${t.season}|`) && k.endsWith(`|${t.team_id}`))
+    .flatMap((k) => boxByGame[k])
+    .filter((b) => log.some((g) => g.week === b.week)); // only weeks the team actually played
+  const gridWeeks = [...new Set(boxRows.map((b) => b.week))].sort((a, b) => a - b);
+  const gridPlayers = Object.values(by(boxRows, (b) => b.player_name)).map((rs) => ({
+    name: rs[0].player_name, pos: rs[0].pos,
+    weeks: Object.fromEntries(rs.map((b) => [b.week, [b.is_starter ? 1 : 0, r1(b.points)]])),
+    starts: rs.filter((b) => b.is_starter).length, sp: rs.filter((b) => b.is_starter).reduce((a, b) => a + b.points, 0),
+  })).sort((a, b) => b.starts - a.starts || b.sp - a.sp);
+  const POS_ORDER = { QB: 0, RB: 1, WR: 2, TE: 3, K: 4, DEF: 5 };
+  gridPlayers.sort((a, b) => (POS_ORDER[a.pos] ?? 9) - (POS_ORDER[b.pos] ?? 9) || b.starts - a.starts || b.sp - a.sp);
+  const grid = { weeks: gridWeeks, players: gridPlayers.map(({ sp, ...rest }) => rest) };
+  const seasonsOfOwner = teamSeasons.filter((x) => x.person === t.person).map((x) => x.season).sort((a, b) => a - b);
+  await write(`os-${t.slug}-${t.season}.json`, {
+    person: t.person, slug: t.slug, season: t.season, platform: t.platform, team: t.team_name, avatar: t.avatar_url || null,
+    complete: meta.complete ?? true, through_week: meta.last_week, regular_season_weeks: meta.regular_season_weeks,
+    num_teams: meta.num_teams, playoff_teams: meta.playoff_teams,
+    prev: seasonsOfOwner.filter((y) => y < t.season).pop() ?? null, next: seasonsOfOwner.find((y) => y > t.season) ?? null,
+    summary: t.summary || null,
+    recap: (() => { const r = lorePick(t.season, 'recap', t.person); return r ? { title: r.title, text: r.text, status: r.status } : null; })(),
+    punishment: t.last_place ? (lorePick(t.season, 'punishment', t.person)?.text || null) : null,
+    stats: {
+      wins: t.wins, losses: t.losses, ties: t.ties, final_rank: t.final_rank, record_rank: t.record_rank, seed: t.playoff_seed,
+      made_playoffs: t.made_playoffs, champion: t.champion, runner_up: t.runner_up, last_place: t.last_place,
+      pf: r2(t.points_for), pa: r2(t.points_against), pf_idx: t.pf_idx, pf_rank: t.pf_rank,
+      pa_rank: peers.filter((x) => x.points_against > t.points_against).length + 1, avg_pf: r1(avgPf),
+      allplay_w: t.allplay_w, allplay_l: t.allplay_l, allplay_pct: t.allplay_pct, xw: t.expected_wins, luck: t.luck,
+      efficiency: t.efficiency, bench_lost: t.bench_lost_per_week, avg_rel: t.avg_rel_score,
+      first_half_rel: t.first_half_rel, second_half_rel: t.second_half_rel,
+      draft_sp_share: t.draft_sp_share, draft_vos: t.draft_vos,
+      eff_rank: peers.filter((x) => x.efficiency > t.efficiency).length + 1,
+      luck_rank: peers.filter((x) => x.luck > t.luck).length + 1,
+    },
+    sources: { draft: (t.sp_draft || 0) + (t.sp_keeper || 0), waiver: t.sp_waiver || 0, free_agent: t.sp_free_agent || 0, trade: t.sp_trade || 0, unknown: t.sp_unknown || 0 },
+    pos: ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'].map((p) => ({ pos: p, sp: r1(t['sp_' + p]), vs_avg: t[p + '_vs_avg_pw'], rank: t['rk_' + p] })),
+    log, roster, grid,
+    draft: (draftByTeam[key] || []).sort((a, b) => a.overall - b.overall).map((d) => ({ round: d.round, overall: d.overall, name: d.player_name,
+      pos: d.pos, keeper: d.is_keeper, grade: d.grade || null, pos_rank: d.pos_rank, vos: r1(d.value_over_slot), sp: r1(d.sp_for_team) })),
+    trades: trades.filter((x) => x.season === t.season && x.person === t.person),
+  });
+}
+
 await write('site.json', {
   built_at: new Date().toISOString(), exported_at: exportedAt,
   seasons: seasonList, owners: ownerList,

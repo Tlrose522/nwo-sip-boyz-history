@@ -8,6 +8,7 @@ export const seasonHref = (y) => href(`seasons/${y}/`);
 export const weekHref = (y, w) => href(`seasons/${y}/week-${w}/`);
 export const gameHref = (y, w, slug) => href(`seasons/${y}/week-${w}/${slug}/`);
 export const ownerHref = (slug) => href(`owners/${slug}/`);
+export const ownerSeasonHref = (slug, y) => href(`owners/${slug}/${y}/`);
 
 export function ord(n) {
   if (n === null || n === undefined || n === '') return '—';

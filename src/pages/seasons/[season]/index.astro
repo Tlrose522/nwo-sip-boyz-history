@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import PowerChart from '../../../components/PowerChart.astro';
 import CompositionGrid from '../../../components/CompositionGrid.astro';
 import { site, season as loadSeason, games as loadGames } from '../../../lib/data.js';
-import { href, num, signed, rate, record, ord, upDown, firstName, seasonHref, weekHref, gameHref, ownerHref, roundName } from '../../../lib/fmt.js';
+import { href, num, signed, rate, record, ord, upDown, firstName, seasonHref, weekHref, gameHref, ownerHref, ownerSeasonHref, roundName } from '../../../lib/fmt.js';
 
 export function getStaticPaths() {
   return site().seasons.map((s) => ({ params: { season: String(s.season) } }));
@@ -108,7 +108,7 @@ const championGame = (round) => round.games.find((x) => s.champion && x.sides[0]
           {s.standings.map((r) => (
             <tr class:list={{ cut: !s.complete && r.rank === cut }} id={r.slug}>
               <td class="l strong">{s.complete ? ord(r.rank) : r.rank}</td>
-              <td class="l"><a class="who" href={ownerHref(r.slug)}>{r.person}</a> <span class="dim small">{r.team}</span>
+              <td class="l"><a class="who" href={ownerHref(r.slug)}>{r.person}</a> <a class="dim small" href={ownerSeasonHref(r.slug, year)} title={`${r.person}'s ${year} season: games, lineups, roster`}>{r.team}</a>
                 {r.champion && <span class="status" style="background:var(--blaze);color:#fff">CHAMP</span>}
                 {r.last_place && <span class="status" style="background:var(--s-1);color:#fff">LAST</span>}</td>
               <td class="strong">{record(r.wins, r.losses, r.ties)}</td>

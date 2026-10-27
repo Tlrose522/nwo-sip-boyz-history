@@ -325,3 +325,22 @@ img { max-width: 100%; }
 .lb-filter input[type='search'] { height: 40px; width: 240px; padding: 0 10px; border: 2px solid var(--ink); background: var(--white); color: var(--ink); font: 500 14px var(--body); letter-spacing: 0; text-transform: none; }
 .pl-table td.small a { font-weight: 500; }
 .pl-table td.small a.who { font-weight: 700; }
+
+/* ---------------------------------------------------------------- owner-season cockpit */
+.t tr.muted td { color: var(--muted); }
+.weekbars { margin-top: 12px; background: var(--white); border: 2px solid var(--ink); padding: 8px 4px 0; }
+.weekbars svg { display: block; width: 100%; height: auto; }
+.weekbars .grid { stroke: var(--rule); stroke-width: 1; }
+.weekbars .grid.mid { stroke: #8A8D95; stroke-dasharray: 4 3; }
+.weekbars .tick { font: 11px var(--body); fill: var(--muted); }
+.weekbars .res { font: 700 11px var(--body); fill: var(--ink); }
+.weekbars .res.po { fill: var(--blaze-text); }
+.grid-table th, .grid-table td.wk { text-align: center; padding: 6px 4px; min-width: 34px; font-size: 12px; }
+.grid-table th.po { color: var(--blaze-text); }
+.grid-table th.cons { color: #A3A6AD; }
+.grid-table td.wk { border-left: 1px solid var(--rule); font-variant-numeric: tabular-nums; font-weight: 600; }
+.grid-table td.wk.bench { color: var(--muted); font-weight: 400; }
+.grid-table td.wk.empty { background: repeating-linear-gradient(135deg, transparent 0 4px, #EEEDE7 4px 5px); }
+.grade { display: inline-block; min-width: 26px; padding: 2px 6px; font-weight: 700; text-align: center; border-left: 4px solid; }
+.kpis.kpis-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 760px) { .kpis.kpis-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

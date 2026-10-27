@@ -19,3 +19,4 @@ export const season = (year) => load(`season-${year}`);
 export const games = (year) => load(`games-${year}`);
 export const owner = (slug) => load(`owner-${slug}`);
 export const leaderboards = () => load('leaderboards');
+export const ownerSeason = (slug, year) => load(`os-${slug}-${year}`);

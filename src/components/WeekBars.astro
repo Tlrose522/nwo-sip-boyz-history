@@ -1,0 +1,34 @@
+---
+// One bar per game: score vs. that week's league median (100 = median), so the height says
+// how good the week was and the color says how it ended (blue win, orange loss, grey consolation).
+const { games } = Astro.props;
+const W = 1000, H = 220, M = { l: 40, r: 10, t: 14, b: 44 };
+const vals = games.map((g) => g.rel).filter((v) => v !== null);
+const lo = Math.min(60, Math.floor(Math.min(...vals) / 10) * 10);
+const hi = Math.max(140, Math.ceil(Math.max(...vals) / 10) * 10);
+const y = (v) => M.t + (hi - v) / (hi - lo) * (H - M.t - M.b);
+const slot = (W - M.l - M.r) / Math.max(1, games.length);
+const bw = Math.min(44, slot - 6);
+const ticks = []; for (let v = lo; v <= hi; v += 20) ticks.push(v);
+const fill = (g) => g.game_type === 'consolation' ? '#B9BCC4' : g.result === 'W' ? 'var(--blue)' : g.result === 'L' ? 'var(--blaze)' : '#8A8D95';
+---
+<div class="weekbars">
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Score versus the league median each week; blue bars are wins, orange bars losses">
+    {ticks.map((v) => (
+      <g><line x1={M.l} x2={W - M.r} y1={y(v)} y2={y(v)} class:list={['grid', { mid: v === 100 }]} />
+        <text x={M.l - 6} y={y(v) + 4} text-anchor="end" class="tick">{v}</text></g>
+    ))}
+    {games.map((g, i) => {
+      const cx = M.l + slot * i + slot / 2;
+      const top = y(Math.max(g.rel ?? 100, 100)), bot = y(Math.min(g.rel ?? 100, 100));
+      return (
+        <g>
+          <title>{`Week ${g.week}: ${g.result} ${g.points}–${g.opp_points} vs. ${g.opp} · ${g.rel} (median ${g.median})${g.game_type !== 'regular' ? ' · ' + (g.game_type === 'winners' ? 'playoffs' : 'consolation') : ''}`}</title>
+          <rect x={cx - bw / 2} y={top} width={bw} height={Math.max(2, bot - top)} rx="2" fill={fill(g)} />
+          <text x={cx} y={H - 26} text-anchor="middle" class="tick">{g.week}</text>
+          <text x={cx} y={H - 10} text-anchor="middle" class:list={['res', { po: g.game_type === 'winners' }]}>{g.game_type === 'winners' ? 'P' + g.result : g.result}</text>
+        </g>
+      );
+    })}
+  </svg>
+</div>

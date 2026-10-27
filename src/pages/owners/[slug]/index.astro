@@ -1,11 +1,11 @@
 ---
-import Base from '../../layouts/Base.astro';
-import Avatar from '../../components/Avatar.astro';
-import Spark from '../../components/Spark.astro';
-import PosBoxes from '../../components/PosBoxes.astro';
-import Meter from '../../components/Meter.astro';
-import { site, owner as loadOwner } from '../../lib/data.js';
-import { href, num, signed, rate, record, ord, upDown, seasonHref, gameHref, ownerHref } from '../../lib/fmt.js';
+import Base from '../../../layouts/Base.astro';
+import Avatar from '../../../components/Avatar.astro';
+import Spark from '../../../components/Spark.astro';
+import PosBoxes from '../../../components/PosBoxes.astro';
+import Meter from '../../../components/Meter.astro';
+import { site, owner as loadOwner } from '../../../lib/data.js';
+import { href, num, signed, rate, record, ord, upDown, seasonHref, gameHref, ownerHref, ownerSeasonHref } from '../../../lib/fmt.js';
 
 export function getStaticPaths() {
   return site().owners.map((o) => ({ params: { slug: o.slug } }));
@@ -55,7 +55,7 @@ const moveTag = (v) => (v === 'waiver' ? ['WAIVER', 'waiver'] : ['FREE AGENT', '
     <h2 class="h2">Season by season</h2>
     <div class="tiles">
       {o.tiles.map((t) => (
-        <a id={`season-${t.season}`} href={seasonHref(t.season) + '#' + o.slug} class:list={['tile', { champ: t.champion, live: !t.complete }]}>
+        <a id={`season-${t.season}`} href={ownerSeasonHref(o.slug, t.season)} class:list={['tile', { champ: t.champion, live: !t.complete }]}>
           <div class="top">
             <div><div class="yr">{t.season}</div><div class="tm">{t.team} · {t.platform}</div></div>
             <div>

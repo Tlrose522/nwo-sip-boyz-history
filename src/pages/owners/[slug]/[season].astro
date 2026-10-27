@@ -1,0 +1,243 @@
+---
+// Owner-season cockpit: everything about one team's season on one page — the result, every
+// game, the weekly lineup, the roster and where its points came from, the draft and the trades.
+import Base from '../../../layouts/Base.astro';
+import Avatar from '../../../components/Avatar.astro';
+import PosBoxes from '../../../components/PosBoxes.astro';
+import WeekBars from '../../../components/WeekBars.astro';
+import { site, ownerSeason, owner as loadOwner } from '../../../lib/data.js';
+import { href, num, signed, rate, record, ord, upDown, seasonHref, gameHref, ownerHref, ownerSeasonHref, firstName } from '../../../lib/fmt.js';
+
+export function getStaticPaths() {
+  return site().owners.flatMap((o) => loadOwner(o.slug).tiles.map((t) => ({ params: { slug: o.slug, season: String(t.season) } })));
+}
+
+const d = ownerSeason(Astro.params.slug, Astro.params.season);
+const st = d.stats;
+const first = firstName(d.person);
+const finish = d.complete
+  ? (st.champion ? 'Champion' : st.runner_up ? 'Runner-up' : ord(st.final_rank))
+  : `${ord(st.record_rank)} so far`;
+const finishSub = d.complete
+  ? (st.champion ? 'won the title' : st.runner_up ? 'lost the final' : st.made_playoffs ? 'made the playoffs' : st.last_place ? 'last place' : 'missed the playoffs')
+  : `through week ${d.through_week}`;
+const N = d.num_teams || 14;
+const kpis = [
+  { k: 'Finish', v: finish, s: finishSub + (st.seed ? ` · ${ord(st.seed)} seed` : '') },
+  { k: 'Record', v: record(st.wins, st.losses, st.ties), s: `${ord(st.record_rank)} of ${N} in the standings` },
+  { k: 'Points for', v: num(st.pf, 1), s: `${ord(st.pf_rank)} of ${N} · ${num(st.pf_idx, 1)} idx` },
+  { k: 'Points against', v: num(st.pa, 1), s: `${ord(st.pa_rank)} most of ${N}` },
+  { k: 'All-play', v: rate(st.allplay_pct), s: `${st.allplay_w}-${st.allplay_l} · ${num(st.xw, 1)} expected wins` },
+  { k: 'Luck', v: signed(st.luck), s: `${ord(st.luck_rank)} luckiest of ${N}`, cls: upDown(st.luck) },
+  { k: 'Lineup eff', v: rate(st.efficiency), s: `${ord(st.eff_rank)} of ${N} · ${num(st.bench_lost, 1)} bench pts/wk` },
+  { k: 'Halves', v: `${num(st.first_half_rel, 0)} → ${num(st.second_half_rel, 0)}`, s: 'score vs. median, 1st → 2nd half' },
+];
+const srcTotal = Object.values(d.sources).reduce((a, b) => a + b, 0) || 1;
+const SRC = [['draft', 'Draft', 'c-draft'], ['waiver', 'Waiver', 'c-waiver'], ['free_agent', 'Free agent', 'c-fa'], ['trade', 'Trade', 'c-trade']];
+const VIA = { draft: 'Drafted', keeper: 'Keeper', waiver: 'Waiver', free_agent: 'Free agent', trade: 'Trade', unknown: '—' };
+const gameType = { regular: '', winners: 'PLAYOFF', consolation: 'CONSOLATION' };
+const ranks = Object.fromEntries(d.pos.map((p) => [p.pos, p.rank]));
+const vsAvg = Object.fromEntries(d.pos.map((p) => [p.pos, p.vs_avg]));
+const gridType = Object.fromEntries(d.log.map((g) => [g.week, g.game_type]));
+const shade = (pts, started) => {
+  if (!started) return '';
+  const t = Math.max(0, Math.min(1, pts / 30));
+  return `background: rgba(31, 71, 214, ${(0.08 + t * 0.42).toFixed(2)})`;
+};
+---
+<Base title={`${d.person} · ${d.season}`} nav="owners" description={`${d.person}'s ${d.season} season: every game, the weekly lineup, roster, draft and trades.`}>
+  <div class="hero" slot="hero">
+    <div class="hero-top">
+      <nav class="chip" aria-label="Breadcrumb"><a href={href('owners/')}>Owners</a> <span class="muted">/</span> <a href={ownerHref(d.slug)}>{d.person}</a> <span class="muted">/</span> {d.season}</nav>
+      <div style="display:flex;gap:8px">
+        <a class="btn" href={d.prev ? ownerSeasonHref(d.slug, d.prev) : '#'} aria-disabled={d.prev ? undefined : 'true'}>‹ {d.prev ?? '—'}</a>
+        <a class="btn" href={d.next ? ownerSeasonHref(d.slug, d.next) : '#'} aria-disabled={d.next ? undefined : 'true'}>{d.next ?? '—'} ›</a>
+      </div>
+    </div>
+    <div class="hero-row" style="align-items:center">
+      <Avatar person={d.person} src={d.avatar} />
+      <div style="flex:1 1 360px">
+        <div class="pixel-chip">{first.toUpperCase()} · {d.season} · {d.platform.toUpperCase()}</div>
+        <h1 style="font-size:clamp(52px,8vw,92px);margin-top:10px;text-transform:uppercase">{d.team}</h1>
+        <p class="plate" style="display:inline-block;margin:14px 0 0;padding:8px 12px;font-size:15px;box-shadow:4px 4px 0 var(--blaze)">
+          {d.person} · <b>{finish}</b> · {record(st.wins, st.losses, st.ties)} · <a href={seasonHref(d.season)} style="color:var(--blue-soft)">Full {d.season} season ›</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" aria-label="Season summary">
+    <div class="kpis kpis-4">
+      {kpis.map((x) => <div><div class="k">{x.k}</div><div class:list={['v', x.cls]} style="font-size:30px;overflow-wrap:anywhere">{x.v}</div><div class="s">{x.s}</div></div>)}
+    </div>
+    {(d.recap || d.summary || d.punishment) && (
+      <div style="margin-top:24px;max-width:860px">
+        {d.recap ? (
+          <>
+            <p class="eyebrow">How it was won{d.recap.status && d.recap.status !== 'edited' && <span class="status">{d.recap.status.toUpperCase()}</span>}</p>
+            {d.recap.title && <p style="margin:0 0 8px;font:italic 800 26px/1.1 var(--display);text-transform:uppercase">{d.recap.title}</p>}
+            <p class="lead">{d.recap.text}</p>
+          </>
+        ) : d.summary && <p class="lead">{d.summary}</p>}
+        {d.punishment && <p class="note"><b style="color:var(--blaze-text)">Punishment:</b> {d.punishment}</p>}
+      </div>
+    )}
+  </section>
+
+  <section class="section" id="games">
+    <h2 class="h2">Every game</h2>
+    <p class="note" style="margin-top:4px">Bar height = score vs. that week's league median (100). <b class="up">Blue</b> won, <b class="down">orange</b> lost, grey = consolation (doesn't count). Hover a bar for the score.</p>
+    <WeekBars games={d.log} />
+    <div class="table-box">
+      <table class="t">
+        <thead><tr>
+          <th scope="col" class="l">Wk</th><th scope="col" class="l">Opponent</th><th scope="col">Result</th><th scope="col">Score</th>
+          <th scope="col">Record</th><th scope="col" title="Score vs. league median, 100 = median">Rel</th><th scope="col" title="Opponent's score vs. his season average">Opp luck</th>
+          <th scope="col">Optimal</th><th scope="col">Eff</th><th scope="col" class="l">Worst call</th><th scope="col" class="l"></th>
+        </tr></thead>
+        <tbody>
+          {d.log.map((g) => (
+            <tr class:list={{ muted: g.game_type === 'consolation' }}>
+              <td class="l strong">{g.week}</td>
+              <td class="l">{g.opp_slug ? <a class="who" href={ownerSeasonHref(g.opp_slug, d.season)}>{g.opp}</a> : g.opp}{gameType[g.game_type] && <span class:list={['tier', { cons: g.game_type === 'consolation' }]} style="margin-left:8px">{gameType[g.game_type]}</span>}</td>
+              <td class:list={['strong', g.result === 'W' ? 'up' : g.result === 'L' ? 'down' : '']}>{g.result} {signed(g.margin, 1)}</td>
+              <td>{num(g.points, 1)}–{num(g.opp_points, 1)}</td>
+              <td class="dim">{g.record ?? '—'}</td>
+              <td>{num(g.rel, 1)}</td>
+              <td class={upDown(-(g.opp_luck ?? 0))}>{signed(g.opp_luck, 1)}</td>
+              <td class="dim">{num(g.optimal, 1)}</td>
+              <td>{rate(g.efficiency)}</td>
+              <td class="l small">{g.call ? <span title={`Started ${g.call.started} over ${g.call.benched}`}>{g.call.started} over {g.call.benched} <span class="down">−{num(g.call.cost, 1)}</span></span> : <span class="dim">—</span>}</td>
+              <td class="l"><a href={gameHref(d.season, g.week, g.slug)}>Box score ›</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Opp luck: how far the opponent scored from his own season average (negative = you caught him on a bad week). Worst call: the biggest gap between a benched player and a starter he could have replaced.</p>
+  </section>
+
+  <section class="section" id="lineups">
+    <h2 class="h2">Weekly lineups</h2>
+    <p class="note" style="margin-top:4px">Every player who was on the roster, week by week. Shaded = started (darker = more points); plain number = benched; blank = not on the roster.</p>
+    <div class="table-box">
+      <table class="t grid-table">
+        <thead><tr>
+          <th scope="col" class="l">Player</th>
+          {d.grid.weeks.map((w) => <th scope="col" class:list={{ po: gridType[w] === 'winners', cons: gridType[w] === 'consolation' }} title={gridType[w] === 'winners' ? 'Playoffs' : gridType[w] === 'consolation' ? 'Consolation' : `Week ${w}`}>{w}</th>)}
+          <th scope="col">Starts</th>
+        </tr></thead>
+        <tbody>
+          {d.grid.players.map((p) => (
+            <tr>
+              <td class="l"><b>{p.name}</b> <span class="pos-tag">{p.pos}</span></td>
+              {d.grid.weeks.map((w) => {
+                const c = p.weeks[w];
+                return c ? <td class:list={['wk', { bench: !c[0] }]} style={shade(c[1], c[0])} title={`Week ${w}: ${c[0] ? 'started' : 'benched'}, ${c[1]} pts`}>{num(c[1], 0)}</td> : <td class="wk empty"></td>;
+              })}
+              <td class="strong">{p.starts}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section" id="roster">
+    <h2 class="h2">Roster</h2>
+    <div class="table-box">
+      <table class="t">
+        <thead><tr>
+          <th scope="col" class="l">Player</th><th scope="col" class="l">How acquired</th><th scope="col">Weeks</th><th scope="col">Starts</th>
+          <th scope="col">Started pts</th><th scope="col">Bench pts</th><th scope="col">Finish</th><th scope="col">VOR</th>
+        </tr></thead>
+        <tbody>
+          {d.roster.map((p) => (
+            <tr>
+              <td class="l"><b>{p.name}</b> <span class="pos-tag">{p.pos}{p.nfl_team && ` · ${p.nfl_team}`}</span></td>
+              <td class="l small">{VIA[p.via] || p.via}{p.via === 'draft' || p.via === 'keeper' ? (p.draft_round ? ` · R${p.draft_round} #${p.draft_overall}` : '') : (p.via_week ? ` · wk ${p.via_week}` : '')}</td>
+              <td>{p.weeks}</td><td>{p.starts}</td><td class="strong">{num(p.sp, 1)}</td><td class="dim">{num(p.bench, 1)}</td>
+              <td>{p.finish ?? '—'}</td><td class={p.vor === null ? '' : upDown(p.vor)}>{signed(p.vor)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Started points include the winners bracket; bench points are regular season. Finish and VOR are the player's whole NFL season under league scoring, wherever he was rostered.</p>
+  </section>
+
+  <div class="two-col section">
+    <section id="composition">
+      <h2 class="h2">Position strength</h2>
+      <p class="note" style="margin-top:4px">Regular-season started points per week vs. the league average, and league rank.</p>
+      <PosBoxes ranks={ranks} vsAvg={vsAvg} teams={N} />
+      <div class="table-box">
+        <table class="t">
+          <thead><tr><th scope="col" class="l">Pos</th><th scope="col">Started pts</th><th scope="col">vs avg / wk</th><th scope="col">League rank</th></tr></thead>
+          <tbody>
+            {d.pos.map((p) => <tr><td class="l strong">{p.pos}</td><td>{num(p.sp, 1)}</td><td class:list={['strong', upDown(p.vs_avg)]}>{signed(p.vs_avg)}</td><td>{ord(p.rank)}</td></tr>)}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="sources">
+      <h2 class="h2">Where points came from</h2>
+      <p class="note" style="margin-top:4px">Regular-season started points by how each player joined the team.</p>
+      <div class="srcbar" style="width:100%;height:18px;margin-top:16px" role="img" aria-label={SRC.map(([k, l]) => `${l} ${(d.sources[k] / srcTotal * 100).toFixed(0)}%`).join(', ')}>
+        {SRC.map(([k, , c]) => <span class={c} style={`flex:${d.sources[k]} 0 0`}></span>)}
+      </div>
+      <div class="table-box">
+        <table class="t">
+          <tbody>
+            {SRC.map(([k, l, c]) => (
+              <tr><td class="l"><i class={c} style="display:inline-block;width:12px;height:12px;margin-right:8px;vertical-align:-1px"></i>{l}</td>
+                <td class="strong">{num(d.sources[k], 1)}</td><td class="dim">{(d.sources[k] / srcTotal * 100).toFixed(0)}%</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Draft value over slot this season: <b class={upDown(st.draft_vos)}>{signed(st.draft_vos)}</b> · share of points from own picks: {rate(st.draft_sp_share)}.</p>
+    </section>
+  </div>
+
+  {d.draft.length > 0 && (
+    <section class="section" id="draft">
+      <h2 class="h2">Draft</h2>
+      <div class="table-box">
+        <table class="t">
+          <thead><tr><th scope="col" class="l">Rd</th><th scope="col">Pick</th><th scope="col" class="l">Player</th><th scope="col">Grade</th><th scope="col">Finish</th><th scope="col">vs slot</th><th scope="col">SP for {first}</th></tr></thead>
+          <tbody>
+            {d.draft.map((p) => (
+              <tr>
+                <td class="l">{p.round}</td><td>#{p.overall}</td>
+                <td class="l"><b>{p.name}</b> <span class="pos-tag">{p.pos}{p.keeper && ' · keeper'}</span></td>
+                <td>{p.grade ? <span class:list={['grade', `g-${p.grade}`]}>{p.grade}</span> : <span class="dim">—</span>}</td>
+                <td>{p.pos_rank ? `${p.pos}${p.pos_rank}` : '—'}</td>
+                <td class={p.vos === null ? '' : upDown(p.vos)}>{signed(p.vos)}</td>
+                <td class="strong">{num(p.sp, 1)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )}
+
+  {d.trades.length > 0 && (
+    <section class="section" id="trades">
+      <h2 class="h2">Trades</h2>
+      <ol class="moves">
+        {d.trades.map((t) => (
+          <li>
+            <span class="mtag">TRADE</span>
+            <span class="dim" style="font-size:13px;width:60px">wk {t.week ?? '—'}</span>
+            <span style="flex:1 1 260px;font-size:14px">Got <b>{t.received || t.picks_received || 'nothing'}</b> from {t.counterparty} for {t.sent || t.picks_sent || 'nothing'}</span>
+            <span class:list={['strong', upDown(t.margin)]} style="font-variant-numeric:tabular-nums">{t.result === 'unvalued' ? 'n/a' : `${signed(t.margin)} SP`}</span>
+          </li>
+        ))}
+      </ol>
+      <p class="note">Margin = started points received minus what the outgoing players scored for their new team, rest of the season.</p>
+    </section>
+  )}
+</Base>
