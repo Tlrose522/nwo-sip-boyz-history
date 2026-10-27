@@ -1,0 +1,73 @@
+{
+  "exported_at": "2026-10-27T12:06:12.859Z",
+  "tabs": {
+    "Owner Map": {
+      "file": "owner-map.csv",
+      "rows": 31
+    },
+    "Seasons": {
+      "file": "seasons.csv",
+      "rows": 9
+    },
+    "Settings": {
+      "file": "settings.csv",
+      "rows": 628
+    },
+    "Owners": {
+      "file": "owners.csv",
+      "rows": 126
+    },
+    "Lineups": {
+      "file": "lineups.csv",
+      "rows": 31192
+    },
+    "Standings": {
+      "file": "standings.csv",
+      "rows": 126
+    },
+    "Team Weeks": {
+      "file": "team-weeks.csv",
+      "rows": 1942
+    },
+    "Player Seasons": {
+      "file": "player-seasons.csv",
+      "rows": 4723
+    },
+    "Team Seasons": {
+      "file": "team-seasons.csv",
+      "rows": 126
+    },
+    "Trade Ledger": {
+      "file": "trade-ledger.csv",
+      "rows": 178
+    },
+    "Careers": {
+      "file": "careers.csv",
+      "rows": 15
+    },
+    "NFL Seasons": {
+      "file": "nfl-seasons.csv",
+      "rows": 5685
+    },
+    "Draft Grades": {
+      "file": "draft-grades.csv",
+      "rows": 1974
+    },
+    "Matchups": {
+      "file": "matchups.csv",
+      "rows": 1942
+    },
+    "Drafts": {
+      "file": "drafts.csv",
+      "rows": 1974
+    },
+    "Transactions": {
+      "file": "transactions.csv",
+      "rows": 6870
+    },
+    "Lore": {
+      "file": "lore.csv",
+      "rows": 136
+    }
+  }
+}

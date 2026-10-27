@@ -1,0 +1,137 @@
+season,category,person,title,text,source,status
+2018,recap,Billy Rose,The first belt,"Billy's Snooki's Cookie went 11-2 and led the league in points, scoring 23% above the weekly league median. The roster was built almost entirely at the draft (86% of started points from his own picks), headlined by eighth-round Patrick Mahomes (379 SP) and second-round Travis Kelce, giving him the league's best QB (+7.7 per week over average) and TE (+12.2) production. After a first-round bye he beat Joey 107.8–78.6, catching Joey 56 points below his season average, then took the final over Tyler 179.4–135.8.","Team Seasons, Team Weeks, Player Seasons",draft
+2019,recap,Billy Rose,Back-to-back on a lucky bounce,"Billy repeated despite only the fifth-best scoring offense: his 10-3 record came 2.4 wins above what his scores deserved, the most luck in the league. His running backs ranked 13th of 14, so the title ran through the receivers (2nd), led by Michael Thomas's 337 started points, and two week-6 trades that brought in Stefon Diggs, Josh Jacobs and Jared Cook (19% of his started points came via trade). In the playoffs he edged Tyler 109.6–104.5, with Tyler 15 points under his average, then beat Jake 146.7–120.0 in the final.","Team Seasons, Team Weeks, Player Seasons, Trade Ledger",draft
+2020,recap,Hayden Ward,The midseason rebuild,"Hayden's first title came from a midseason turnaround: below the league median through the first half, then the second-best scoring team the rest of the way. First-round pick Christian McCaffrey gave him only 90 started points, so he rebuilt by trade, landing Travis Kelce from Jake in week 4 (229 SP) and Terry McLaurin from Joey in week 7, plus free agent Myles Gaskin (123 SP). Only half his started points came from his own draft picks, the lowest share in the league. Patrick Mahomes was again the league's top QB (+5.1 per week), luck added 2.3 wins (most in the league), and he closed it out over Bryce 117.3–113.5 and Harlan 124.7–110.1.","Team Seasons, Team Weeks, Player Seasons, Trade Ledger",draft
+2021,recap,Billy Rose,"Three titles, by 0.78 points","Billy's third belt was built on the league's best backfield and quarterback: Najee Harris and Ezekiel Elliott gave him +10.6 points per week at RB, Josh Allen came in the fourth round, and third-round Cooper Kupp scored 434 started points, the best value pick in league history. A modest 8-6 record (0.9 wins unlucky) made him the 4 seed, but he got hot in the playoffs: 125.5–102.4 over Bryce, a 161.6–64.7 rout of Nick, then a 139.3–138.5 win over Joey in the final, decided by 0.78 points.","Team Seasons, Team Weeks, Player Seasons, Draft Grades",draft
+2022,recap,Griffin Gaule,Wire to wire,"Griffin's Tsutomu Yamaguchi was the best team from start to finish: 9-5, the league's top scorer, and the 1 seed. The engine was a running back room 17.8 points per week better than the league average, the biggest positional edge any champion has had, with first-round Austin Ekeler (350 SP) and fourth-round Josh Jacobs (314 SP). Nearly everything came from the draft (86% of started points). After the bye he won his two playoff games by a combined 110 points: 159.1–108.3 over Harlan and 163.5–103.8 over Nathan.","Team Seasons, Team Weeks, Player Seasons",draft
+2023,recap,Hayden Ward,The heist,"Hayden's second title is the most improbable in league history. Bear Force One ranked 11th of 14 in points, scored below the league median for the season, and was 13th in lineup efficiency, but luck turned an expected 5.8 wins into 8-6 and the 6 seed. All three playoff opponents then scored well below their season averages (by 33, 17 and 22 points), and he won those games by 0.88, 39.6 and 1.08 points. Stefon Diggs (269 SP), Amari Cooper and Tony Pollard did the heavy lifting, with waiver pickup C.J. Stroud (week 3, 172 SP) at quarterback.","Team Seasons, Team Weeks, Player Seasons",draft
+2024,recap,Tyler Rose,The running back room,"Tyler's first title rode the league's second-best backfield (+13.2 points per week): third-round De'Von Achane, ninth-round Chuba Hubbard (228 SP) and Jahmyr Gibbs, acquired from Chris in week 9 in a trade that netted +112 started points. That more than offset a week-6 deal with Jake that cost him 289. Burnie Xanders finished 10-4 as the 2 seed, scored 11% above the median after midseason, and won the playoffs 163.6–129.3 over Austin Abegg and 122.0–117.5 over Jake.","Team Seasons, Team Weeks, Player Seasons, Trade Ledger",draft
+2025,recap,Tyler Rose,Back-to-back across platforms,"Tyler won the first Sleeper season to make it two straight. Unverified Sources started slowly, below the median through the first half, then posted the league's best second half (26% above the median). Josh Allen was the top QB (+5.9 per week) and first-round Jahmyr Gibbs scored 360 started points, while two early trades with Jake, for DK Metcalf in week 2 and A.J. Brown in week 5, added a combined 209 started points of margin. All three playoff opponents fell 20–33 points below their averages: Connor 133.7–95.2, Austin Joannes 157.8–114.4, and Nathan 100.3–83.6 in the final.","Team Seasons, Team Weeks, Player Seasons, Trade Ledger",draft
+2018,belt,Billy Rose,Champion,,Seasons,auto
+2019,belt,Billy Rose,Champion,,Seasons,auto
+2020,belt,Hayden Ward,Champion,,Seasons,auto
+2021,belt,Billy Rose,Champion,,Seasons,auto
+2022,belt,Griffin Gaule,Champion,,Seasons,auto
+2023,belt,Hayden Ward,Champion,,Seasons,auto
+2024,belt,Tyler Rose,Champion,,Seasons,auto
+2025,belt,Tyler Rose,Champion,,Seasons,auto
+2018,punishment,Walter Mitchell,Last place,,Team Seasons (last_place),needs text
+2019,punishment,Griffin Gaule,Last place,,Team Seasons (last_place),needs text
+2020,punishment,Joey Roberts,Last place,,Team Seasons (last_place),needs text
+2021,punishment,Nathan Richards,Last place,,Team Seasons (last_place),needs text
+2022,punishment,Chris McKinney,Last place,,Team Seasons (last_place),needs text
+2023,punishment,Nick Lepak,Last place,,Team Seasons (last_place),needs text
+2024,punishment,Chris McKinney,Last place,,Team Seasons (last_place),needs text
+2025,punishment,Jake Parsons,Last place,,Team Seasons (last_place),needs text
+2018,summary,Austin Abegg,,Missed the playoffs at 6-7: the league's No. 2 WR room (+12.3 a week) couldn't make up for a RB room 18.3 points a week below average.,"Team Weeks, Player Seasons",draft
+2018,summary,Billy Rose,,Won the title at 11-2; see the season recap.,"Team Weeks, Player Seasons",draft
+2018,summary,Bryce Poisson,,"Went 8-5 behind the league's best WR room (+17.4 a week), despite a RB room 9.2 points a week below average, then lost in the first round to Joey, 89.8–116.4.","Team Weeks, Player Seasons",draft
+2018,summary,Chris McKinney,,Missed the playoffs at 4-9 with the No. 13 offense in points.,"Team Weeks, Player Seasons",draft
+2018,summary,Connor Schwartz,,"Went 9-4 behind the league's No. 2 RB room (+14.9 a week), despite the league's worst lineup efficiency, then lost in the first round to Tyler, 132.1–139.8.","Team Weeks, Player Seasons",draft
+2018,summary,Griffin Gaule,,"Missed the playoffs at 6-7, sunk by a RB room 11.6 points a week below average.","Team Weeks, Player Seasons",draft
+2018,summary,Harlan Lane,,"Missed the playoffs at 3-10, sunk by 2.8 wins of bad luck and a second-half fade (+8% to −11% vs. the median).","Team Weeks, Player Seasons",draft
+2018,summary,Hayden Ward,,Missed the playoffs at 5-8: the league's best lineup efficiency couldn't make up for a RB room 14.2 points a week below average.,"Team Weeks, Player Seasons",draft
+2018,summary,Jake Parsons,,Missed the playoffs at 4-9 with the No. 12 offense in points.,"Team Weeks, Player Seasons",draft
+2018,summary,Joey Roberts,,"Went 8-5 behind the league's No. 3 RB room (+13.1 a week), despite a WR room 7.6 points a week below average, then lost in the semifinals to Billy, 78.6–107.8.","Team Weeks, Player Seasons",draft
+2018,summary,Nathan Richards,,"Went 9-4 behind the league's best RB room (+16.7 a week) and a second-half surge (+10% to +29% vs. the median), then lost in the semifinals to Tyler, 102.6–143.4.","Team Weeks, Player Seasons",draft
+2018,summary,Nick Lepak,,Missed the playoffs at 8-5: the league's No. 4 RB room (+11.4 a week) couldn't make up for a WR room 7.2 points a week below average.,"Team Weeks, Player Seasons",draft
+2018,summary,Tyler Rose,,"Reached the final at 8-5 behind the league's No. 5 RB room (+10.7 a week) and Todd Gurley II (372 SP, round-1 pick), then lost to Billy, 135.8–179.4.","Team Weeks, Player Seasons",draft
+2018,summary,Walter Mitchell,,"Last place at 2-11, taking the punishment, sunk by a RB room 19.5 points a week below average and 1.9 wins of bad luck.","Team Weeks, Player Seasons",draft
+2019,summary,Austin Abegg,,"Went 7-6, then lost in the first round to Tyler, 96.5–110.7.","Team Weeks, Player Seasons",draft
+2019,summary,Austin Joannes,,"Missed the playoffs at 5-8, sunk by the league's worst lineup efficiency.","Team Weeks, Player Seasons",draft
+2019,summary,Billy Rose,,Won the title at 10-3; see the season recap.,"Team Weeks, Player Seasons",draft
+2019,summary,Bryce Poisson,,"Missed the playoffs at 5-8 despite Christian McCaffrey (354 SP, round-1 pick).","Team Weeks, Player Seasons",draft
+2019,summary,Chris McKinney,,Missed the playoffs at 4-9 despite a second-half surge (−15% to +1% vs. the median).,"Team Weeks, Player Seasons",draft
+2019,summary,Connor Schwartz,,Missed the playoffs at 6-7: the league's best WR room (+9.9 a week) couldn't make up for a RB room 9.5 points a week below average.,"Team Weeks, Player Seasons",draft
+2019,summary,Griffin Gaule,,"Last place at 1-12, taking the punishment, sunk by 2.8 wins of bad luck.","Team Weeks, Player Seasons",draft
+2019,summary,Harlan Lane,,Missed the playoffs at 6-7 despite the No. 3 offense in points and the league's best QB room (+8.7 a week).,"Team Weeks, Player Seasons",draft
+2019,summary,Hayden Ward,,"Missed the playoffs at 6-7, sunk by a WR room 7.8 points a week below average.","Team Weeks, Player Seasons",draft
+2019,summary,Jake Parsons,,"Reached the final at 11-2 behind the league's No. 3 RB room (+7.1 a week), then lost to Billy, 120.0–146.7.","Team Weeks, Player Seasons",draft
+2019,summary,Joey Roberts,,"Went 7-6 behind the league's No. 2 RB room (+10.7 a week), despite 2.5 wins of bad luck, then lost in the first round to Nick, 113.2–129.6.","Team Weeks, Player Seasons",draft
+2019,summary,Nathan Richards,,Missed the playoffs at 6-7 despite the league's best lineup efficiency.,"Team Weeks, Player Seasons",draft
+2019,summary,Nick Lepak,,"Went 8-5 helped by 1.8 wins of luck, despite a WR room 12.7 points a week below average, then lost in the semifinals to Jake, 159.9–166.0.","Team Weeks, Player Seasons",draft
+2019,summary,Tyler Rose,,"Went 9-4 behind the league's best RB room (+13.9 a week) and Deshaun Watson (312 SP, round-5 pick), then lost in the semifinals to Billy, 104.5–109.6.","Team Weeks, Player Seasons",draft
+2020,summary,Austin Abegg,,"Went 11-2 helped by 2.1 wins of luck and the league's best lineup efficiency, then lost in the semifinals to Harlan, 124.1–136.6.","Team Weeks, Player Seasons",draft
+2020,summary,Austin Joannes,,Missed the playoffs at 5-8 with the No. 9 offense in points.,"Team Weeks, Player Seasons",draft
+2020,summary,Billy Rose,,"Missed the playoffs at 5-8, sunk by a second-half fade (+6% to −13% vs. the median).","Team Weeks, Player Seasons",draft
+2020,summary,Bryce Poisson,,"Went 9-4 behind the league's best WR room (+15.4 a week) and a second-half surge (+7% to +28% vs. the median), then lost in the semifinals to Hayden, 113.5–117.3.","Team Weeks, Player Seasons",draft
+2020,summary,Chris McKinney,,"Went 7-6 behind Russell Wilson (312 SP, round-6 pick), despite a second-half fade (+22% to −2% vs. the median), then lost in the first round to Harlan, 90.4–138.4.","Team Weeks, Player Seasons",draft
+2020,summary,Griffin Gaule,,Missed the playoffs at 6-7 with the No. 5 offense in points.,"Team Weeks, Player Seasons",draft
+2020,summary,Harlan Lane,,"Reached the final at 9-4 behind the league's No. 2 WR room (+9.2 a week), then lost to Hayden, 110.1–124.7.","Team Weeks, Player Seasons",draft
+2020,summary,Hayden Ward,,Won the title at 10-3; see the season recap.,"Team Weeks, Player Seasons",draft
+2020,summary,Jake Parsons,,Missed the playoffs at 5-8: the league's best TE room (+7.1 a week) couldn't make up for a WR room 14.2 points a week below average.,"Team Weeks, Player Seasons",draft
+2020,summary,Joey Roberts,,"Last place at 2-11, taking the punishment: a second-half surge (−19% to −3% vs. the median) couldn't make up for 1.6 wins of bad luck.","Team Weeks, Player Seasons",draft
+2020,summary,Nathan Richards,,Missed the playoffs at 5-8 with the No. 12 offense in points.,"Team Weeks, Player Seasons",draft
+2020,summary,Nick Lepak,,Missed the playoffs at 5-8: a second-half surge (−13% to +1% vs. the median) couldn't make up for the league's worst lineup efficiency.,"Team Weeks, Player Seasons",draft
+2020,summary,Tyler Rose,,"Went 7-6 behind the league's best RB room (+19.4 a week) and Dalvin Cook (301 SP, round-1 pick), then lost in the first round to Bryce, 97.0–110.8.","Team Weeks, Player Seasons",draft
+2020,summary,Walter Mitchell,,"Missed the playoffs at 5-8, sunk by a second-half fade (+2% to −14% vs. the median).","Team Weeks, Player Seasons",draft
+2021,summary,Austin Abegg,,"Missed the playoffs at 5-9, sunk by a RB room 7.0 points a week below average.","Team Weeks, Player Seasons",draft
+2021,summary,Austin Joannes,,"Went 9-5 helped by 2.1 wins of luck, then lost in the first round to Joey, 83.2–121.9.","Team Weeks, Player Seasons",draft
+2021,summary,Billy Rose,,Won the title at 8-6; see the season recap.,"Team Weeks, Player Seasons",draft
+2021,summary,Bryce Poisson,,"Went 7-7 despite 1.8 wins of bad luck, then lost in the first round to Billy, 102.4–125.5.","Team Weeks, Player Seasons",draft
+2021,summary,Chris McKinney,,"Went 11-3 helped by 3.0 wins of luck and the league's best lineup efficiency, then lost in the semifinals to Joey, 81.7–94.2.","Team Weeks, Player Seasons",draft
+2021,summary,Griffin Gaule,,"Missed the playoffs at 6-8, sunk by a second-half fade (+15% to −15% vs. the median).","Team Weeks, Player Seasons",draft
+2021,summary,Harlan Lane,,"Missed the playoffs at 6-8 despite Tom Brady (315 SP, round-8 pick).","Team Weeks, Player Seasons",draft
+2021,summary,Hayden Ward,,"Missed the playoffs at 6-8, sunk by the league's worst lineup efficiency.","Team Weeks, Player Seasons",draft
+2021,summary,Jake Parsons,,"Missed the playoffs at 5-9, sunk by a WR room 11.3 points a week below average.","Team Weeks, Player Seasons",draft
+2021,summary,Joey Roberts,,"Reached the final at 7-7 behind the league's No. 2 RB room (+8.5 a week) and Austin Ekeler (315 SP, round-1 pick), then lost to Billy, 138.5–139.3.","Team Weeks, Player Seasons",draft
+2021,summary,Nathan Richards,,"Last place at 4-10, taking the punishment, sunk by a WR room 9.0 points a week below average and 1.8 wins of bad luck.","Team Weeks, Player Seasons",draft
+2021,summary,Nick Lepak,,"Went 11-3 behind the league's best WR room (+11.5 a week), then lost in the semifinals to Billy, 64.7–161.6.","Team Weeks, Player Seasons",draft
+2021,summary,Tyler Rose,,Missed the playoffs at 7-7 with the No. 7 offense in points.,"Team Weeks, Player Seasons",draft
+2021,summary,Walter Mitchell,,"Missed the playoffs at 6-8, sunk by a RB room 7.7 points a week below average.","Team Weeks, Player Seasons",draft
+2022,summary,Austin Abegg,,Missed the playoffs at 7-7 despite a second-half surge (−13% to +4% vs. the median).,"Team Weeks, Player Seasons",draft
+2022,summary,Austin Joannes,,Missed the playoffs at 6-8 despite the league's No. 2 RB room (+8.6 a week).,"Team Weeks, Player Seasons",draft
+2022,summary,Billy Rose,,"Missed the playoffs at 5-9, sunk by a WR room 12.2 points a week below average and a second-half fade (+2% to −15% vs. the median).","Team Weeks, Player Seasons",draft
+2022,summary,Bryce Poisson,,"Went 8-6 behind Patrick Mahomes (362 SP, round-4 pick), then lost in the first round to Harlan, 125.2–128.0.","Team Weeks, Player Seasons",draft
+2022,summary,Chris McKinney,,"Last place at 5-9, taking the punishment: a second-half surge (−26% to −3% vs. the median) couldn't make up for the league's worst lineup efficiency.","Team Weeks, Player Seasons",draft
+2022,summary,Griffin Gaule,,Won the title at 9-5; see the season recap.,"Team Weeks, Player Seasons",draft
+2022,summary,Harlan Lane,,"Went 8-6 behind Jalen Hurts (371 SP, round-6 pick) and the league's No. 4 WR room (+7.6 a week), then lost in the semifinals to Griffin, 108.3–159.1.","Team Weeks, Player Seasons",draft
+2022,summary,Hayden Ward,,"Missed the playoffs at 7-7 despite Justin Jefferson (316 SP, round-1 pick).","Team Weeks, Player Seasons",draft
+2022,summary,Jake Parsons,,Missed the playoffs at 7-7 despite a second-half surge (−7% to +9% vs. the median).,"Team Weeks, Player Seasons",draft
+2022,summary,Joey Roberts,,"Missed the playoffs at 6-8, sunk by a second-half fade (+7% to −11% vs. the median).","Team Weeks, Player Seasons",draft
+2022,summary,Nathan Richards,,"Reached the final at 9-5 behind the league's No. 2 WR room (+10.8 a week), despite a RB room 10.8 points a week below average, then lost to Griffin, 103.8–163.5.","Team Weeks, Player Seasons",draft
+2022,summary,Nick Lepak,,Missed the playoffs at 6-8 with the No. 13 offense in points.,"Team Weeks, Player Seasons",draft
+2022,summary,Tyler Rose,,"Went 8-6 behind Josh Allen (385 SP, round-3 pick), despite a second-half fade (+25% to −2% vs. the median), then lost in the semifinals to Nathan, 128.4–129.1.","Team Weeks, Player Seasons",draft
+2022,summary,Walter Mitchell,,"Went 7-7 behind the league's best WR room (+13.0 a week) and the league's best lineup efficiency, then lost in the first round to Tyler, 132.0–155.8.","Team Weeks, Player Seasons",draft
+2023,summary,Austin Abegg,,Missed the playoffs at 7-7 with the No. 5 offense in points.,"Team Weeks, Player Seasons",draft
+2023,summary,Austin Joannes,,Missed the playoffs at 6-8 despite the league's best lineup efficiency.,"Team Weeks, Player Seasons",draft
+2023,summary,Billy Rose,,"Missed the playoffs at 4-10, sunk by a WR room 13.5 points a week below average and 2.8 wins of bad luck.","Team Weeks, Player Seasons",draft
+2023,summary,Bryce Poisson,,"Went 8-6, then lost in the first round to Hayden, 92.3–93.1.","Team Weeks, Player Seasons",draft
+2023,summary,Chris McKinney,,Missed the playoffs at 6-8 despite a second-half surge (−14% to +6% vs. the median).,"Team Weeks, Player Seasons",draft
+2023,summary,Griffin Gaule,,"Went 10-4 helped by 3.3 wins of luck, then lost in the semifinals to Hayden, 97.0–136.6.","Team Weeks, Player Seasons",draft
+2023,summary,Harlan Lane,,Missed the playoffs at 7-7: a second-half surge (−16% to +3% vs. the median) couldn't make up for a RB room 8.1 points a week below average.,"Team Weeks, Player Seasons",draft
+2023,summary,Hayden Ward,,Won the title at 8-6; see the season recap.,"Team Weeks, Player Seasons",draft
+2023,summary,Jake Parsons,,"Missed the playoffs at 7-7 despite Josh Allen (309 SP, round-3 pick).","Team Weeks, Player Seasons",draft
+2023,summary,Joey Roberts,,"Went 8-6 behind CeeDee Lamb (314 SP, round-1 pick), then lost in the first round to Nathan, 96.6–134.7.","Team Weeks, Player Seasons",draft
+2023,summary,Nathan Richards,,"Reached the final at 8-6 behind the league's No. 3 RB room (+8.2 a week) and Amon-Ra St. Brown (320 SP, round-2 pick), then lost to Hayden, 101.6–102.7.","Team Weeks, Player Seasons",draft
+2023,summary,Nick Lepak,,"Last place at 3-11, taking the punishment, sunk by a second-half fade (+14% to −17% vs. the median) and 3.1 wins of bad luck.","Team Weeks, Player Seasons",draft
+2023,summary,Tyler Rose,,"Missed the playoffs at 6-8, sunk by a second-half fade (+8% to −9% vs. the median) and the league's worst lineup efficiency.","Team Weeks, Player Seasons",draft
+2023,summary,Walter Mitchell,,"Went 10-4 behind the league's No. 2 RB room (+9.1 a week) and Tyreek Hill (365 SP, round-1 pick), then lost in the semifinals to Nathan, 113.5–118.9.","Team Weeks, Player Seasons",draft
+2024,summary,Austin Abegg,,"Went 8-6 behind the league's best WR room (+15.0 a week) and a second-half surge (+6% to +29% vs. the median), then lost in the semifinals to Tyler, 129.3–163.6.","Team Weeks, Player Seasons",draft
+2024,summary,Austin Joannes,,Missed the playoffs at 7-7 despite the league's No. 5 RB room (+7.3 a week).,"Team Weeks, Player Seasons",draft
+2024,summary,Billy Rose,,"Went 8-6 behind the league's best RB room (+20.9 a week), despite a WR room 10.6 points a week below average, then lost in the first round to Joey, 99.4–156.1.","Team Weeks, Player Seasons",draft
+2024,summary,Bryce Poisson,,"Missed the playoffs at 6-8, sunk by a RB room 10.8 points a week below average and the league's worst lineup efficiency.","Team Weeks, Player Seasons",draft
+2024,summary,Chris McKinney,,"Last place at 2-12, taking the punishment, sunk by 3.5 wins of bad luck.","Team Weeks, Player Seasons",draft
+2024,summary,Griffin Gaule,,Missed the playoffs at 5-9: a second-half surge (−16% to +1% vs. the median) couldn't make up for a RB room 7.5 points a week below average.,"Team Weeks, Player Seasons",draft
+2024,summary,Harlan Lane,,Missed the playoffs at 7-7: 2.8 wins of luck couldn't make up for a RB room 16.2 points a week below average.,"Team Weeks, Player Seasons",draft
+2024,summary,Hayden Ward,,"Missed the playoffs at 7-7, sunk by a second-half fade (+5% to −12% vs. the median).","Team Weeks, Player Seasons",draft
+2024,summary,Jake Parsons,,"Reached the final at 10-4 behind the league's No. 3 RB room (+9.2 a week), then lost to Tyler, 117.5–122.0.","Team Weeks, Player Seasons",draft
+2024,summary,Joey Roberts,,"Went 8-6 behind the league's No. 4 RB room (+8.8 a week), then lost in the semifinals to Jake, 134.6–145.2.","Team Weeks, Player Seasons",draft
+2024,summary,Nathan Richards,,"Went 7-7 behind Josh Allen (347 SP, round-4 pick), despite a RB room 11.3 points a week below average, then lost in the first round to Abegg, 113.7–175.4.","Team Weeks, Player Seasons",draft
+2024,summary,Nick Lepak,,Missed the playoffs at 7-7 with the No. 8 offense in points.,"Team Weeks, Player Seasons",draft
+2024,summary,Tyler Rose,,Won the title at 10-4; see the season recap.,"Team Weeks, Player Seasons",draft
+2024,summary,Walter Mitchell,,Missed the playoffs at 6-8 with the No. 12 offense in points.,"Team Weeks, Player Seasons",draft
+2025,summary,Austin Abegg,,"Went 11-3 helped by 2.8 wins of luck and a second-half surge (−4% to +12% vs. the median), then lost in the semifinals to Nathan, 105.9–114.0.","Team Weeks, Player Seasons",draft
+2025,summary,Austin Joannes,,"Went 11-3 behind the league's best RB room (+20.3 a week) and Christian McCaffrey (397 SP, round-1 pick), then lost in the semifinals to Tyler, 114.4–157.8.","Team Weeks, Player Seasons",draft
+2025,summary,Billy Rose,,"Went 8-6 behind the league's best WR room (+15.3 a week) and Jaxon Smith-Njigba (349 SP, round-4 pick), then lost in the first round to Nathan, 132.8–135.4.","Team Weeks, Player Seasons",draft
+2025,summary,Bryce Poisson,,Missed the playoffs at 4-10 with the No. 12 offense in points.,"Team Weeks, Player Seasons",draft
+2025,summary,Chris McKinney,,"Missed the playoffs at 5-9, sunk by a RB room 9.9 points a week below average and the league's worst lineup efficiency.","Team Weeks, Player Seasons",draft
+2025,summary,Connor Schwartz,,"Went 9-5 behind Puka Nacua (348 SP, round-2 pick), then lost in the first round to Tyler, 95.2–133.7.","Team Weeks, Player Seasons",draft
+2025,summary,Griffin Gaule,,"Missed the playoffs at 5-9, sunk by a RB room 10.0 points a week below average.","Team Weeks, Player Seasons",draft
+2025,summary,Harlan Lane,,Missed the playoffs at 6-8: the league's best TE room (+10.3 a week) couldn't make up for 2.4 wins of bad luck.,"Team Weeks, Player Seasons",draft
+2025,summary,Hayden Ward,,"Missed the playoffs at 7-7, sunk by a WR room 10.6 points a week below average.","Team Weeks, Player Seasons",draft
+2025,summary,Jake Parsons,,"Last place at 2-12, taking the punishment, sunk by 2.5 wins of bad luck.","Team Weeks, Player Seasons",draft
+2025,summary,Joey Roberts,,"Missed the playoffs at 4-10, sunk by 1.9 wins of bad luck and a RB room 7.0 points a week below average.","Team Weeks, Player Seasons",draft
+2025,summary,Nathan Richards,,"Reached the final at 11-3 helped by 2.8 wins of luck, then lost to Tyler, 83.6–100.3.","Team Weeks, Player Seasons",draft
+2025,summary,Tyler Rose,,Won the title at 8-6; see the season recap.,"Team Weeks, Player Seasons",draft
+2025,summary,Walter Mitchell,,Missed the playoffs at 7-7 with the No. 9 offense in points.,"Team Weeks, Player Seasons",draft

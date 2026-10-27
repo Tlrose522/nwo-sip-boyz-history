@@ -1,0 +1,10 @@
+platform,season,league_name,num_teams,regular_season_weeks,playoff_week_start,playoff_teams,champion,champion_team,runner_up,runner_up_team,champion_owner_id,runner_up_owner_id,league_id
+ESPN,2018,NWO Sip Boyz,14,13,14,6,Billy Rose,Snooki's Cookie,Tyler Rose,I Don't Condone Domestic Abuse,{AAEA52B8-86BD-4719-87A7-B0958B367CC5},{19F4B967-C945-44D8-B4B9-67C945B4D81C},443582
+ESPN,2019,NWO Sip Boyz,14,13,14,6,Billy Rose,Snooki's Cookie,Jake Parsons,Titsburg Feelers,{AAEA52B8-86BD-4719-87A7-B0958B367CC5},{AFC55B70-8AF1-4AF9-855B-708AF1CAF968},443582
+ESPN,2020,NWO Sip Boyz,14,13,14,6,Hayden Ward,Thou Shenault F W/ Lord H Poppa,Harlan Lane,Cause a scene Contagious,{72647518-C1EF-461B-94BB-B8E5BC09917D},{1CCF3174-BDED-4D19-8F31-74BDED2D192D},443582
+ESPN,2021,NWO Sip Boyz,14,14,15,6,Billy Rose,Snooki's Cookie,Joey Roberts,The Flojo,{AAEA52B8-86BD-4719-87A7-B0958B367CC5},{B9865170-99D8-4965-8651-7099D8796526},443582
+ESPN,2022,NWO Sip Boyz,14,14,15,6,Griffin Gaule,Tsutomu Yamaguchi,Nathan Richards,Nater Taterz,{AF13F8FA-EB38-4E49-B883-610D06EA0373},{FE9B4464-ABCF-40BF-9B44-64ABCF00BF95},443582
+ESPN,2023,NWO Sip Boyz,14,14,15,6,Hayden Ward,Bear Force One,Nathan Richards,Nater Taterz,{72647518-C1EF-461B-94BB-B8E5BC09917D},{FE9B4464-ABCF-40BF-9B44-64ABCF00BF95},443582
+ESPN,2024,NWO Sip Boyz,14,14,15,6,Tyler Rose,Burnie Xanders,Jake Parsons,Big Bird,{19F4B967-C945-44D8-B4B9-67C945B4D81C},{AFC55B70-8AF1-4AF9-855B-708AF1CAF968},443582
+Sleeper,2025,NWO Sip Boyz,14,14,15,6,Tyler Rose,Unverified Sources,Nathan Richards,Nater Taterz,1253479720855535616,1253419240711540736,1248316182096777216
+Sleeper,2026,NWO Sip Boyz,14,14,15,6,,,,,,,1385295678015561728
