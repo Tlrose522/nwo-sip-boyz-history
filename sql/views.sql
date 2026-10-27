@@ -66,6 +66,7 @@ JOIN settings prev
  AND prev.category = cur.category AND prev.setting = cur.setting
 WHERE cur.category IN ('general', 'roster', 'scoring', 'waivers', 'trades', 'draft')
   AND coalesce(CAST(cur.value AS VARCHAR), '') <> coalesce(CAST(prev.value AS VARCHAR), '')
+  AND cur.setting NOT LIKE '%deadline%'   -- dates move every year; not a rule change
 ORDER BY cur.season, cur.category, cur.setting;
 
 -- ---------------------------------------------------------------- standings / season tiles

@@ -73,6 +73,18 @@ await rm(OUT, { recursive: true, force: true });
 await mkdir(OUT, { recursive: true });
 const write = (name, obj) => writeFile(new URL(name, OUT), JSON.stringify(obj));
 
+// Readable names for ESPN scoring stat IDs (the loader names the common ones already).
+const ESPN_STATS = { 17: '300-399 pass yd bonus', 18: '400+ pass yd bonus', 19: 'passing 2-pt', 26: 'rushing 2-pt',
+  37: '100-199 rush yd bonus', 38: '200+ rush yd bonus', 44: 'receiving 2-pt', 56: '100-199 rec yd bonus',
+  57: '200+ rec yd bonus', 63: 'fumble recovery TD', 74: '50+ yd FG', 77: '40-49 yd FG', 80: '0-39 yd FG',
+  85: 'missed FG', 86: 'PAT made', 88: 'PAT missed', 101: 'kick/punt return TD', 198: '50-59 yd FG', 201: '60+ yd FG' };
+const SETTING_NAMES = { FLEX: 'FLEX slots', BN: 'bench slots', regular_season_weeks: 'regular-season weeks',
+  waiver_type: 'waiver type (0 rolling, 1 reverse standings, 2 FAAB)', fgmiss: 'missed FG', faab_budget: 'FAAB budget' };
+function settingName(k) {
+  const m = /^statId (\d+)$/.exec(k);
+  return m ? (ESPN_STATS[m[1]] || k) : (SETTING_NAMES[k] || k.replace(/_/g, ' '));
+}
+
 /* ------------------------------------------------------------ seasons */
 const tsBySeason = by(teamSeasons, (t) => t.season);
 const sparkKey = Object.fromEntries(sparks.map((s) => [`${s.season}|${s.team_id}`, s.rel.map(r1)]));
@@ -135,7 +147,7 @@ for (const s of seasons) {
     last_place: s.last_place && s.complete ? { person: s.last_place, slug: slugOf[s.last_place], punishment: punishment?.text || null } : null,
     recap: recap ? { title: recap.title, text: recap.text, status: recap.status } : null,
     platform_switch: prevPlatform && prevPlatform !== s.platform ? prevPlatform : null,
-    changes: changes.filter((c) => c.season === s.season).slice(0, 6),
+    changes: changes.filter((c) => c.season === s.season).slice(0, 6).map((c) => ({ ...c, setting: settingName(c.setting) })),
     standings, weeks: weekList, bracket,
     awards: awards.filter((a) => a.season === s.season).map((a) => ({ ...a, value: r2(a.value) })),
     trades: Object.values(by(trades.filter((t) => t.season === s.season), (t) => t.transaction_id))
