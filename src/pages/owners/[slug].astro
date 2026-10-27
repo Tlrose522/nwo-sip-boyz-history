@@ -144,7 +144,7 @@ const moveTag = (v) => (v === 'waiver' ? ['WAIVER', 'waiver'] : ['FREE AGENT', '
           </tbody>
         </table>
       </div>
-      <p class="note">Started points scored for {o.person.split(' ')[0]}, all seasons combined.</p>
+      <p class="note">Started points scored for {o.person.split(' ')[0]}, all seasons combined. <a href={href(`players/?owner=${encodeURIComponent(o.person)}`)}>Every player {o.person.split(' ')[0]} has rostered ›</a></p>
     </section>
 
     <section id="moves">

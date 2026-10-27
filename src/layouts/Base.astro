@@ -36,6 +36,7 @@ const exported = s.exported_at ? new Date(s.exported_at) : null;
       <nav class="site-nav" aria-label="Main">
         <a href={href('seasons/')} aria-current={nav === 'seasons' ? 'page' : undefined}>Seasons</a>
         <a href={href('owners/')} aria-current={nav === 'owners' ? 'page' : undefined}>Owners</a>
+        <a href={href('players/')} aria-current={nav === 'players' ? 'page' : undefined}>Players</a>
         <a href={href('leaderboards/')} aria-current={nav === 'leaderboards' ? 'page' : undefined}>Leaderboards</a>
       </nav>
       <form class="jump" role="search" id="jump">

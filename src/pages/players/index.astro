@@ -1,0 +1,209 @@
+---
+// Every rostered player-season: league-scored points, positional finish and value over
+// replacement next to the started points he gave each owner. Filter by season range,
+// position, owner and name; sort on any column. Data loads from /data/players.json.
+import Base from '../../layouts/Base.astro';
+import { site } from '../../lib/data.js';
+import { href } from '../../lib/fmt.js';
+
+const s = site();
+const years = s.seasons.map((x) => x.season).sort((a, b) => a - b);
+const owners = s.owners.slice().sort((a, b) => a.person.localeCompare(b.person));
+const POS = ['All', 'QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+---
+<Base title="Players" nav="players" description="Every rostered player-season in NWO Sip Boyz history: points, positional finish, value over replacement and started points by owner.">
+  <div class="hero" slot="hero">
+    <h1>PLAYERS</h1>
+    <div class="hero-row"><p class="plate" style="margin:0">Every player rostered in league history, season by season. Compare across eras with value over replacement.</p></div>
+  </div>
+
+  <div class="lb-controls">
+    <div class="lb-tabs" role="group" aria-label="Position">
+      {POS.map((p, i) => <button type="button" data-pos={p} aria-pressed={i === 0 ? 'true' : 'false'}>{p}</button>)}
+    </div>
+  </div>
+  <div class="lb-filter pl-filter" style="margin-top:14px">
+    <label>Player
+      <input id="pl-q" type="search" placeholder="e.g. Gurley, McCaffrey" autocomplete="off">
+    </label>
+    <label>Owner
+      <select id="pl-owner">
+        <option value="">All owners</option>
+        {owners.map((o) => <option value={o.person}>{o.person}{!o.active ? ' (inactive)' : ''}</option>)}
+      </select>
+    </label>
+    <label>From
+      <select id="pl-from">{years.map((y) => <option value={y} selected={y === years[0]}>{y}</option>)}</select>
+    </label>
+    <label>To
+      <select id="pl-to">{years.map((y) => <option value={y} selected={y === years[years.length - 1]}>{y}</option>)}</select>
+    </label>
+    <button type="button" id="pl-reset" class="lb-reset">Reset</button>
+  </div>
+
+  <section class="section" style="margin-top:20px">
+    <div class="h2-row">
+      <h2 class="h2" id="pl-title">All positions</h2>
+      <span class="note" id="pl-count" style="margin:0">Loading…</span>
+    </div>
+    <div class="table-box">
+      <table class="t lb-table pl-table">
+        <thead><tr id="pl-head"></tr></thead>
+        <tbody id="pl-body"></tbody>
+      </table>
+    </div>
+    <p style="margin-top:12px"><button type="button" id="pl-more" class="btn" hidden>Show 100 more</button></p>
+    <noscript><p class="note">This table needs JavaScript to load, sort and filter.</p></noscript>
+    <div class="lb-notes">
+      <p><b>VOR</b> (value over replacement) = the player's season points minus the last starter-caliber player at his position that season, the fairest way to compare across eras and positions. <b>Finish</b> is his rank at the position among every NFL player.</p>
+      <p><b>Points</b> are NFL stats rescored with that season's league scoring rules, over the league's fantasy weeks, whether he was started or not. <b>Started pts</b> are what actually counted for fantasy teams (regular season + winners bracket). With an owner selected, started points and starts are that owner's share.</p>
+      <p>Scoring rules changed between eras (ESPN 2018–2024, Sleeper 2025–), so raw points compare best within a season; VOR and finish compare across them. Team defenses aren't in the NFL stats, so they show league numbers only. Players rostered in a season they didn't play (e.g. holdouts) show no points.</p>
+    </div>
+  </section>
+
+  <script type="application/json" id="pl-config" set:html={JSON.stringify({ src: href('data/players.json'), ownerBase: href('owners/'), seasonBase: href('seasons/'), years })}></script>
+  <script is:inline>
+  (function () {
+    var C = JSON.parse(document.getElementById('pl-config').textContent);
+    var $ = function (id) { return document.getElementById(id); };
+    var DATA = null, PAGE = 100;
+
+    function fx(x, dp) { return x === null || x === undefined || isNaN(x) ? '—' : Number(x).toLocaleString('en-US', { minimumFractionDigits: dp, maximumFractionDigits: dp }); }
+    function sgn(x) { if (x === null || x === undefined) return '—'; return (x > 0 ? '+' : x < 0 ? '−' : '') + fx(Math.abs(x), 1); }
+    var VIA = { draft: 'drafted', keeper: 'keeper', waiver: 'waiver', free_agent: 'free agent', trade: 'trade', unknown: '' };
+
+    // Columns: k = sort key (function of the row as shown), dir = first-click direction (−1 high→low).
+    var COLS = [
+      { k: 'season', h: 'Season', dir: -1, l: true },
+      { k: 'name', h: 'Player', dir: 1, l: true },
+      { k: 'rk', h: 'Finish', dir: 1 },
+      { k: 'pts', h: 'Points', dir: -1 },
+      { k: 'g', h: 'G', dir: -1 },
+      { k: 'ppg', h: 'PPG', dir: -1 },
+      { k: 'vor', h: 'VOR', dir: -1 },
+      { k: 'sp', h: 'Started pts', dir: -1 },
+      { k: 'st', h: 'Starts', dir: -1 },
+      { k: 'owner', h: 'Owner(s)', dir: 1, l: true },
+      { k: 'draft', h: 'Drafted', dir: 1, l: true },
+    ];
+
+    var q = new URLSearchParams(location.search);
+    var state = {
+      pos: ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'].indexOf(q.get('pos')) !== -1 ? q.get('pos') : 'All',
+      owner: q.get('owner') || '',
+      from: C.years.indexOf(+q.get('from')) !== -1 ? +q.get('from') : C.years[0],
+      to: C.years.indexOf(+q.get('to')) !== -1 ? +q.get('to') : C.years[C.years.length - 1],
+      q: q.get('q') || '', sort: 'vor', dir: -1, shown: PAGE,
+    };
+
+    // A row as displayed: with an owner filter, started points and starts are that owner's share.
+    function view(r) {
+      var mine = state.owner ? r.o.find(function (o) { return o[0] === state.owner; }) : null;
+      return {
+        r: r, season: r.s, name: r.n, rk: r.rk, pts: r.pts, g: r.g, ppg: r.ppg, vor: r.vor,
+        sp: mine ? mine[1] : r.sp, st: mine ? mine[2] : r.st,
+        owner: r.o.length ? r.o[0][0] : '', draft: r.d ? r.d[2] : null,
+      };
+    }
+
+    function filtered() {
+      var terms = state.q.toLowerCase().split(/,| vs\.? /).map(function (t) { return t.trim(); }).filter(Boolean);
+      return DATA.rows.filter(function (r) {
+        if (r.s < state.from || r.s > state.to) return false;
+        if (state.pos !== 'All' && r.p !== state.pos) return false;
+        if (state.owner && !r.o.some(function (o) { return o[0] === state.owner; })) return false;
+        if (terms.length && !terms.some(function (t) { return r.n.toLowerCase().indexOf(t) !== -1; })) return false;
+        return true;
+      }).map(view);
+    }
+
+    function cell(tr, text, cls) { var td = document.createElement('td'); if (cls) td.className = cls; td.textContent = text; tr.appendChild(td); return td; }
+
+    function render() {
+      if (state.from > state.to) { var t = state.from; state.from = state.to; state.to = t; }
+      $('pl-from').value = state.from; $('pl-to').value = state.to; $('pl-owner').value = state.owner; $('pl-q').value = state.q;
+      document.querySelectorAll('[data-pos]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-pos') === state.pos)); });
+      var posName = { All: 'All positions', QB: 'Quarterbacks', RB: 'Running backs', WR: 'Wide receivers', TE: 'Tight ends', K: 'Kickers', DEF: 'Team defenses' }[state.pos];
+      $('pl-title').textContent = state.owner ? state.owner.split(' ')[0] + "'s " + posName.toLowerCase() : posName;
+
+      var col = COLS.find(function (c) { return c.k === state.sort; });
+      var list = filtered().sort(function (a, b) {
+        var x = a[col.k], y = b[col.k];
+        if (x === null || x === undefined || x === '') return (y === null || y === undefined || y === '') ? 0 : 1;
+        if (y === null || y === undefined || y === '') return -1;
+        var c = typeof x === 'string' ? x.localeCompare(y) : x - y;
+        return c * state.dir || (b.vor || -1e9) - (a.vor || -1e9);
+      });
+
+      // Header (every column sorts)
+      var head = $('pl-head'); head.innerHTML = '';
+      var th0 = document.createElement('th'); th0.className = 'l'; th0.textContent = '#'; th0.scope = 'col'; head.appendChild(th0);
+      COLS.forEach(function (c) {
+        var th = document.createElement('th'); th.scope = 'col'; if (c.l) th.className = 'l';
+        var on = c.k === state.sort;
+        th.setAttribute('aria-sort', on ? (state.dir === -1 ? 'descending' : 'ascending') : 'none');
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'sort' + (on ? ' on' : '');
+        b.textContent = (state.owner && (c.k === 'sp' || c.k === 'st') ? c.h + ' (' + state.owner.split(' ')[0] + ')' : c.h) + (on ? (state.dir === -1 ? ' ▼' : ' ▲') : '');
+        b.addEventListener('click', function () { state.dir = on ? -state.dir : c.dir; state.sort = c.k; state.shown = PAGE; render(); });
+        th.appendChild(b); head.appendChild(th);
+      });
+
+      // Body
+      var body = $('pl-body'); body.innerHTML = '';
+      list.slice(0, state.shown).forEach(function (v, i) {
+        var r = v.r, tr = document.createElement('tr');
+        cell(tr, i + 1, 'l strong');
+        var tdS = cell(tr, '', 'l'); var aS = document.createElement('a'); aS.href = C.seasonBase + r.s + '/'; aS.textContent = r.s; tdS.appendChild(aS);
+        var tdN = cell(tr, '', 'l'); var b = document.createElement('b'); b.textContent = r.n; tdN.appendChild(b);
+        var tag = document.createElement('span'); tag.className = 'pos-tag'; tag.textContent = ' ' + r.p + (r.t ? ' · ' + r.t : ''); tdN.appendChild(tag);
+        cell(tr, r.rk ? r.p + r.rk : '—', r.rk && r.rk <= 3 ? 'strong' : '');
+        cell(tr, fx(r.pts, 1)); cell(tr, r.g === null ? '—' : r.g); cell(tr, fx(r.ppg, 1));
+        cell(tr, sgn(r.vor), 'strong ' + (r.vor === null ? '' : r.vor >= 0 ? 'up' : 'down'));
+        cell(tr, fx(v.sp, 1), state.sort === 'sp' ? 'strong' : ''); cell(tr, v.st);
+        // Owners: each with started points; the filtered owner first and bold
+        var tdO = cell(tr, '', 'l small');
+        var os = r.o.slice().sort(function (a, b2) { return (b2[0] === state.owner) - (a[0] === state.owner) || b2[1] - a[1]; });
+        os.forEach(function (o, j) {
+          if (j) tdO.appendChild(document.createTextNode(' · '));
+          var a = document.createElement('a'); a.href = C.ownerBase + (DATA.people[o[0]] || '') + '/'; a.textContent = o[0].split(' ')[0];
+          if (o[0] === state.owner || (!state.owner && j === 0)) a.className = 'who';
+          a.title = o[0] + ': ' + fx(o[1], 1) + ' started pts in ' + o[2] + ' starts' + (VIA[o[3]] ? ' (' + VIA[o[3]] + ')' : '');
+          tdO.appendChild(a);
+          var sp = document.createElement('span'); sp.className = 'dim'; sp.textContent = ' ' + fx(o[1], 0); tdO.appendChild(sp);
+        });
+        cell(tr, r.d ? r.d[0].split(' ')[0] + ' · R' + r.d[1] + ' #' + r.d[2] : '—', 'l small dim');
+        body.appendChild(tr);
+      });
+      if (!list.length) { var e = document.createElement('tr'); cell(e, 'No players match these filters.', 'l dim').colSpan = COLS.length + 1; body.appendChild(e); }
+      $('pl-count').textContent = list.length.toLocaleString() + ' player-season' + (list.length === 1 ? '' : 's') +
+        (state.from === C.years[0] && state.to === C.years[C.years.length - 1] ? ', all seasons' : state.from === state.to ? ', ' + state.from : ', ' + state.from + '–' + state.to);
+      var more = $('pl-more'); more.hidden = list.length <= state.shown;
+      more.textContent = 'Show ' + Math.min(PAGE, list.length - state.shown) + ' more of ' + (list.length - state.shown);
+
+      var p = new URLSearchParams();
+      if (state.pos !== 'All') p.set('pos', state.pos);
+      if (state.owner) p.set('owner', state.owner);
+      if (state.from !== C.years[0]) p.set('from', state.from);
+      if (state.to !== C.years[C.years.length - 1]) p.set('to', state.to);
+      if (state.q) p.set('q', state.q);
+      history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
+    }
+
+    function set(k, v) { state[k] = v; state.shown = PAGE; if (DATA) render(); }
+    document.querySelectorAll('[data-pos]').forEach(function (b) { b.addEventListener('click', function () { set('pos', b.getAttribute('data-pos')); }); });
+    $('pl-owner').addEventListener('change', function () { state.sort = this.value ? 'sp' : 'vor'; state.dir = -1; set('owner', this.value); });
+    $('pl-from').addEventListener('change', function () { set('from', +this.value); });
+    $('pl-to').addEventListener('change', function () { set('to', +this.value); });
+    var timer; $('pl-q').addEventListener('input', function () { var v = this.value; clearTimeout(timer); timer = setTimeout(function () { set('q', v); }, 150); });
+    $('pl-reset').addEventListener('click', function () {
+      state = { pos: 'All', owner: '', from: C.years[0], to: C.years[C.years.length - 1], q: '', sort: 'vor', dir: -1, shown: PAGE };
+      render();
+    });
+    $('pl-more').addEventListener('click', function () { state.shown += PAGE; render(); });
+
+    if (state.owner) state.sort = 'sp';
+    fetch(C.src).then(function (r) { return r.json(); }).then(function (d) { DATA = d; render(); })
+      .catch(function () { $('pl-count').textContent = 'Couldn’t load player data. Try refreshing.'; });
+  })();
+  </script>
+</Base>

@@ -319,3 +319,9 @@ img { max-width: 100%; }
 .lb-table tr.sep td { background: var(--paper); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 6px 10px; }
 .lb-notes { margin: 10px 0 0; max-width: 860px; font-size: 12px; color: var(--muted); line-height: 1.5; }
 .lb-notes p { margin: 4px 0 0; }
+
+/* ---------------------------------------------------------------- players */
+.lb-tabs button[aria-pressed='true'] { background: var(--blaze); border-color: var(--ink); color: var(--white); box-shadow: 3px 3px 0 var(--ink); }
+.lb-filter input[type='search'] { height: 40px; width: 240px; padding: 0 10px; border: 2px solid var(--ink); background: var(--white); color: var(--ink); font: 500 14px var(--body); letter-spacing: 0; text-transform: none; }
+.pl-table td.small a { font-weight: 500; }
+.pl-table td.small a.who { font-weight: 700; }

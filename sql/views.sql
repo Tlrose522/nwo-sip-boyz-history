@@ -359,3 +359,31 @@ LEFT JOIN faab ON faab.season = t.season AND faab.person = t.person
 LEFT JOIN pick ON pick.season = t.season AND pick.person = t.person
 WHERE coalesce(t.person, '') <> ''
 ORDER BY t.season, t.person;
+
+-- ---------------------------------------------------------------- players
+-- One row per rostered player per season: league-scored season stats from NFL Seasons
+-- (nflverse, joined on the platform's player ID) next to the started points he gave each
+-- owner. Team defenses have no NFL Seasons row, so only their league numbers show.
+CREATE OR REPLACE VIEW out_players AS
+WITH owners AS (
+  SELECT season, platform, player_id,
+         any_value(player_name) AS player_name, any_value(position) AS pos,
+         sum(sp) AS sp, sum(starts) AS starts,
+         list([person, CAST(round(sp, 1) AS VARCHAR), CAST(starts AS VARCHAR), acquired_via] ORDER BY sp DESC, person) AS owners
+  FROM player_seasons WHERE coalesce(player_id, '') <> ''
+  GROUP BY season, platform, player_id
+),
+drafted AS (
+  SELECT season, platform, player_id, any_value(person) AS person, min(round) AS round, min(overall) AS overall
+  FROM drafts WHERE coalesce(player_id, '') <> '' GROUP BY ALL
+)
+SELECT o.season, o.platform, o.player_id, o.player_name, o.pos,
+       n.nfl_team, n.games, n.points, n.ppg, n.pos_rank, n.vor, n.replacement_points,
+       round(o.sp, 1) AS sp, o.starts, o.owners,
+       d.person AS drafted_by, d.round AS draft_round, d.overall AS draft_overall
+FROM owners o
+LEFT JOIN nfl_seasons n
+  ON n.season = o.season
+ AND ((o.platform = 'ESPN' AND n.espn_id = o.player_id) OR (o.platform = 'Sleeper' AND n.sleeper_id = o.player_id))
+LEFT JOIN drafted d ON d.season = o.season AND d.platform = o.platform AND d.player_id = o.player_id
+ORDER BY o.season, n.vor DESC NULLS LAST;

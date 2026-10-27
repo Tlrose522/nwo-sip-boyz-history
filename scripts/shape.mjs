@@ -46,7 +46,7 @@ for (const f of files) {
 // Optional tabs: an empty stand-in keeps the views working before they exist.
 const OPTIONAL = {
   lore: 'season INTEGER, category VARCHAR, person VARCHAR, title VARCHAR, text VARCHAR, source VARCHAR, status VARCHAR',
-  nfl_seasons: 'season INTEGER, ppg DOUBLE, espn_id VARCHAR, sleeper_id VARCHAR',
+  nfl_seasons: 'season INTEGER, nfl_team VARCHAR, games INTEGER, points DOUBLE, ppg DOUBLE, pos_rank INTEGER, vor DOUBLE, replacement_points DOUBLE, espn_id VARCHAR, sleeper_id VARCHAR',
   draft_grades: 'season INTEGER, overall INTEGER, grade VARCHAR, pos_rank INTEGER, vor DOUBLE, value_over_slot DOUBLE, sp_for_team DOUBLE',
   trade_ledger: 'platform VARCHAR, season INTEGER, week INTEGER, date VARCHAR, person VARCHAR, team_name VARCHAR, counterparty VARCHAR, received VARCHAR, sent VARCHAR, picks_received VARCHAR, picks_sent VARCHAR, sp_received DOUBLE, sp_sent DOUBLE, margin DOUBLE, result VARCHAR, transaction_id VARCHAR',
   settings: 'platform VARCHAR, season INTEGER, category VARCHAR, setting VARCHAR, value VARCHAR, detail VARCHAR',
@@ -268,6 +268,19 @@ for (const c of careers) {
 
 function fmtPct(x) { return x === null || x === undefined ? '—' : Number(x).toFixed(3).replace(/^0/, ''); }
 function signed(x) { return x === null || x === undefined ? '—' : (x > 0 ? '+' : x < 0 ? '−' : '') + Math.abs(x).toLocaleString('en-US', { maximumFractionDigits: 1 }); }
+
+// Players: every rostered player-season, compact keys (the page fetches this file).
+const players = await rows('SELECT * FROM out_players');
+await write('players.json', {
+  people: Object.fromEntries(careers.map((c) => [c.person, c.slug])),
+  rows: players.map((p) => ({
+    s: p.season, id: p.player_id, n: p.player_name, p: p.pos, t: p.nfl_team || null,
+    pts: r1(p.points), g: p.games ?? null, ppg: r1(p.ppg), rk: p.pos_rank ?? null, vor: r1(p.vor), rep: r1(p.replacement_points),
+    sp: r1(p.sp), st: p.starts,
+    o: p.owners.map(([person, sp, starts, via]) => [person, Number(sp), Number(starts), via]),
+    d: p.drafted_by ? [p.drafted_by, p.draft_round, p.draft_overall] : null,
+  })),
+});
 
 // Leaderboards: per owner-season pieces the page re-totals for any range of seasons.
 const lbRows = await rows('SELECT * FROM out_lb_seasons');
