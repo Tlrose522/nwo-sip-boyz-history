@@ -1,0 +1,45 @@
+---
+// Team composition: each team's regular-season started points per week at each position,
+// vs. the league average that season. Diverging: blue above average, orange below, grey ≈ 0.
+import { signed, ownerHref, ord } from '../lib/fmt.js';
+const { rows, teams = 14 } = Astro.props;
+const POS = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+const CAP = 12; // pts/wk at which a cell reaches full tint
+
+// Mix neutral → pole by |v| / CAP. Tints stay light enough that ink text passes 4.5:1.
+const NEUTRAL = [243, 242, 238], BLUE = [143, 166, 240], ORANGE = [242, 160, 124];
+function tint(v) {
+  if (v === null || v === undefined) return 'transparent';
+  const t = Math.min(Math.abs(v), CAP) / CAP;
+  const pole = v >= 0 ? BLUE : ORANGE;
+  const c = NEUTRAL.map((n, i) => Math.round(n + (pole[i] - n) * t));
+  return `rgb(${c.join(',')})`;
+}
+const list = rows.map((r) => ({ ...r, net: POS.reduce((a, p) => a + (r.pos_vs_avg[p] ?? 0), 0) }));
+---
+<div class="table-box">
+  <table class="t comp">
+    <thead><tr>
+      <th scope="col" class="l">Team</th>
+      {POS.map((p) => <th scope="col">{p}</th>)}
+      <th scope="col" title="Sum across positions">Net</th>
+    </tr></thead>
+    <tbody>
+      {list.map((r) => (
+        <tr>
+          <td class="l"><a class="who" href={ownerHref(r.slug)}>{r.person}</a></td>
+          {POS.map((p) => {
+            const v = r.pos_vs_avg[p];
+            return <td class="cell" style={`background:${tint(v)}`} title={`${r.person} ${p}: ${signed(v)} pts/wk vs. avg · ${ord(r.pos_rank[p])} of ${teams}`}>{signed(v)}</td>;
+          })}
+          <td class="strong" style={`background:${tint(r.net / 2)}`}>{signed(r.net)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+<div class="comp-legend" aria-hidden="true">
+  <span>−{CAP}+ below avg</span>
+  <span class="ramp" style={`background:linear-gradient(90deg, ${tint(-CAP)}, ${tint(0)}, ${tint(CAP)})`}></span>
+  <span>+{CAP}+ above avg</span>
+</div>

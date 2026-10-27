@@ -1,5 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import PowerChart from '../../../components/PowerChart.astro';
+import CompositionGrid from '../../../components/CompositionGrid.astro';
 import { site, season as loadSeason, games as loadGames } from '../../../lib/data.js';
 import { href, num, signed, rate, record, ord, upDown, firstName, seasonHref, weekHref, gameHref, ownerHref, roundName } from '../../../lib/fmt.js';
 
@@ -125,6 +127,20 @@ const championGame = (round) => round.games.find((x) => s.champion && x.sides[0]
       </table>
     </div>
     <p class="note">Luck = wins − expected wins from the all-play record; <b class="up">blue</b> won more than the scores deserved, <b class="down">orange</b> fewer. PF idx: 100 = league average this season. Lineup efficiency excludes consolation games.{!s.complete && ' Dashed line = current playoff cut.'}</p>
+  </section>
+
+  {s.power.some((t) => t.points.length > 1) && (
+    <section class="section" id="power">
+      <h2 class="h2">Power over time</h2>
+      <p class="note" style="margin-top:4px">3-week rolling score vs. that week's league median (100). Pick a team to highlight; hover for weekly numbers. Regular season only.</p>
+      <PowerChart teams={s.power} highlight={(s.champion || s.regular_leader)?.slug ?? s.power[0].slug} />
+    </section>
+  )}
+
+  <section class="section" id="composition">
+    <h2 class="h2">Team composition</h2>
+    <p class="note" style="margin-top:4px">Started points per week at each position vs. the league average this season (regular season). Hover a cell for its league rank.</p>
+    <CompositionGrid rows={s.standings} teams={s.num_teams} />
   </section>
 
   <section class="section" id="weeks">

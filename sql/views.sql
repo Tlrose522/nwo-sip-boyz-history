@@ -288,3 +288,14 @@ FROM player_seasons
 WHERE acquired_via IN ('waiver', 'free_agent') AND coalesce(person, '') <> ''
 QUALIFY row_number() OVER (PARTITION BY person ORDER BY sp DESC) <= 6
 ORDER BY person, sp DESC;
+
+-- ---------------------------------------------------------------- power over time
+-- Weekly league-relative score (100 = that week's median) and its 3-week rolling average,
+-- regular season only.
+CREATE OR REPLACE VIEW out_power AS
+SELECT season, team_id, person, week, rel_score,
+       round(avg(rel_score) OVER (PARTITION BY season, team_id ORDER BY week ROWS BETWEEN 2 PRECEDING AND CURRENT ROW), 1) AS roll3,
+       rank() OVER (PARTITION BY season, week ORDER BY rel_score DESC) AS week_rank
+FROM team_weeks
+WHERE game_type = 'regular'
+ORDER BY season, team_id, week;

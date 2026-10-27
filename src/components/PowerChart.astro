@@ -1,0 +1,114 @@
+---
+// Power over time: every team's 3-week rolling score vs. the weekly league median (100).
+// All teams draw in grey; one highlighted team draws in blaze with dots and an end label.
+// Pick a team with the chips above the chart; hover anywhere for that week's numbers.
+import { firstName } from '../lib/fmt.js';
+const { teams, highlight, id = 'power' } = Astro.props;
+
+const W = 1000, H = 360, M = { l: 46, r: 120, t: 16, b: 34 };
+const all = teams.flatMap((t) => t.points);
+const maxWeek = Math.max(...all.map((p) => p.week));
+const vals = all.map((p) => p.roll).filter((v) => v !== null);
+const lo = Math.min(90, Math.floor(Math.min(...vals) / 10) * 10);
+const hi = Math.max(110, Math.ceil(Math.max(...vals) / 10) * 10);
+const x = (w) => M.l + (maxWeek === 1 ? 0 : (w - 1) / (maxWeek - 1)) * (W - M.l - M.r);
+const y = (v) => M.t + (hi - v) / (hi - lo) * (H - M.t - M.b);
+const ticks = []; for (let v = lo; v <= hi; v += 10) ticks.push(v);
+const weeks = Array.from({ length: maxWeek }, (_, i) => i + 1);
+const lines = teams.map((t) => ({
+  ...t,
+  path: t.points.map((p) => `${x(p.week).toFixed(1)},${y(p.roll).toFixed(1)}`).join(' '),
+  last: t.points[t.points.length - 1],
+}));
+const data = { maxWeek, teams: teams.map((t) => ({ slug: t.slug, person: t.person, points: t.points })) };
+---
+<div class="power" id={id} data-highlight={highlight}>
+  <div class="chips" role="group" aria-label="Highlight a team">
+    {teams.map((t) => (
+      <button type="button" data-slug={t.slug} aria-pressed={t.slug === highlight ? 'true' : 'false'}>{t.person}</button>
+    ))}
+  </div>
+  <div class="power-plot">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Each team's three-week rolling score versus the weekly league median, by week">
+      {ticks.map((v) => (
+        <g>
+          <line x1={M.l} x2={W - M.r} y1={y(v)} y2={y(v)} class:list={['grid', { mid: v === 100 }]} />
+          <text x={M.l - 8} y={y(v) + 4} text-anchor="end" class="tick">{v}</text>
+        </g>
+      ))}
+      <text x={W - M.r + 6} y={y(100) + 4} class="tick">median</text>
+      {weeks.map((w) => <text x={x(w)} y={H - 10} text-anchor="middle" class="tick">{w}</text>)}
+      <text x={M.l} y={H - 10} text-anchor="end" class="tick" dx="-8">Wk</text>
+      {lines.map((t) => (
+        <g class:list={['team', { on: t.slug === highlight }]} data-slug={t.slug}>
+          <polyline points={t.path} />
+          {t.points.map((p) => <circle cx={x(p.week)} cy={y(p.roll)} r="4" />)}
+          <text x={x(t.last.week) + 8} y={y(t.last.roll) + 4} class="end">{firstName(t.person)} {t.last.roll}</text>
+        </g>
+      ))}
+      <line class="cross" x1="0" x2="0" y1={M.t} y2={H - M.b} visibility="hidden" />
+      <rect class="hit" x={M.l} y={M.t} width={W - M.l - M.r} height={H - M.t - M.b} fill="transparent" />
+    </svg>
+    <div class="tip" role="status" aria-live="polite" hidden></div>
+  </div>
+  <script type="application/json" class="power-data" set:html={JSON.stringify(data)}></script>
+  <details class="table-toggle">
+    <summary>Show as a table</summary>
+    <div class="table-box">
+      <table class="t">
+        <thead><tr><th scope="col" class="l">Team</th>{weeks.map((w) => <th scope="col">{w}</th>)}</tr></thead>
+        <tbody>
+          {teams.map((t) => (
+            <tr><td class="l strong">{t.person}</td>{weeks.map((w) => { const p = t.points.find((q) => q.week === w); return <td>{p ? p.roll : '—'}</td>; })}</tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </details>
+</div>
+
+<script is:inline>
+  (function () {
+    document.querySelectorAll('.power').forEach(function (root) {
+      var data = JSON.parse(root.querySelector('.power-data').textContent);
+      var svg = root.querySelector('svg'), tip = root.querySelector('.tip'), cross = root.querySelector('.cross');
+      var selected = root.getAttribute('data-highlight');
+      var W = 1000, L = 46, R = 120;
+      function select(slug) {
+        selected = slug;
+        root.querySelectorAll('.chips button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-slug') === slug)); });
+        root.querySelectorAll('g.team').forEach(function (g) {
+          var on = g.getAttribute('data-slug') === slug;
+          g.classList.toggle('on', on);
+          if (on) g.parentNode.insertBefore(g, cross); // draw the highlighted line on top
+        });
+      }
+      root.querySelectorAll('.chips button').forEach(function (b) {
+        b.addEventListener('click', function () { select(b.getAttribute('data-slug')); });
+      });
+      select(selected);
+      // Crosshair + tooltip: nearest week to the pointer.
+      function move(ev) {
+        var box = svg.getBoundingClientRect();
+        var sx = (ev.clientX - box.left) / box.width * W;
+        var wk = Math.round((sx - L) / ((W - L - R) / Math.max(1, data.maxWeek - 1))) + 1;
+        wk = Math.max(1, Math.min(data.maxWeek, wk));
+        var cx = L + (wk - 1) / Math.max(1, data.maxWeek - 1) * (W - L - R);
+        cross.setAttribute('x1', cx); cross.setAttribute('x2', cx); cross.setAttribute('visibility', 'visible');
+        var team = data.teams.find(function (t) { return t.slug === selected; });
+        var p = team && team.points.find(function (q) { return q.week === wk; });
+        var best = data.teams.map(function (t) { var q = t.points.find(function (z) { return z.week === wk; }); return q ? { n: t.person, v: q.roll } : null; })
+          .filter(Boolean).sort(function (a, b) { return b.v - a.v; })[0];
+        tip.innerHTML = '<b>Week ' + wk + '</b>' +
+          (p ? '<div>' + team.person + ': <b>' + p.roll + '</b> (3-wk) · ' + p.rel + ' this week · #' + p.rank + '</div>' : '') +
+          (best ? '<div class="dim">Top 3-wk: ' + best.n + ' ' + best.v + '</div>' : '');
+        tip.hidden = false;
+        var left = (cx / W) * box.width;
+        tip.style.left = Math.min(Math.max(left, 90), box.width - 90) + 'px';
+      }
+      var hit = root.querySelector('.hit');
+      hit.addEventListener('mousemove', move);
+      hit.addEventListener('mouseleave', function () { tip.hidden = true; cross.setAttribute('visibility', 'hidden'); });
+    });
+  })();
+</script>

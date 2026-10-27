@@ -57,9 +57,10 @@ await run(await readFile(new URL('sql/views.sql', root), 'utf8'));
 
 /* ------------------------------------------------------------ read views */
 const [seasons, changes, teamSeasons, sparks, games, box, calls, weeks, awards, trades, draft, lore,
-  careers, h2h, signature, pickups] = await Promise.all([
+  careers, h2h, signature, pickups, power] = await Promise.all([
   'out_seasons', 'out_settings_changes', 'out_team_seasons', 'out_sparks', 'out_games', 'out_box', 'out_calls',
   'out_weeks', 'out_awards', 'out_trades', 'out_draft', 'out_lore', 'out_careers', 'out_h2h', 'out_signature', 'out_pickups',
+  'out_power',
 ].map((v) => rows(`SELECT * FROM ${v}`)));
 
 const slugOf = Object.fromEntries((await rows('SELECT person, slug FROM people')).map((p) => [p.person, p.slug]));
@@ -149,6 +150,13 @@ for (const s of seasons) {
     platform_switch: prevPlatform && prevPlatform !== s.platform ? prevPlatform : null,
     changes: changes.filter((c) => c.season === s.season).slice(0, 6).map((c) => ({ ...c, setting: settingName(c.setting) })),
     standings, weeks: weekList, bracket,
+    // One line per team, in standings order: weekly score vs. median and its 3-week rolling average.
+    power: standings.map((r) => {
+      const t = ts.find((x) => x.person === r.person);
+      return { person: r.person, slug: r.slug, team: r.team,
+        points: power.filter((p) => p.season === s.season && p.team_id === t.team_id)
+          .map((p) => ({ week: p.week, rel: r1(p.rel_score), roll: r1(p.roll3), rank: p.week_rank })) };
+    }),
     awards: awards.filter((a) => a.season === s.season).map((a) => ({ ...a, value: r2(a.value) })),
     trades: Object.values(by(trades.filter((t) => t.season === s.season), (t) => t.transaction_id))
       .map((sides) => ({ week: sides[0].week, date: sides[0].date, sides: sides.sort((a, b) => (b.margin ?? 0) - (a.margin ?? 0)) }))
