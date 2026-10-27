@@ -1,0 +1,77 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { site, season as loadSeason, games as loadGames } from '../../../../lib/data.js';
+import { href, num, seasonHref, weekHref, gameHref, ownerHref } from '../../../../lib/fmt.js';
+
+export function getStaticPaths() {
+  return site().seasons.flatMap((s) =>
+    Object.keys(loadGames(s.season).weeks).map((w) => ({ params: { season: String(s.season), week: String(w) } })));
+}
+
+const year = Number(Astro.params.season);
+const week = Number(Astro.params.week);
+const s = loadSeason(year);
+const wk = loadGames(year).weeks[week];
+const weeks = s.weeks.map((w) => w.week);
+const i = weeks.indexOf(week);
+const isPlayoff = week > s.regular_season_weeks;
+const order = { winners: 0, regular: 0, consolation: 1 };
+const games = wk.games.slice().sort((a, b) => order[a.game_type] - order[b.game_type]);
+const high = Math.max(...wk.games.flatMap((x) => x.sides.map((y) => y.points)));
+const low = Math.min(...wk.games.flatMap((x) => x.sides.map((y) => y.points)));
+const who = (v) => wk.games.flatMap((x) => x.sides).find((y) => y.points === v)?.person;
+---
+<Base title={`${year} week ${week}`} nav="seasons">
+  <div class="hero" slot="hero">
+    <div class="hero-top">
+      <nav class="chip" aria-label="Breadcrumb"><a href={href('seasons/')}>Seasons</a> <span class="muted">/</span> <a href={seasonHref(year)}>{year}</a> <span class="muted">/</span> Week {week}</nav>
+      <div style="display:flex;gap:8px">
+        <a class="btn" href={i > 0 ? weekHref(year, weeks[i - 1]) : '#'} aria-disabled={i > 0 ? undefined : 'true'}>‹ Wk {weeks[i - 1] ?? '—'}</a>
+        <a class="btn" href={i < weeks.length - 1 ? weekHref(year, weeks[i + 1]) : '#'} aria-disabled={i < weeks.length - 1 ? undefined : 'true'}>Wk {weeks[i + 1] ?? '—'} ›</a>
+      </div>
+    </div>
+    <div class="hero-row">
+      <h1>WK {week}</h1>
+      <div class="plate" style="margin-bottom:8px">
+        <div class="pixel-chip" style="padding:0;background:none">{year} · {isPlayoff ? 'PLAYOFFS' : 'REGULAR SEASON'}</div>
+        <p>League median <b>{num(wk.median, 1)}</b></p>
+        <p class="dim">High: {who(high)} {num(high, 1)} · Low: {who(low)} {num(low, 1)}</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="week-strip" aria-label="Weeks" style="margin-top:0">
+    {s.weeks.map((w) => <a href={weekHref(year, w.week)} class:list={{ po: w.week > s.regular_season_weeks }} aria-current={w.week === week ? 'page' : undefined}>{w.week}</a>)}
+  </nav>
+
+  <section class="section" style="margin-top:28px">
+    <h2 class="h2">Scoreboard</h2>
+    <div class="games">
+      {games.map((x) => {
+        const [a, b] = x.sides;
+        return (
+          <a class="game" id={x.slug} href={gameHref(year, week, x.slug)} data-teams={`${a.slug} ${b.slug}`}>
+            <div class="row w"><span>{a.person} <span class="team">{a.team}</span></span><span>{num(a.points, 2)}</span></div>
+            <div class="row"><span>{b.person} <span class="team">{b.team}</span></span><span>{num(b.points, 2)}</span></div>
+            <div class="meta">
+              {x.game_type === 'winners' && <span class="tier">PLAYOFF</span>}{x.game_type === 'consolation' && <span class="tier cons">CONSOLATION</span>}
+              {' '}Margin {num(x.margin, 2)}{b.bench_lost !== null && b.optimal > a.points && ` · ${b.person.split(' ')[0]}'s best lineup would have won`}
+            </div>
+          </a>
+        );
+      })}
+    </div>
+    <p class="note">Consolation games are shown for completeness; they never count toward records.</p>
+  </section>
+
+  <script is:inline>
+    // Highlight the game for ?team=<owner> (set by the header jump box).
+    (function () {
+      var t = new URLSearchParams(location.search).get('team');
+      if (!t) return;
+      document.querySelectorAll('.game').forEach(function (el) {
+        if ((el.getAttribute('data-teams') || '').split(' ').indexOf(t) !== -1) { el.classList.add('mine'); el.scrollIntoView({ block: 'center' }); }
+      });
+    })();
+  </script>
+</Base>

@@ -1,0 +1,19 @@
+---
+// NFL Street-style ratings meter: 20 skewed segments, each colored by its place on the scale.
+import { scaleColor, tier } from '../lib/fmt.js';
+const { label, metric, pct } = Astro.props;
+const segs = Array.from({ length: 20 }, (_, i) => {
+  const v = (i + 1) * 5;
+  return v <= pct + 2 ? scaleColor(v) : null;
+});
+const t = tier(pct);
+---
+<div>
+  <div class="rating-head"><span class="n">{label}</span><span class="m">{metric}</span></div>
+  <div class="meter-row">
+    <div class="meter" role="img" aria-label={`${label}: ${pct}th percentile, ${t.label.toLowerCase()}`}>
+      {segs.map((c) => <span style={c ? `background:${c}` : undefined}></span>)}
+    </div>
+    <div class="meter-val"><b style={`color:${t.color}`}>{pct}</b><i style={`color:${t.color}`}>{t.label}</i></div>
+  </div>
+</div>

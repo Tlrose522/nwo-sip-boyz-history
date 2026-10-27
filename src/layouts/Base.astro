@@ -1,0 +1,92 @@
+---
+import '../styles/global.css';
+import { site } from '../lib/data.js';
+import { href } from '../lib/fmt.js';
+
+const { title, description = 'NWO Sip Boyz league history: every season, every game, every owner.', nav = '' } = Astro.props;
+const s = site();
+// Small index for the jump box: owners and seasons, resolved in the browser.
+const jumpIndex = {
+  base: href(''),
+  owners: s.owners.map((o) => ({ slug: o.slug, names: o.person.toLowerCase().split(/\s+/) })),
+  seasons: s.seasons.map((x) => x.season),
+};
+const exported = s.exported_at ? new Date(s.exported_at) : null;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title ? `${title} · NWO Sip Boyz` : 'NWO Sip Boyz History'}</title>
+  <meta name="description" content={description}>
+  <link rel="icon" href={href('favicon.svg')} type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Press+Start+2P&family=Saira+Condensed:wght@600;700;800&display=swap">
+</head>
+<body>
+  <header class="site-head">
+    <div class="inner">
+      <a class="brand" href={href('')}>
+        <svg width="36" height="21" viewBox="0 0 12 7" shape-rendering="crispEdges" aria-hidden="true"><rect x="3" y="0" width="6" height="1" fill="#E2471B"/><rect x="1" y="1" width="10" height="1" fill="#E2471B"/><rect x="0" y="2" width="12" height="3" fill="#E2471B"/><rect x="1" y="5" width="10" height="1" fill="#E2471B"/><rect x="3" y="6" width="6" height="1" fill="#E2471B"/><rect x="2" y="3" width="8" height="1" fill="#F6F5F0"/><rect x="4" y="2" width="1" height="3" fill="#F6F5F0"/><rect x="6" y="2" width="1" height="3" fill="#F6F5F0"/><rect x="8" y="2" width="1" height="3" fill="#F6F5F0"/></svg>
+        <span class="word">NWO SIP BOYZ</span>
+        <span class="tag">LEAGUE<br>HISTORY</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href={href('seasons/')} aria-current={nav === 'seasons' ? 'page' : undefined}>Seasons</a>
+        <a href={href('owners/')} aria-current={nav === 'owners' ? 'page' : undefined}>Owners</a>
+        <a href={href('leaderboards/')} aria-current={nav === 'leaderboards' ? 'page' : undefined}>Leaderboards</a>
+      </nav>
+      <form class="jump" role="search" id="jump">
+        <label for="jump-q" class="sr-only">Jump to an owner, season or week</label>
+        <input id="jump-q" type="search" placeholder="Jump: tyler 2019 wk 6" autocomplete="off">
+      </form>
+    </div>
+    <div class="yardline" aria-hidden="true"></div>
+  </header>
+
+  <slot name="hero" />
+  <main class="panel">
+    <slot />
+  </main>
+
+  <footer class="site-foot">
+    ESPN 2018–2024 · Sleeper 2025–present · Data refreshed Tuesdays{exported && <> · last pulled {exported.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' })}</>}
+  </footer>
+
+  <script is:inline type="application/json" id="jump-index" set:html={JSON.stringify(jumpIndex)}></script>
+  <script is:inline>
+    // "tyler 2019 6" → that week's scoreboard with Tyler's game highlighted;
+    // "tyler 2019" → his 2019 tile; "2019" → the season; "tyler" → his page.
+    (function () {
+      var idx = JSON.parse(document.getElementById('jump-index').textContent);
+      document.getElementById('jump').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var q = document.getElementById('jump-q').value.toLowerCase().replace(/week|wk/g, ' ').trim();
+        if (!q) return;
+        var parts = q.split(/\s+/), year = null, week = null, words = [];
+        parts.forEach(function (p) {
+          if (/^\d{4}$/.test(p) && idx.seasons.indexOf(+p) !== -1) year = +p;
+          else if (/^\d{1,2}$/.test(p)) week = +p;
+          else words.push(p);
+        });
+        var owner = null;
+        if (words.length) {
+          var hits = idx.owners.filter(function (o) {
+            return words.every(function (w) { return o.names.some(function (n) { return n.indexOf(w) === 0; }); });
+          });
+          owner = hits[0] || null;
+        }
+        var url = idx.base;
+        if (year && week) url += 'seasons/' + year + '/week-' + week + '/' + (owner ? '?team=' + owner.slug : '');
+        else if (owner && year) url += 'owners/' + owner.slug + '/#season-' + year;
+        else if (year) url += 'seasons/' + year + '/';
+        else if (owner) url += 'owners/' + owner.slug + '/';
+        else return;
+        location.href = url;
+      });
+    })();
+  </script>
+</body>
+</html>

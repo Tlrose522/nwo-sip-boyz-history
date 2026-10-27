@@ -1,0 +1,19 @@
+---
+// Six boxes, one per position group, colored by league rank in started points per week.
+import { ord, rankColor, signed } from '../lib/fmt.js';
+const { ranks, vsAvg = {}, teams = 14 } = Astro.props;
+const POS = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+const items = POS.filter((p) => ranks?.[p]).map((p) => ({
+  p, r: ranks[p], color: rankColor(ranks[p], teams), dark: ranks[p] > teams * 0.78,
+  title: `${p}: ${ord(ranks[p])} of ${teams} (${signed(vsAvg[p])} pts/wk vs. avg)`,
+}));
+---
+{items.length > 0 && (
+  <ul class="posboxes" aria-label={'Position-group ranks: ' + items.map((i) => `${i.p} ${ord(i.r)}`).join(', ')}>
+    {items.map((i) => (
+      <li class:list={{ dark: i.dark }} style={`background:${i.color}`} title={i.title}>
+        <span class="p">{i.p}</span><span class="r">{i.r}</span>
+      </li>
+    ))}
+  </ul>
+)}

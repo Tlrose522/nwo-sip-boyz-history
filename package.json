@@ -1,0 +1,23 @@
+{
+  "name": "nwo-sip-boyz-history",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "NWO Sip Boyz league history site, built from the league's Google Sheet.",
+  "scripts": {
+    "export": "node --env-file-if-exists=.env scripts/export-sheet.mjs",
+    "shape": "node scripts/shape.mjs",
+    "dev": "npm run shape && astro dev",
+    "build": "npm run shape && astro build",
+    "preview": "astro preview",
+    "refresh": "npm run export && npm run build"
+  },
+  "dependencies": {
+    "@duckdb/node-api": "1.5.6-r.2",
+    "astro": "^7.4.2",
+    "google-auth-library": "^11.3.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

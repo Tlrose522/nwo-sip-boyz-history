@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import { leaderboards } from '../../lib/data.js';
+import { ownerHref, num, signed, rate, record } from '../../lib/fmt.js';
+
+const all = leaderboards();
+const eligible = all.filter((c) => c.seasons >= 3);
+// One board per category from the metrics spec: headline metric first, supporting metrics beside it.
+const boards = [
+  { id: 'winning', title: 'Winning', sort: (a, b) => b.titles - a.titles || b.win_pct - a.win_pct,
+    cols: [['Titles', (c) => c.titles], ['Finals', (c) => c.finals], ['Playoffs', (c) => c.playoff_apps], ['Record', (c) => record(c.wins, c.losses, c.ties)], ['Win %', (c) => rate(c.win_pct)], ['All-play', (c) => rate(c.allplay_pct)]] },
+  { id: 'luck', title: 'Luck', sort: (a, b) => b.career_luck - a.career_luck,
+    cols: [['Career luck', (c) => signed(c.career_luck)], ['Win %', (c) => rate(c.win_pct)], ['All-play', (c) => rate(c.allplay_pct)]] },
+  { id: 'lineups', title: 'Lineup management', sort: (a, b) => b.efficiency - a.efficiency,
+    cols: [['Efficiency', (c) => rate(c.efficiency)], ['Bench lost / wk', (c) => num(c.bench_lost_per_week, 1)]] },
+  { id: 'drafting', title: 'Drafting', sort: (a, b) => (b.draft_vos_per_season ?? -1e9) - (a.draft_vos_per_season ?? -1e9),
+    cols: [['Value over slot / season', (c) => signed(c.draft_vos_per_season)], ['Draft SP share', (c) => rate(c.draft_sp_share)], ['Best pick', (c) => c.best_pick || '—']] },
+  { id: 'trading', title: 'Trading', sort: (a, b) => b.trade_margin - a.trade_margin, min: (c) => c.trades >= 3,
+    cols: [['SP margin', (c) => signed(c.trade_margin)], ['Trades', (c) => c.trades], ['Won', (c) => c.trades_won]] },
+  { id: 'acquiring', title: 'Acquiring', sort: (a, b) => b.waiver_sp_per_season - a.waiver_sp_per_season, min: (c) => c.waiver_adds >= 10,
+    cols: [['Waiver/FA SP / season', (c) => num(c.waiver_sp_per_season, 1)], ['Adds', (c) => c.waiver_adds], ['Hit rate', (c) => rate(c.waiver_hit_rate)], ['SP per FAAB $', (c) => num(c.sp_per_faab_dollar, 1)]] },
+];
+---
+<Base title="Leaderboards" nav="leaderboards">
+  <div class="hero" slot="hero">
+    <h1>LEADER<br>BOARDS</h1>
+    <div class="hero-row"><p class="plate" style="margin:0">Owners with 3+ seasons. Trading needs 3+ trades; acquiring needs 10+ adds.</p></div>
+  </div>
+  <nav class="week-strip" aria-label="Categories" style="margin-top:0">
+    {boards.map((b) => <a href={`#${b.id}`} style="padding:0 12px">{b.title}</a>)}
+  </nav>
+  {boards.map((b) => {
+    const list = eligible.filter((c) => !b.min || b.min(c)).sort(b.sort);
+    return (
+      <section class="section" id={b.id}>
+        <h2 class="h2">{b.title}</h2>
+        <div class="table-box">
+          <table class="t">
+            <thead><tr><th scope="col" class="l">#</th><th scope="col" class="l">Owner</th>{b.cols.map(([h]) => <th scope="col" class={h === 'Best pick' ? 'l' : undefined}>{h}</th>)}</tr></thead>
+            <tbody>
+              {list.map((c, i) => (
+                <tr>
+                  <td class="l strong">{i + 1}</td>
+                  <td class="l"><a class="who" href={ownerHref(c.slug)}>{c.person}</a>{!c.active && <span class="dim small"> · inactive</span>}</td>
+                  {b.cols.map(([h, f], j) => <td class:list={[{ strong: j === 0, l: h === 'Best pick' }]}>{f(c)}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    );
+  })}
+</Base>

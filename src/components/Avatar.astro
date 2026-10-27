@@ -1,0 +1,8 @@
+---
+import { initials } from '../lib/fmt.js';
+const { person, src, size = 'lg' } = Astro.props;
+---
+<div class:list={['avatar', { sm: size === 'sm' }]} role="img" aria-label={`${person} avatar`}>
+  {src ? <img src={src} alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()" /> : null}
+  {!src && initials(person)}
+</div>

@@ -1,0 +1,26 @@
+---
+// Diverging bar: a player's points vs. a baseline (his season average, or the average starter at
+// his position). Both values are rendered; a toggle on the box score page switches which shows.
+import { signed } from '../lib/fmt.js';
+const { points, playerAvg, posAvg, pos } = Astro.props;
+function cell(base, what) {
+  if (base === null || base === undefined) return null;
+  const d = points - base;
+  return { d, w: (Math.min(Math.abs(d), 20) / 20 * 50).toFixed(1), up: d >= 0,
+    label: `${signed(Math.abs(d))} ${d >= 0 ? 'above' : 'below'} ${what} (${base.toFixed(1)})` };
+}
+const views = [
+  ['player', cell(playerAvg, 'his season average')],
+  ['pos', cell(posAvg, `the average starting ${pos}`)],
+];
+---
+{views.map(([key, v]) => (
+  <div class="vs" data-basis={key} hidden={key !== 'player' ? true : undefined}>
+    {v ? (
+      <>
+        <div class="track" role="img" aria-label={v.label}><div class:list={['bar', v.up ? 'up' : 'down']} style={`width:${v.w}%`}></div></div>
+        <span class:list={['num', v.up ? 'up' : 'down']}>{signed(v.d)}</span>
+      </>
+    ) : <span class="num dim">—</span>}
+  </div>
+))}

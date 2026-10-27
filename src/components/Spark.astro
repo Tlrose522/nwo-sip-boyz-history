@@ -1,0 +1,12 @@
+---
+// Weekly league-relative score (100 = that week's median). Dashed line marks 100.
+const { values = [], weeks = 14, line = 'var(--blaze)', base = '#B9BCC4', label = 'Weekly scores vs. league median' } = Astro.props;
+const W = 136, H = 34, lo = 60, hi = 160;
+const x = (i) => (i * W / Math.max(1, weeks - 1)).toFixed(1);
+const y = (v) => (H - (Math.max(lo, Math.min(hi, v)) - lo) / (hi - lo) * H).toFixed(1);
+const pts = values.map((v, i) => `${x(i)},${y(v)}`).join(' ');
+---
+<svg class="spark" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" role="img" aria-label={label}>
+  <line x1="0" y1={y(100)} x2={W} y2={y(100)} stroke={base} stroke-width="1" stroke-dasharray="2 2" vector-effect="non-scaling-stroke" />
+  {values.length > 1 && <polyline points={pts} fill="none" stroke={line} stroke-width="2" vector-effect="non-scaling-stroke" />}
+</svg>

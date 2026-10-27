@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import Avatar from '../components/Avatar.astro';
+import { site } from '../lib/data.js';
+import { seasonHref, ownerHref, href } from '../lib/fmt.js';
+
+const s = site();
+const completed = s.seasons.filter((x) => x.complete).sort((a, b) => b.season - a.season);
+const belt = completed[0]?.champion;
+const current = s.seasons.find((x) => !x.complete);
+const titleCounts = s.owners.filter((o) => o.titles > 0).sort((a, b) => b.titles - a.titles || a.person.localeCompare(b.person));
+---
+<Base>
+  <div class="hero" slot="hero">
+    <div class="pixel-chip">EST. 2018 · {s.owners.filter((o) => o.active).length} OWNERS · {completed.length} CHAMPIONS CROWNED</div>
+    <div class="hero-row">
+      <h1>THE<br>HISTORY</h1>
+      {belt && (
+        <div class="plate" style="margin-bottom:8px">
+          <div class="pixel-chip" style="padding:0;background:none">BELT HOLDER</div>
+          <p style="font:italic 800 34px/1 var(--display);margin-top:10px"><a href={ownerHref(belt.slug)} style="color:#fff">{belt.person}</a></p>
+          <p class="dim">{belt.team} · won {completed[0].season}</p>
+        </div>
+      )}
+    </div>
+  </div>
+
+  {current && (
+    <section class="section">
+      <div class="h2-row"><h2 class="h2">{current.season}, in progress</h2><a class="btn" href={seasonHref(current.season)}>Standings and every game ›</a></div>
+      <p class="note">Through week {current.last_week}. Refreshed every Tuesday morning.</p>
+    </section>
+  )}
+
+  <section class="section">
+    <h2 class="h2">Belt lineage</h2>
+    <div class="table-box">
+      <table class="t">
+        <thead><tr><th scope="col" class="l">Season</th><th scope="col" class="l">Champion</th><th scope="col" class="l">Runner-up</th><th scope="col" class="l">Points leader</th><th scope="col" class="l">Last place</th><th scope="col" class="l">Story</th></tr></thead>
+        <tbody>
+          {completed.map((x) => (
+            <tr>
+              <td class="l strong"><a href={seasonHref(x.season)}>{x.season}</a> <span class="dim small">{x.platform}</span></td>
+              <td class="l"><a class="who" href={ownerHref(x.champion.slug)}>{x.champion.person}</a> <span class="dim small">{x.champion.team}</span></td>
+              <td class="l">{x.runner_up ? <a href={ownerHref(x.runner_up.slug)}>{x.runner_up.person}</a> : '—'}</td>
+              <td class="l">{x.points_leader ? <a href={ownerHref(x.points_leader.slug)}>{x.points_leader.person}</a> : '—'}</td>
+              <td class="l">{x.last_place ? <a href={ownerHref(x.last_place.slug)}>{x.last_place.person}</a> : '—'}</td>
+              <td class="l dim">{x.recap_title || ''}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="h2-row"><h2 class="h2">Title count</h2><a href={href('leaderboards/')}>All leaderboards ›</a></div>
+    <div class="grid-list">
+      {titleCounts.map((o) => (
+        <a class="owner-card" href={ownerHref(o.slug)}>
+          <Avatar person={o.person} src={o.avatar} size="sm" />
+          <div><div class="nm">{o.person}</div><div class="meta">{o.titles} title{o.titles === 1 ? '' : 's'} · {o.title_seasons.join(', ')}</div></div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

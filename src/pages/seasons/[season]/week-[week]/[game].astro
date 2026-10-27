@@ -1,0 +1,124 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import VsAvg from '../../../../components/VsAvg.astro';
+import { site, season as loadSeason, games as loadGames } from '../../../../lib/data.js';
+import { href, num, rate, signed, seasonHref, weekHref, ownerHref, firstName } from '../../../../lib/fmt.js';
+
+export function getStaticPaths() {
+  return site().seasons.flatMap((s) =>
+    Object.keys(loadGames(s.season).boxes).map((key) => {
+      const [week, game] = key.split('/');
+      return { params: { season: String(s.season), week, game } };
+    }));
+}
+
+const year = Number(Astro.params.season);
+const week = Number(Astro.params.week);
+const s = loadSeason(year);
+const box = loadGames(year).boxes[`${week}/${Astro.params.game}`];
+const [w, l] = box.sides;
+const tie = w.points === l.points;
+const typeLabel = { regular: 'Regular season', winners: 'Playoffs', consolation: 'Consolation (doesn’t count)' }[box.game_type];
+const sides = [l, w]; // loser left, winner right, like a scoreboard read left → right
+const optimalWouldWin = (side, other) => side.optimal !== null && side.optimal > other.points && side.points < other.points;
+---
+<Base title={`${w.person} vs. ${l.person}, ${year} week ${week}`} nav="seasons">
+  <div class="hero" slot="hero">
+    <div class="hero-top">
+      <nav class="chip" aria-label="Breadcrumb"><a href={href('seasons/')}>Seasons</a> <span class="muted">/</span> <a href={seasonHref(year)}>{year}</a> <span class="muted">/</span> <a href={weekHref(year, week)}>Week {week}</a></nav>
+    </div>
+  </div>
+
+  <section class="box">
+    <div class="box-head">
+      <div class="pixel">BOX SCORE · {year} WEEK {week}</div>
+      <div style="font-size:13px;color:#C9CBD1">{typeLabel} · league median {num(box.median, 1)}</div>
+    </div>
+    <div class="score">
+      <div><div class="team">{l.team}</div><div class="who"><a href={ownerHref(l.slug)}>{l.person}</a></div></div>
+      <div class="nums"><span class:list={{ lose: !tie }}>{num(l.points, 2)}</span> <span style="font-size:32px;color:#8A8D95">–</span> <span class="win">{num(w.points, 2)}</span></div>
+      <div><div class="team">{w.team}</div><div class="who"><a href={ownerHref(w.slug)}>{w.person}</a> {!tie && <span class="tier" style="background:var(--blaze);vertical-align:middle">W</span>}</div></div>
+    </div>
+    <p class="note" style="text-align:center;margin:0">League-relative: {firstName(l.person)} {num(l.rel, 1)} · {firstName(w.person)} {num(w.rel, 1)} (100 = week median)</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:center;align-items:center;margin-top:14px;font-size:13px;color:var(--muted)">
+      <span>vs. avg compares each player's points with</span>
+      <div class="basis" role="group" aria-label="Compare with">
+        <button type="button" data-set="player" aria-pressed="true">his season average</button>
+        <button type="button" data-set="pos" aria-pressed="false">avg starter at his position</button>
+      </div>
+      <span><b class="up">blue</b> above · <b class="down">orange</b> below</span>
+    </div>
+
+    <div class="box-cols">
+      {sides.map((side) => {
+        const other = side === w ? l : w;
+        return (
+          <div>
+            <table class="t">
+              <caption>{firstName(side.person)} · starters</caption>
+              <thead><tr><th scope="col" class="l">Slot</th><th scope="col" class="l">Player</th><th scope="col">Pts</th><th scope="col">vs avg</th></tr></thead>
+              <tbody>
+                {side.starters.map((p) => {
+                  const bad = side.call && side.call.started === p.name;
+                  return (
+                    <tr class:list={{ hl: bad }}>
+                      <td class="l dim small strong">{p.slot}</td>
+                      <td class="l">{p.name} <span class="pos-tag">{p.pos}{p.nfl_team && ` · ${p.nfl_team}`}</span> {bad && <span class="flag">worst call −{num(side.call.cost, 1)}</span>}</td>
+                      <td class="strong">{num(p.points, 2)}</td>
+                      <td><VsAvg points={p.points} playerAvg={p.player_avg} posAvg={p.pos_avg} pos={p.pos} /></td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            {side.bench.length > 0 && (
+              <table class="t" style="margin-top:14px">
+                <caption style="color:var(--muted)">Bench</caption>
+                <tbody>
+                  {side.bench.map((p) => {
+                    const should = side.call && side.call.benched === p.name;
+                    return (
+                      <tr class:list={{ hl: should }}>
+                        <td class="l dim small strong" style="width:48px">{p.slot}</td>
+                        <td class="l" style="color:var(--ink-3)">{p.name} <span class="pos-tag">{p.pos}{p.nfl_team && ` · ${p.nfl_team}`}</span> {should && <span class="flag start">should have started</span>}</td>
+                        <td style="color:var(--ink-3)">{num(p.points, 2)}</td>
+                        <td><VsAvg points={p.points} playerAvg={p.player_avg} posAvg={p.pos_avg} pos={p.pos} /></td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            )}
+            <dl class="stat-row">
+              <div><dt>Actual</dt><dd>{num(side.points, 1)}</dd></div>
+              <div><dt>Optimal</dt><dd>{num(side.optimal, 1)}</dd></div>
+              <div class:list={{ bad: side.bench_lost > 10 }}><dt>Bench lost</dt><dd>{num(side.bench_lost, 1)}</dd></div>
+              <div><dt>Efficiency</dt><dd>{rate(side.efficiency)}</dd></div>
+            </dl>
+            {optimalWouldWin(side, other) && <p class="note" style="color:var(--ink-3)">The optimal lineup would have won, {num(side.optimal, 1)}–{num(other.points, 1)}.</p>}
+            {side.opp_luck !== null && box.game_type !== 'consolation' && (
+              <p class="note">Opponent luck: {firstName(other.person)} scored {signed(side.opp_luck)} vs. his season average.</p>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  {s.weeks.length > 0 && (
+    <p class="note" style="margin-top:20px"><a href={weekHref(year, week)}>‹ All week {week} games</a></p>
+  )}
+
+  <script is:inline>
+    (function () {
+      var buttons = document.querySelectorAll('.basis button');
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var key = b.getAttribute('data-set');
+          buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+          document.querySelectorAll('.vs[data-basis]').forEach(function (el) { el.hidden = el.getAttribute('data-basis') !== key; });
+        });
+      });
+    })();
+  </script>
+</Base>

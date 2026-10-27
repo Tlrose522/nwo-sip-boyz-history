@@ -1,0 +1,188 @@
+---
+import Base from '../../layouts/Base.astro';
+import Avatar from '../../components/Avatar.astro';
+import Spark from '../../components/Spark.astro';
+import PosBoxes from '../../components/PosBoxes.astro';
+import Meter from '../../components/Meter.astro';
+import { site, owner as loadOwner } from '../../lib/data.js';
+import { href, num, signed, rate, record, ord, upDown, seasonHref, gameHref, ownerHref } from '../../lib/fmt.js';
+
+export function getStaticPaths() {
+  return site().owners.map((o) => ({ params: { slug: o.slug } }));
+}
+
+const o = loadOwner(Astro.params.slug);
+const c = o.career;
+const teams = 14;
+const finishLabel = (t) => t.champion ? 'champion' : t.runner_up ? 'lost final' : t.made_playoffs ? 'made playoffs' : t.last_place ? 'last place' : 'missed playoffs';
+const kpis = [
+  { k: 'Titles', v: c.titles, s: c.title_seasons.join(', ') || '—' },
+  { k: 'Finals', v: c.finals, s: c.final_seasons.join(', ') || '—' },
+  { k: 'Playoffs', v: `${c.playoff_apps}/${c.completed_seasons}`, s: 'completed seasons' },
+  { k: 'Record', v: record(c.wins, c.losses, c.ties), s: `${rate(c.win_pct)} · ${ord(c.win_pct_rank)} of ${c.owners}` },
+  { k: 'All-play', v: rate(c.allplay_pct), s: `${ord(c.allplay_rank)} of ${c.owners}` },
+  { k: 'Career luck', v: signed(c.luck), s: c.luck >= 0 ? 'wins above expected' : 'wins below expected', cls: upDown(c.luck) },
+  { k: 'Best finish', v: ord(c.best_finish), s: c.best_finish_season ?? '—' },
+  { k: 'Worst finish', v: ord(c.worst_finish), s: `${c.worst_finish_season ?? '—'} · ${c.last_places} last place${c.last_places === 1 ? '' : 's'}` },
+];
+const rivals = o.rivals;
+const nemesis = rivals.filter((r) => r.games >= 3).sort((a, b) => (a.w - a.l) - (b.w - b.l))[0];
+const favorite = rivals.filter((r) => r.games >= 3).sort((a, b) => (b.w - b.l) - (a.w - a.l))[0];
+const moveTag = (v) => (v === 'waiver' ? ['WAIVER', 'waiver'] : ['FREE AGENT', 'fa']);
+---
+<Base title={o.person} nav="owners" description={`${o.person}'s NWO Sip Boyz career: every season, rivalries and moves.`}>
+  <div class="hero" slot="hero">
+    <nav class="chip" aria-label="Breadcrumb"><a href={href('owners/')}>Owners</a> <span class="muted">/</span> {o.person}</nav>
+    <div class="hero-row" style="align-items:center">
+      <Avatar person={o.person} src={o.avatar} />
+      <div style="flex:1 1 320px">
+        <div class="pixel-chip">OWNER · {o.active ? 'ACTIVE' : 'INACTIVE'} · SINCE {c.first_season}</div>
+        <h1 style="font-size:clamp(56px,9vw,96px);margin-top:10px;text-transform:uppercase">{o.person}</h1>
+        <p class="plate" style="display:inline-block;margin:14px 0 0;padding:8px 12px;font-size:15px;box-shadow:4px 4px 0 var(--blaze)">
+          {o.active ? 'Now' : 'Last'} <b>{o.latest_team}</b> · {c.seasons} season{c.seasons === 1 ? '' : 's'} · {c.first_season}–{c.last_season}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" aria-label="Career summary">
+    <div class="kpis">
+      {kpis.map((x) => <div><div class="k">{x.k}</div><div class:list={['v', x.cls]}>{x.v}</div><div class="s">{x.s}</div></div>)}
+    </div>
+  </section>
+
+  <section class="section" id="seasons">
+    <h2 class="h2">Season by season</h2>
+    <div class="tiles">
+      {o.tiles.map((t) => (
+        <a id={`season-${t.season}`} href={seasonHref(t.season) + '#' + o.slug} class:list={['tile', { champ: t.champion, live: !t.complete }]}>
+          <div class="top">
+            <div><div class="yr">{t.season}</div><div class="tm">{t.team} · {t.platform}</div></div>
+            <div>
+              <div class="fin" style={!t.complete ? 'color:var(--muted)' : undefined}>{t.complete ? ord(t.final_rank) : ord(t.record_rank)}</div>
+              <div class="fin-sub">{t.complete ? finishLabel(t) : `in progress · thru wk ${t.through_week}`}</div>
+            </div>
+          </div>
+          <Spark values={t.spark} weeks={Math.max(14, t.spark.length)} line={t.champion ? 'var(--blaze-soft)' : 'var(--blaze)'} base={t.champion ? '#6B6E76' : '#B9BCC4'} label={`${t.season} weekly scores vs. league median`} />
+          <dl>
+            <div><dt>REC</dt><dd>{record(t.wins, t.losses, t.ties)}</dd></div>
+            <div><dt>PF RK</dt><dd>{ord(t.pf_rank)}</dd></div>
+            <div><dt>LUCK</dt><dd class={upDown(t.luck)}>{signed(t.luck)}</dd></div>
+            <div><dt>EFF</dt><dd>{rate(t.efficiency)}</dd></div>
+          </dl>
+          <PosBoxes ranks={t.pos_rank} vsAvg={t.pos_vs_avg} teams={teams} />
+          {t.summary && <p class="sum">{t.summary}</p>}
+          {t.champion && <span class="badge gold">CHAMPION · BELT</span>}
+          {t.runner_up && <span class="badge silver">FINALS</span>}
+          {t.points_leader && t.complete && <span class="badge">POINTS LEADER</span>}
+          {t.last_place && <span class="badge last">LAST PLACE</span>}
+        </a>
+      ))}
+    </div>
+    <p class="note">Line = weekly score vs. that week's league median (dashed = 100). Boxes = league rank in regular-season started points per week at each position:
+      <span style="background:var(--s-8);padding:0 4px;color:var(--ink);font-weight:700">best</span>
+      <span style="background:var(--s-6);padding:0 4px;color:var(--ink);font-weight:700">good</span>
+      <span style="background:var(--s-4);padding:0 4px;color:var(--ink);font-weight:700">middle</span>
+      <span style="background:var(--s-3);padding:0 4px;color:var(--ink);font-weight:700">weak</span>
+      <span style="background:var(--s-1);padding:0 4px;color:#fff;font-weight:700">worst</span>.</p>
+  </section>
+
+  <div class="two-col section">
+    {o.profile && (
+      <section id="profile">
+        <h2 class="h2">Manager profile</h2>
+        <p class="note">Percentile among owners with 3+ seasons</p>
+        <div class="ratings">
+          {o.profile.filter((p) => p.pct !== null).map((p) => <Meter label={p.label} metric={p.metric} pct={p.pct} />)}
+          <div class="legend" aria-hidden="true">
+            <span><span style="color:#E8513A">■</span> WEAK 0–44</span><span><span style="color:var(--s-4)">■</span> AVERAGE 45–64</span>
+            <span><span style="color:var(--s-6)">■</span> STRONG 65–89</span><span><span style="color:var(--s-8)">■</span> ELITE 90+</span>
+          </div>
+        </div>
+        {o.best_pick && <p class="note">Best pick: {o.best_pick}</p>}
+      </section>
+    )}
+
+    <section id="rivalries">
+      <h2 class="h2">Rivalries</h2>
+      {nemesis && favorite && <p class="note">Nemesis: <b style="color:var(--ink)">{nemesis.opp}</b> · Favorite opponent: <b style="color:var(--ink)">{favorite.opp}</b></p>}
+      <div class="table-box">
+        <table class="t">
+          <thead><tr><th scope="col" class="l">Opponent</th><th scope="col">W-L</th><th scope="col">PF/G</th><th scope="col">PA/G</th><th scope="col">Playoffs</th><th scope="col" class="l">Last met</th></tr></thead>
+          <tbody>
+            {rivals.map((r) => (
+              <tr>
+                <td class="l"><a class="who" href={ownerHref(r.slug)}>{r.opp}</a></td>
+                <td class:list={['strong', r.w > r.l ? 'up' : r.w < r.l ? 'down' : '']}>{record(r.w, r.l, r.t)}</td>
+                <td>{num(r.pf_g, 1)}</td><td>{num(r.pa_g, 1)}</td>
+                <td>{r.po_w + r.po_l ? `${r.po_w}-${r.po_l}` : '—'}</td>
+                <td class="l"><a href={gameHref(r.last.season, r.last.week, r.last.slug)}>{r.last.season} wk {r.last.week}</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Regular season and winners bracket; consolation games don't count.</p>
+    </section>
+  </div>
+
+  <div class="two-col section">
+    <section id="players">
+      <h2 class="h2">Signature players</h2>
+      <div class="table-box">
+        <table class="t">
+          <thead><tr><th scope="col" class="l">Player</th><th scope="col" class="l">Seasons</th><th scope="col">Starts</th><th scope="col">SP</th><th scope="col">SP/start</th><th scope="col" class="l">Best season</th></tr></thead>
+          <tbody>
+            {o.players.map((p) => (
+              <tr>
+                <td class="l"><b>{p.name}</b> <span class="pos-tag">{p.pos}</span></td>
+                <td class="l">{p.first_season === p.last_season ? p.first_season : `${p.first_season}–${String(p.last_season).slice(2)}`}</td>
+                <td>{p.starts}</td><td class="strong">{num(p.sp, 1)}</td><td>{num(p.per_start, 1)}</td>
+                <td class="l"><a href={seasonHref(p.best_season)}>{p.best_season}</a> <span class="dim">{num(p.best_sp, 1)} SP</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Started points scored for {o.person.split(' ')[0]}, all seasons combined.</p>
+    </section>
+
+    <section id="moves">
+      <h2 class="h2">Moves</h2>
+      <ol class="moves">
+        {o.trades.slice(0, 10).map((t) => (
+          <li>
+            <span class="mtag">TRADE</span>
+            <span class="dim" style="font-size:13px;width:82px">{t.season} · wk {t.week ?? '—'}</span>
+            <span style="flex:1 1 200px;font-size:14px">Got {t.received || t.picks_received || 'nothing'} from {t.counterparty} for {t.sent || t.picks_sent || 'nothing'}</span>
+            <span class:list={['strong', upDown(t.margin)]} style="font-variant-numeric:tabular-nums">{t.result === 'unvalued' ? 'n/a' : signed(t.margin)}</span>
+          </li>
+        ))}
+        {o.pickups.map((p) => {
+          const [label, cls] = moveTag(p.acquired_via);
+          return (
+            <li>
+              <span class:list={['mtag', cls]}>{label}</span>
+              <span class="dim" style="font-size:13px;width:82px">{p.season}{p.acquired_week ? ` · wk ${p.acquired_week}` : ''}</span>
+              <span style="flex:1 1 200px;font-size:14px">{p.player_name} <span class="pos-tag">{p.pos}</span> · {p.starts} starts</span>
+              <span class="strong" style="font-variant-numeric:tabular-nums">{num(p.sp, 1)} SP</span>
+            </li>
+          );
+        })}
+      </ol>
+      <p class="note">Trades show started-point margin for the rest of that season; pickups show started points for the team.</p>
+    </section>
+  </div>
+
+  {o.lore.filter((l) => l.category === 'recap').length > 0 && (
+    <section class="section" id="lore">
+      <h2 class="h2">Title runs</h2>
+      {o.lore.filter((l) => l.category === 'recap').map((l) => (
+        <div style="margin-top:16px;max-width:820px">
+          <p class="eyebrow"><a href={seasonHref(l.season)}>{l.season}</a> · {l.title}</p>
+          <p style="margin:0;line-height:1.55">{l.text}</p>
+        </div>
+      ))}
+    </section>
+  )}
+</Base>

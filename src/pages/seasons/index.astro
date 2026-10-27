@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../lib/data.js';
+import { seasonHref, ownerHref, num } from '../../lib/fmt.js';
+const seasons = site().seasons.slice().sort((a, b) => b.season - a.season);
+---
+<Base title="Seasons" nav="seasons">
+  <div class="hero" slot="hero"><h1>SEASONS</h1></div>
+  <div class="grid-list" style="margin-top:0">
+    {seasons.map((s) => (
+      <a class="owner-card" href={seasonHref(s.season)} style="display:block">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <span style="font:italic 800 40px/1 var(--display)">{s.season}</span>
+          <span class="dim small">{s.platform}{!s.complete && ` · thru wk ${s.last_week}`}</span>
+        </div>
+        {s.complete ? (
+          <div class="meta" style="font-size:13px;margin-top:8px">
+            <b style="color:var(--ink)">{s.champion.person}</b> over {s.runner_up?.person ?? '—'}<br>
+            Last place: {s.last_place?.person ?? '—'}<br>
+            {s.recap_title && <i>{s.recap_title}</i>}
+          </div>
+        ) : (
+          <div class="meta" style="font-size:13px;margin-top:8px">In progress · points leader {s.points_leader?.person} ({num(s.points_leader?.pf, 1)})</div>
+        )}
+      </a>
+    ))}
+  </div>
+</Base>

@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import Avatar from '../../components/Avatar.astro';
+import { site } from '../../lib/data.js';
+import { ownerHref, record, rate } from '../../lib/fmt.js';
+const owners = site().owners.slice().sort((a, b) => Number(b.active) - Number(a.active) || b.titles - a.titles || b.win_pct - a.win_pct);
+---
+<Base title="Owners" nav="owners">
+  <div class="hero" slot="hero"><h1>OWNERS</h1></div>
+  <div class="grid-list" style="margin-top:0">
+    {owners.map((o) => (
+      <a class="owner-card" href={ownerHref(o.slug)}>
+        <Avatar person={o.person} src={o.avatar} size="sm" />
+        <div>
+          <div class="nm">{o.person}{!o.active && <span class="status" style="background:var(--rule-2)">INACTIVE</span>}</div>
+          <div class="meta">{o.latest_team}</div>
+          <div class="meta">{o.titles ? `${o.titles}× champ · ` : ''}{record(o.wins, o.losses, o.ties)} ({rate(o.win_pct)}) · {o.first_season}–{o.last_season}</div>
+        </div>
+      </a>
+    ))}
+  </div>
+</Base>

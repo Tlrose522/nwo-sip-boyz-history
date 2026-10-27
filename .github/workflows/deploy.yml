@@ -1,0 +1,88 @@
+name: Refresh data and deploy
+
+# Runs when:
+#   - the Sheet's Tuesday refresh finishes (Apps Script sends a "sheet-refreshed" dispatch),
+#   - Tuesday 8:30 AM ET as a fallback in case that ping never comes,
+#   - you press "Run workflow" in the Actions tab,
+#   - you push site changes to main (rebuilds from the committed snapshot; pulls the Sheet
+#     only if there is no snapshot yet, i.e. the very first push).
+on:
+  repository_dispatch:
+    types: [sheet-refreshed]
+  schedule:
+    - cron: '30 12 * * 2'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # commit the data snapshot
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Decide whether to pull the Sheet
+        id: pull
+        run: |
+          if [ "${{ github.event_name }}" != "push" ] || [ ! -f data/raw/_manifest.json ]; then
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pull every tab from the Sheet
+        if: steps.pull.outputs.needed == 'true'
+        env:
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: npm run export
+
+      - name: Commit the snapshot (only if the data changed)
+        if: steps.pull.outputs.needed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw
+          if git diff --cached --quiet; then
+            echo "Sheet unchanged since the last snapshot."
+          else
+            git commit -m "Data refresh $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Shape data and build the site
+        env:
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
