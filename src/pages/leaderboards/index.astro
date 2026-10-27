@@ -1,54 +1,318 @@
 ---
+// Career leaderboards: one table at a time (six categories), sortable on any column, for any
+// season or range of seasons. Built from per owner-season pieces (out_lb_seasons) that the
+// browser re-totals for the chosen range, so every number matches the Careers tab on "All".
 import Base from '../../layouts/Base.astro';
 import { leaderboards } from '../../lib/data.js';
-import { ownerHref, num, signed, rate, record } from '../../lib/fmt.js';
+import { href } from '../../lib/fmt.js';
 
-const all = leaderboards();
-const eligible = all.filter((c) => c.seasons >= 3);
-// One board per category from the metrics spec: headline metric first, supporting metrics beside it.
+const lb = leaderboards();
+const years = lb.seasons.map((s) => s.season).sort((a, b) => a - b);
+const live = lb.seasons.find((s) => !s.complete)?.season ?? null;
+const payload = { ...lb, ownerBase: href('owners/') };
+
+// Category tabs and the notes under each table. Column specs live in the script below.
 const boards = [
-  { id: 'winning', title: 'Winning', sort: (a, b) => b.titles - a.titles || b.win_pct - a.win_pct,
-    cols: [['Titles', (c) => c.titles], ['Finals', (c) => c.finals], ['Playoffs', (c) => c.playoff_apps], ['Record', (c) => record(c.wins, c.losses, c.ties)], ['Win %', (c) => rate(c.win_pct)], ['All-play', (c) => rate(c.allplay_pct)]] },
-  { id: 'luck', title: 'Luck', sort: (a, b) => b.career_luck - a.career_luck,
-    cols: [['Career luck', (c) => signed(c.career_luck)], ['Win %', (c) => rate(c.win_pct)], ['All-play', (c) => rate(c.allplay_pct)]] },
-  { id: 'lineups', title: 'Lineup management', sort: (a, b) => b.efficiency - a.efficiency,
-    cols: [['Efficiency', (c) => rate(c.efficiency)], ['Bench lost / wk', (c) => num(c.bench_lost_per_week, 1)]] },
-  { id: 'drafting', title: 'Drafting', sort: (a, b) => (b.draft_vos_per_season ?? -1e9) - (a.draft_vos_per_season ?? -1e9),
-    cols: [['Value over slot / season', (c) => signed(c.draft_vos_per_season)], ['Draft SP share', (c) => rate(c.draft_sp_share)], ['Best pick', (c) => c.best_pick || '—']] },
-  { id: 'trading', title: 'Trading', sort: (a, b) => b.trade_margin - a.trade_margin, min: (c) => c.trades >= 3,
-    cols: [['SP margin', (c) => signed(c.trade_margin)], ['Trades', (c) => c.trades], ['Won', (c) => c.trades_won]] },
-  { id: 'acquiring', title: 'Acquiring', sort: (a, b) => b.waiver_sp_per_season - a.waiver_sp_per_season, min: (c) => c.waiver_adds >= 10,
-    cols: [['Waiver/FA SP / season', (c) => num(c.waiver_sp_per_season, 1)], ['Adds', (c) => c.waiver_adds], ['Hit rate', (c) => rate(c.waiver_hit_rate)], ['SP per FAAB $', (c) => num(c.sp_per_faab_dollar, 1)]] },
+  { id: 'winning', label: 'Winning', notes: [
+    'Ranked by titles, then regular-season win %.',
+    'Win % and all-play % count ties as half a win. All-play: each week, a win against every team you outscored and a loss to every team that outscored you.',
+    'Playoff W-L counts winners-bracket games only; consolation games never count.'] },
+  { id: 'luck', label: 'Luck', notes: [
+    'Luck = actual wins − expected wins, where expected wins = all-play win % × games. Positive means you won more than your scores deserved.',
+    'Close games: regular-season games decided by less than 5 points.',
+    'Playoff opponent luck: how far your winners-bracket opponents scored from their own regular-season averages, summed. Negative = you caught them on bad weeks.'] },
+  { id: 'lineups', label: 'Lineup management', notes: [
+    'Efficiency = points your starters scored ÷ points of the best legal lineup from that week\'s roster, averaged over every regular-season and winners-bracket game.',
+    'Bench lost / week = average points left on the bench (optimal − actual). Lower is better.',
+    'Consolation games are excluded because those lineups often go unmanaged.'] },
+  { id: 'drafting', label: 'Drafting', notes: [
+    'Value over slot: each pick\'s value over replacement (VOR) minus what picks within 5 slots of it usually return in this league, summed per season and averaged across the seasons shown.',
+    'Draft SP share: the share of a team\'s started points that came from its own draft picks.',
+    'Team defenses and keepers aren\'t graded. Best pick = the highest value over slot in the seasons shown.'] },
+  { id: 'trading', label: 'Trading', notes: [
+    'SP margin: for each trade, started points the incoming players scored for you the rest of that season minus what the outgoing players scored for their new team. Traded picks count the player drafted with them.',
+    'Trades without a known week (some early ESPN history) aren\'t valued and aren\'t counted.'] },
+  { id: 'acquiring', label: 'Acquiring', notes: [
+    'Waiver/FA SP per season: regular-season started points from players added off waivers or free agency, per season played.',
+    'Hit rate: share of pickups who started 3+ games. SP per FAAB $: started points from waiver claims ÷ FAAB dollars spent.'] },
 ];
 ---
 <Base title="Leaderboards" nav="leaderboards">
   <div class="hero" slot="hero">
     <h1>LEADER<br>BOARDS</h1>
-    <div class="hero-row"><p class="plate" style="margin:0">Owners with 3+ seasons. Trading needs 3+ trades; acquiring needs 10+ adds.</p></div>
   </div>
-  <nav class="week-strip" aria-label="Categories" style="margin-top:0">
-    {boards.map((b) => <a href={`#${b.id}`} style="padding:0 12px">{b.title}</a>)}
-  </nav>
-  {boards.map((b) => {
-    const list = eligible.filter((c) => !b.min || b.min(c)).sort(b.sort);
-    return (
-      <section class="section" id={b.id}>
-        <h2 class="h2">{b.title}</h2>
-        <div class="table-box">
-          <table class="t">
-            <thead><tr><th scope="col" class="l">#</th><th scope="col" class="l">Owner</th>{b.cols.map(([h]) => <th scope="col" class={h === 'Best pick' ? 'l' : undefined}>{h}</th>)}</tr></thead>
-            <tbody>
-              {list.map((c, i) => (
-                <tr>
-                  <td class="l strong">{i + 1}</td>
-                  <td class="l"><a class="who" href={ownerHref(c.slug)}>{c.person}</a>{!c.active && <span class="dim small"> · inactive</span>}</td>
-                  {b.cols.map(([h, f], j) => <td class:list={[{ strong: j === 0, l: h === 'Best pick' }]}>{f(c)}</td>)}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-    );
-  })}
+
+  <div class="lb-controls">
+    <div class="lb-tabs" role="tablist" aria-label="Leaderboard category">
+      {boards.map((b, i) => (
+        <button type="button" role="tab" id={`tab-${b.id}`} data-board={b.id} aria-selected={i === 0 ? 'true' : 'false'} aria-controls="lb-panel">{b.label}</button>
+      ))}
+    </div>
+    <div class="lb-filter" role="group" aria-label="Seasons">
+      <label>From
+        <select id="lb-from">{years.map((y) => <option value={y} selected={y === years[0]}>{y}</option>)}</select>
+      </label>
+      <label>To
+        <select id="lb-to">{years.map((y) => <option value={y} selected={y === years[years.length - 1]}>{y}{y === live ? ' (in progress)' : ''}</option>)}</select>
+      </label>
+      <button type="button" id="lb-all" class="lb-reset">All seasons</button>
+    </div>
+  </div>
+
+  <section id="lb-panel" role="tabpanel" aria-labelledby="tab-winning" class="section" style="margin-top:20px">
+    <div class="h2-row">
+      <h2 class="h2" id="lb-title">Winning</h2>
+      <span class="note" id="lb-range" style="margin:0"></span>
+    </div>
+    <div class="table-box">
+      <table class="t lb-table">
+        <thead><tr id="lb-head"></tr></thead>
+        <tbody id="lb-body"></tbody>
+      </table>
+    </div>
+    <noscript><p class="note">This table needs JavaScript to sort and filter.</p></noscript>
+    {boards.map((b, i) => (
+      <div class="lb-notes" data-notes={b.id} hidden={i !== 0 ? true : undefined}>
+        {b.notes.map((n) => <p>{n}</p>)}
+      </div>
+    ))}
+    <p class="lb-notes" id="lb-min"></p>
+  </section>
+
+  <script type="application/json" id="lb-data" set:html={JSON.stringify(payload)}></script>
+  <script is:inline>
+  (function () {
+    var D = JSON.parse(document.getElementById('lb-data').textContent);
+    var years = D.seasons.map(function (s) { return s.season; }).sort(function (a, b) { return a - b; });
+
+    /* ------------------------------------------------ formatting */
+    function fx(x, dp) { return x === null || x === undefined || isNaN(x) ? '—' : Number(x).toLocaleString('en-US', { minimumFractionDigits: dp, maximumFractionDigits: dp }); }
+    function sgn(x, dp) { if (x === null || x === undefined || isNaN(x)) return '—'; return (x > 0 ? '+' : x < 0 ? '−' : '') + fx(Math.abs(x), dp); }
+    function rate(x) { return x === null || x === undefined || isNaN(x) ? '—' : x.toFixed(3).replace(/^0/, '').replace(/^-0/, '−'); }
+    function rec(w, l, t) { return w + '-' + l + (t ? '-' + t : ''); }
+    function cls(x) { return x === null || x === undefined ? '' : x >= 0 ? 'up' : 'down'; }
+
+    /* ------------------------------------------------ totals for a range of seasons */
+    function totals(from, to) {
+      var by = {};
+      D.rows.forEach(function (r) {
+        if (r.season < from || r.season > to) return;
+        var p = by[r.person] || (by[r.person] = { person: r.person, rows: [] });
+        p.rows.push(r);
+      });
+      return Object.keys(by).map(function (name) {
+        var rs = by[name].rows;
+        var sum = function (k) { return rs.reduce(function (a, r) { return a + (Number(r[k]) || 0); }, 0); };
+        var o = { person: name, seasons: rs.length, meta: D.people[name] || {} };
+        o.titles = rs.filter(function (r) { return r.champion; }).length;
+        o.finals = rs.filter(function (r) { return r.champion || r.runner_up; }).length;
+        o.playoffs = rs.filter(function (r) { return r.made_playoffs; }).length;
+        o.lasts = rs.filter(function (r) { return r.last_place; }).length;
+        o.w = sum('wins'); o.l = sum('losses'); o.t = sum('ties');
+        o.win_pct = o.w + o.l + o.t ? (o.w + 0.5 * o.t) / (o.w + o.l + o.t) : null;
+        var aw = sum('allplay_w'), al = sum('allplay_l'), at = sum('allplay_t');
+        o.allplay = aw + al + at ? (aw + 0.5 * at) / (aw + al + at) : null;
+        o.po_w = sum('po_w'); o.po_l = sum('po_l');
+        o.po_pct = o.po_w + o.po_l ? o.po_w / (o.po_w + o.po_l) : null;
+        o.luck = sum('luck');
+        o.close_w = sum('close_w'); o.close_l = sum('close_l');
+        o.close_pct = o.close_w + o.close_l ? o.close_w / (o.close_w + o.close_l) : null;
+        o.po_opp_luck = rs.some(function (r) { return r.po_opp_luck !== null; }) ? sum('po_opp_luck') : null;
+        var g = sum('lineup_games');
+        o.games = g; o.eff = g ? sum('eff_sum') / g : null; o.bench = g ? sum('bench_sum') / g : null;
+        var vos = rs.filter(function (r) { return r.draft_vos !== null && r.draft_vos !== undefined; });
+        o.vos = vos.length ? vos.reduce(function (a, r) { return a + r.draft_vos; }, 0) / vos.length : null;
+        var dss = rs.filter(function (r) { return r.draft_sp_share !== null && r.draft_sp_share !== undefined; });
+        o.dss = dss.length ? dss.reduce(function (a, r) { return a + r.draft_sp_share; }, 0) / dss.length : null;
+        var bp = rs.filter(function (r) { return r.best_pick_vos !== null; }).sort(function (a, b) { return b.best_pick_vos - a.best_pick_vos; })[0];
+        o.best_pick = bp ? bp.season + ' ' + bp.best_pick + ' (#' + bp.best_pick_overall + ', ' + sgn(bp.best_pick_vos, 1) + ')' : null;
+        o.best_pick_vos = bp ? bp.best_pick_vos : null;
+        o.trades = sum('trades'); o.trades_won = sum('trades_won'); o.margin = sum('trade_margin');
+        o.trade_rate = o.trades ? o.trades_won / o.trades : null;
+        o.per_trade = o.trades ? o.margin / o.trades : null;
+        o.adds = sum('adds'); o.hits = sum('hits');
+        o.hit_rate = o.adds ? o.hits / o.adds : null;
+        o.pickup_ps = o.seasons ? sum('pickup_sp') / o.seasons : null;
+        o.faab = sum('faab');
+        o.sp_faab = o.faab ? sum('waiver_sp') / o.faab : null;
+        return o;
+      });
+    }
+
+    /* ------------------------------------------------ boards: columns, default sort, minimums */
+    // dir: which way is "better" (and the first click's sort direction).
+    var BOARDS = {
+      winning: { title: 'Winning', sort: 'titles', cols: [
+        { k: 'titles', h: 'Titles', dir: -1, v: function (o) { return o.titles * 10 + (o.win_pct || 0); }, f: function (o) { return o.titles; } },
+        { k: 'finals', h: 'Finals', dir: -1, f: function (o) { return o.finals; } },
+        { k: 'playoffs', h: 'Playoffs', dir: -1, f: function (o) { return o.playoffs; } },
+        { k: 'win_pct', h: 'Win %', dir: -1, f: function (o) { return rate(o.win_pct); } },
+        { k: 'w', h: 'Record', dir: -1, v: function (o) { return o.win_pct; }, f: function (o) { return rec(o.w, o.l, o.t); } },
+        { k: 'allplay', h: 'All-play %', dir: -1, f: function (o) { return rate(o.allplay); } },
+        { k: 'po_pct', h: 'Playoff W-L', dir: -1, f: function (o) { return o.po_w + o.po_l ? rec(o.po_w, o.po_l) : '—'; } },
+        { k: 'lasts', h: 'Last places', dir: 1, f: function (o) { return o.lasts; } },
+        { k: 'seasons', h: 'Seasons', dir: -1, f: function (o) { return o.seasons; } } ] },
+      luck: { title: 'Luck', sort: 'luck', cols: [
+        { k: 'luck', h: 'Luck', dir: -1, f: function (o) { return sgn(o.luck, 1); }, c: function (o) { return cls(o.luck); } },
+        { k: 'close_pct', h: 'Close games', dir: -1, f: function (o) { return o.close_w + o.close_l ? rec(o.close_w, o.close_l) + ' ' + rate(o.close_pct) : '—'; } },
+        { k: 'po_opp_luck', h: 'Playoff opp luck', dir: 1, f: function (o) { return sgn(o.po_opp_luck, 1); } },
+        { k: 'win_pct', h: 'Win %', dir: -1, f: function (o) { return rate(o.win_pct); } },
+        { k: 'allplay', h: 'All-play %', dir: -1, f: function (o) { return rate(o.allplay); } },
+        { k: 'seasons', h: 'Seasons', dir: -1, f: function (o) { return o.seasons; } } ] },
+      lineups: { title: 'Lineup management', sort: 'eff', cols: [
+        { k: 'eff', h: 'Efficiency', dir: -1, f: function (o) { return rate(o.eff); } },
+        { k: 'bench', h: 'Bench lost / wk', dir: 1, f: function (o) { return fx(o.bench, 1); } },
+        { k: 'games', h: 'Games', dir: -1, f: function (o) { return o.games; } },
+        { k: 'seasons', h: 'Seasons', dir: -1, f: function (o) { return o.seasons; } } ] },
+      drafting: { title: 'Drafting', sort: 'vos', cols: [
+        { k: 'vos', h: 'Value over slot / season', dir: -1, f: function (o) { return sgn(o.vos, 1); }, c: function (o) { return cls(o.vos); } },
+        { k: 'dss', h: 'Draft SP share', dir: -1, f: function (o) { return rate(o.dss); } },
+        { k: 'best_pick_vos', h: 'Best pick', dir: -1, l: true, f: function (o) { return o.best_pick || '—'; } },
+        { k: 'seasons', h: 'Seasons', dir: -1, f: function (o) { return o.seasons; } } ] },
+      trading: { title: 'Trading', sort: 'margin', cols: [
+        { k: 'margin', h: 'SP margin', dir: -1, f: function (o) { return sgn(o.margin, 1); }, c: function (o) { return cls(o.margin); } },
+        { k: 'trades', h: 'Trades', dir: -1, f: function (o) { return o.trades; } },
+        { k: 'trade_rate', h: 'Won', dir: -1, f: function (o) { return o.trades ? o.trades_won + ' (' + rate(o.trade_rate) + ')' : '—'; } },
+        { k: 'per_trade', h: 'Margin / trade', dir: -1, f: function (o) { return sgn(o.per_trade, 1); } },
+        { k: 'seasons', h: 'Seasons', dir: -1, f: function (o) { return o.seasons; } } ] },
+      acquiring: { title: 'Acquiring', sort: 'pickup_ps', cols: [
+        { k: 'pickup_ps', h: 'Waiver/FA SP / season', dir: -1, f: function (o) { return fx(o.pickup_ps, 1); } },
+        { k: 'adds', h: 'Pickups', dir: -1, f: function (o) { return o.adds; } },
+        { k: 'hit_rate', h: 'Hit rate', dir: -1, f: function (o) { return rate(o.hit_rate); } },
+        { k: 'faab', h: 'FAAB spent', dir: -1, f: function (o) { return '$' + fx(o.faab, 0); } },
+        { k: 'sp_faab', h: 'SP per FAAB $', dir: -1, f: function (o) { return fx(o.sp_faab, 1); } },
+        { k: 'seasons', h: 'Seasons', dir: -1, f: function (o) { return o.seasons; } } ] },
+    };
+    // Spec minimums (3 seasons; 3 trades; 10 pickups), scaled down for short ranges.
+    function minimums(board, n) {
+      var m = { seasons: Math.min(3, n) };
+      if (board === 'trading') m.trades = n >= 3 ? 3 : 1;
+      if (board === 'acquiring') m.adds = n >= 3 ? 10 : 1;
+      if (board === 'drafting') m.vos = true;
+      return m;
+    }
+    function eligible(o, m) {
+      return o.seasons >= m.seasons && (!m.trades || o.trades >= m.trades) && (!m.adds || o.adds >= m.adds) && (!m.vos || o.vos !== null);
+    }
+    function minText(m, n) {
+      var parts = [m.seasons + (m.seasons === 1 ? ' season' : ' seasons') + ' in range'];
+      if (m.trades) parts.push(m.trades + (m.trades === 1 ? ' trade' : ' trades'));
+      if (m.adds) parts.push(m.adds + (m.adds === 1 ? ' pickup' : ' pickups'));
+      return 'Ranked owners need ' + parts.join(' and ') + '; others are listed below the line, unranked. Inactive owners stay on the boards.';
+    }
+
+    /* ------------------------------------------------ state + URL (?board=luck&from=2019&to=2024) */
+    var q = new URLSearchParams(location.search);
+    var state = {
+      board: BOARDS[q.get('board')] ? q.get('board') : 'winning',
+      from: years.indexOf(+q.get('from')) !== -1 ? +q.get('from') : years[0],
+      to: years.indexOf(+q.get('to')) !== -1 ? +q.get('to') : years[years.length - 1],
+      sort: null, dir: null,
+    };
+    var $ = function (id) { return document.getElementById(id); };
+
+    function render() {
+      if (state.from > state.to) { var t = state.from; state.from = state.to; state.to = t; }
+      $('lb-from').value = state.from; $('lb-to').value = state.to;
+      var B = BOARDS[state.board];
+      var sortKey = state.sort || B.sort;
+      var col = B.cols.find(function (c) { return c.k === sortKey; }) || B.cols[0];
+      var dir = state.dir || col.dir;
+      var n = years.filter(function (y) { return y >= state.from && y <= state.to; }).length;
+      var m = minimums(state.board, n);
+      var val = function (o) { var v = col.v ? col.v(o) : o[col.k]; return v === null || v === undefined ? null : v; };
+      var list = totals(state.from, state.to).sort(function (a, b) {
+        var x = val(a), y = val(b);
+        if (x === null && y === null) return a.person.localeCompare(b.person);
+        if (x === null) return 1; if (y === null) return -1;
+        return (y - x) * -dir || a.person.localeCompare(b.person);
+      });
+      var ranked = list.filter(function (o) { return eligible(o, m); });
+      var rest = list.filter(function (o) { return !eligible(o, m); });
+
+      // Tabs, title, notes
+      document.querySelectorAll('.lb-tabs button').forEach(function (b) {
+        b.setAttribute('aria-selected', String(b.getAttribute('data-board') === state.board));
+      });
+      $('lb-panel').setAttribute('aria-labelledby', 'tab-' + state.board);
+      $('lb-title').textContent = B.title;
+      $('lb-range').textContent = state.from === years[0] && state.to === years[years.length - 1] ? 'All seasons, ' + years[0] + '–' + years[years.length - 1]
+        : state.from === state.to ? state.from + ' season' : state.from + '–' + state.to + ' (' + n + ' seasons)';
+      document.querySelectorAll('[data-notes]').forEach(function (el) { el.hidden = el.getAttribute('data-notes') !== state.board; });
+      $('lb-min').textContent = minText(m, n);
+
+      // Header: every column is a sort button
+      var head = $('lb-head'); head.innerHTML = '';
+      var th0 = document.createElement('th'); th0.className = 'l'; th0.scope = 'col'; th0.textContent = '#'; head.appendChild(th0);
+      var th1 = document.createElement('th'); th1.className = 'l'; th1.scope = 'col'; th1.textContent = 'Owner'; head.appendChild(th1);
+      B.cols.forEach(function (c) {
+        var th = document.createElement('th'); th.scope = 'col'; if (c.l) th.className = 'l';
+        var active = c.k === col.k;
+        th.setAttribute('aria-sort', active ? (dir === -1 ? 'descending' : 'ascending') : 'none');
+        var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'sort' + (active ? ' on' : '');
+        btn.textContent = c.h; btn.title = 'Sort by ' + c.h;
+        var arrow = document.createElement('span'); arrow.setAttribute('aria-hidden', 'true'); arrow.textContent = active ? (dir === -1 ? ' ▼' : ' ▲') : '';
+        btn.appendChild(arrow);
+        btn.addEventListener('click', function () {
+          // Same column flips direction; a new column starts in its "better" direction.
+          if (c.k === col.k) state.dir = -dir;
+          else state.dir = c.dir;
+          state.sort = c.k;
+          render();
+        });
+        th.appendChild(btn); head.appendChild(th);
+      });
+
+      // Body
+      var body = $('lb-body'); body.innerHTML = '';
+      function row(o, rank, muted) {
+        var tr = document.createElement('tr'); if (muted) tr.className = 'muted';
+        var td = document.createElement('td'); td.className = 'l strong'; td.textContent = rank; tr.appendChild(td);
+        var tdn = document.createElement('td'); tdn.className = 'l';
+        var a = document.createElement('a'); a.className = 'who'; a.href = D.ownerBase + (o.meta.slug || '') + '/'; a.textContent = o.person; tdn.appendChild(a);
+        if (o.meta.active === false) { var s = document.createElement('span'); s.className = 'dim small'; s.textContent = ' · inactive'; tdn.appendChild(s); }
+        tr.appendChild(tdn);
+        B.cols.forEach(function (c, i) {
+          var t = document.createElement('td');
+          t.className = [c.l ? 'l' : '', c.k === col.k ? 'strong' : '', c.c ? c.c(o) : ''].join(' ').trim();
+          t.textContent = c.f(o); tr.appendChild(t);
+        });
+        body.appendChild(tr);
+      }
+      ranked.forEach(function (o, i) { row(o, i + 1, false); });
+      if (rest.length) {
+        var sep = document.createElement('tr'); sep.className = 'sep';
+        var c = document.createElement('td'); c.colSpan = B.cols.length + 2; c.textContent = 'Below the minimum for this range';
+        sep.appendChild(c); body.appendChild(sep);
+        rest.forEach(function (o) { row(o, '—', true); });
+      }
+      if (!list.length) {
+        var e = document.createElement('tr'); var ec = document.createElement('td'); ec.colSpan = B.cols.length + 2; ec.className = 'l dim'; ec.textContent = 'No seasons in this range.'; e.appendChild(ec); body.appendChild(e);
+      }
+
+      // Keep the URL shareable without cluttering it on the defaults
+      var p = new URLSearchParams();
+      if (state.board !== 'winning') p.set('board', state.board);
+      if (state.from !== years[0]) p.set('from', state.from);
+      if (state.to !== years[years.length - 1]) p.set('to', state.to);
+      history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
+    }
+
+    document.querySelectorAll('.lb-tabs button').forEach(function (b) {
+      b.addEventListener('click', function () { state.board = b.getAttribute('data-board'); state.sort = null; state.dir = null; render(); });
+    });
+    // Arrow keys move between tabs (standard tablist behavior)
+    document.querySelector('.lb-tabs').addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      var tabs = Array.prototype.slice.call(this.querySelectorAll('button'));
+      var i = tabs.indexOf(document.activeElement); if (i === -1) return;
+      var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      next.focus(); next.click();
+    });
+    $('lb-from').addEventListener('change', function () { state.from = +this.value; render(); });
+    $('lb-to').addEventListener('change', function () { state.to = +this.value; render(); });
+    $('lb-all').addEventListener('click', function () { state.from = years[0]; state.to = years[years.length - 1]; render(); });
+    render();
+  })();
+  </script>
 </Base>

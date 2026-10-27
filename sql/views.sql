@@ -299,3 +299,63 @@ SELECT season, team_id, person, week, rel_score,
 FROM team_weeks
 WHERE game_type = 'regular'
 ORDER BY season, team_id, week;
+
+-- ---------------------------------------------------------------- leaderboards (per season)
+-- One row per owner per season with every leaderboard input as an additive piece, so the
+-- page can re-total any range of seasons in the browser. Mirrors the Careers tab's rules:
+--   * W-L and all-play: regular season; efficiency and bench: regular + winners bracket
+--   * trades: valued sides only; pickups: waiver/FA player-seasons; hit = 3+ starts
+CREATE OR REPLACE VIEW out_lb_seasons AS
+WITH tw AS (
+  SELECT season, team_id,
+         count(*) FILTER (WHERE game_type IN ('regular', 'winners') AND efficiency IS NOT NULL) AS lineup_games,
+         sum(efficiency) FILTER (WHERE game_type IN ('regular', 'winners')) AS eff_sum,
+         sum(bench_lost) FILTER (WHERE game_type IN ('regular', 'winners') AND efficiency IS NOT NULL) AS bench_sum,
+         count(*) FILTER (WHERE game_type = 'winners' AND result = 'W') AS po_w,
+         count(*) FILTER (WHERE game_type = 'winners' AND result = 'L') AS po_l,
+         sum(opp_luck) FILTER (WHERE game_type = 'winners') AS po_opp_luck
+  FROM team_weeks GROUP BY ALL
+),
+close AS (
+  SELECT season, team_id,
+         count(*) FILTER (WHERE result = 'W') AS close_w, count(*) FILTER (WHERE result = 'L') AS close_l
+  FROM game_sides WHERE game_type = 'regular' AND abs(margin) < 5 GROUP BY ALL
+),
+tr AS (
+  SELECT season, person, count(DISTINCT transaction_id) AS trades,
+         count(*) FILTER (WHERE result = 'won') AS trades_won, sum(margin) AS trade_margin
+  FROM trade_ledger WHERE result <> 'unvalued' AND coalesce(person, '') <> '' GROUP BY ALL
+),
+pk AS (
+  SELECT season, person, count(*) AS adds, count(*) FILTER (WHERE starts >= 3) AS hits,
+         sum(sp_regular) AS pickup_sp, sum(sp_regular) FILTER (WHERE acquired_via = 'waiver') AS waiver_sp
+  FROM player_seasons WHERE acquired_via IN ('waiver', 'free_agent') AND coalesce(person, '') <> '' GROUP BY ALL
+),
+faab AS (
+  SELECT season, person, sum(TRY_CAST(faab_bid AS DOUBLE)) AS faab
+  FROM transactions WHERE action = 'add' AND type = 'waiver' AND coalesce(person, '') <> '' GROUP BY ALL
+),
+pick AS (
+  SELECT season, person, arg_max(player_name, value_over_slot) AS best_pick,
+         arg_max(overall, value_over_slot) AS best_pick_overall, max(value_over_slot) AS best_pick_vos
+  FROM draft_grades WHERE value_over_slot IS NOT NULL AND coalesce(person, '') <> '' GROUP BY ALL
+)
+SELECT t.season, t.person,
+       t.champion, t.runner_up, t.made_playoffs, t.last_place,
+       t.wins, t.losses, t.ties, t.allplay_w, t.allplay_l, t.allplay_t, t.luck,
+       t.draft_vos, t.draft_sp_share,
+       tw.lineup_games, tw.eff_sum, tw.bench_sum, tw.po_w, tw.po_l, tw.po_opp_luck,
+       coalesce(c.close_w, 0) AS close_w, coalesce(c.close_l, 0) AS close_l,
+       coalesce(tr.trades, 0) AS trades, coalesce(tr.trades_won, 0) AS trades_won, coalesce(tr.trade_margin, 0) AS trade_margin,
+       coalesce(pk.adds, 0) AS adds, coalesce(pk.hits, 0) AS hits, coalesce(pk.pickup_sp, 0) AS pickup_sp,
+       coalesce(pk.waiver_sp, 0) AS waiver_sp, coalesce(faab.faab, 0) AS faab,
+       pick.best_pick, pick.best_pick_overall, pick.best_pick_vos
+FROM team_seasons t
+LEFT JOIN tw ON tw.season = t.season AND tw.team_id = t.team_id
+LEFT JOIN close c ON c.season = t.season AND c.team_id = t.team_id
+LEFT JOIN tr ON tr.season = t.season AND tr.person = t.person
+LEFT JOIN pk ON pk.season = t.season AND pk.person = t.person
+LEFT JOIN faab ON faab.season = t.season AND faab.person = t.person
+LEFT JOIN pick ON pick.season = t.season AND pick.person = t.person
+WHERE coalesce(t.person, '') <> ''
+ORDER BY t.season, t.person;

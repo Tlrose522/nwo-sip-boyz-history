@@ -50,6 +50,7 @@ const OPTIONAL = {
   draft_grades: 'season INTEGER, overall INTEGER, grade VARCHAR, pos_rank INTEGER, vor DOUBLE, value_over_slot DOUBLE, sp_for_team DOUBLE',
   trade_ledger: 'platform VARCHAR, season INTEGER, week INTEGER, date VARCHAR, person VARCHAR, team_name VARCHAR, counterparty VARCHAR, received VARCHAR, sent VARCHAR, picks_received VARCHAR, picks_sent VARCHAR, sp_received DOUBLE, sp_sent DOUBLE, margin DOUBLE, result VARCHAR, transaction_id VARCHAR',
   settings: 'platform VARCHAR, season INTEGER, category VARCHAR, setting VARCHAR, value VARCHAR, detail VARCHAR',
+  transactions: 'season INTEGER, type VARCHAR, action VARCHAR, person VARCHAR, faab_bid DOUBLE',
 };
 for (const [t, cols] of Object.entries(OPTIONAL)) if (!tables.has(t)) await run(`CREATE TABLE ${t} (${cols})`);
 
@@ -268,7 +269,15 @@ for (const c of careers) {
 function fmtPct(x) { return x === null || x === undefined ? '—' : Number(x).toFixed(3).replace(/^0/, ''); }
 function signed(x) { return x === null || x === undefined ? '—' : (x > 0 ? '+' : x < 0 ? '−' : '') + Math.abs(x).toLocaleString('en-US', { maximumFractionDigits: 1 }); }
 
-await write('leaderboards.json', careers.map((c) => ({ ...c })));
+// Leaderboards: per owner-season pieces the page re-totals for any range of seasons.
+const lbRows = await rows('SELECT * FROM out_lb_seasons');
+await write('leaderboards.json', {
+  seasons: seasons.map((s) => ({ season: s.season, platform: s.platform, complete: s.complete })),
+  people: Object.fromEntries(careers.map((c) => [c.person, { slug: c.slug, active: c.active }])),
+  rows: lbRows.map((r) => ({ ...r, luck: r1(r.luck), trade_margin: r2(r.trade_margin), pickup_sp: r1(r.pickup_sp),
+    waiver_sp: r1(r.waiver_sp), eff_sum: r.eff_sum === null ? null : Math.round(r.eff_sum * 1000) / 1000,
+    bench_sum: r1(r.bench_sum), po_opp_luck: r1(r.po_opp_luck), best_pick_vos: r1(r.best_pick_vos) })),
+});
 await write('site.json', {
   built_at: new Date().toISOString(), exported_at: exportedAt,
   seasons: seasonList, owners: ownerList,
