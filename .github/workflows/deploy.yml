@@ -32,7 +32,8 @@ jobs:
 
       - uses: actions/setup-node@v5
         with:
-          node-version: 22
+          node-version-file: .nvmrc
+          check-latest: true   # runner images can lag behind the newest patch Astro requires
           cache: npm
 
       - run: npm ci
