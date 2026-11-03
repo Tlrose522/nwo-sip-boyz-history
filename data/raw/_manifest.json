@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-10-27T18:08:18.235Z",
+  "exported_at": "2026-11-03T19:39:53.303Z",
   "tabs": {
     "Owner Map": {
       "file": "owner-map.csv",
@@ -19,7 +19,7 @@
     },
     "Lineups": {
       "file": "lineups.csv",
-      "rows": 31192
+      "rows": 31414
     },
     "Standings": {
       "file": "standings.csv",
@@ -27,11 +27,11 @@
     },
     "Team Weeks": {
       "file": "team-weeks.csv",
-      "rows": 1942
+      "rows": 1956
     },
     "Player Seasons": {
       "file": "player-seasons.csv",
-      "rows": 4723
+      "rows": 4752
     },
     "Team Seasons": {
       "file": "team-seasons.csv",
@@ -39,7 +39,7 @@
     },
     "Trade Ledger": {
       "file": "trade-ledger.csv",
-      "rows": 178
+      "rows": 180
     },
     "Careers": {
       "file": "careers.csv",
@@ -47,7 +47,7 @@
     },
     "NFL Seasons": {
       "file": "nfl-seasons.csv",
-      "rows": 5685
+      "rows": 5705
     },
     "Draft Grades": {
       "file": "draft-grades.csv",
@@ -55,7 +55,7 @@
     },
     "Matchups": {
       "file": "matchups.csv",
-      "rows": 1942
+      "rows": 1956
     },
     "Drafts": {
       "file": "drafts.csv",
@@ -63,7 +63,7 @@
     },
     "Transactions": {
       "file": "transactions.csv",
-      "rows": 6870
+      "rows": 6937
     },
     "Lore": {
       "file": "lore.csv",
