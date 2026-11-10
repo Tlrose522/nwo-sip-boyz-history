@@ -3863,7 +3863,7 @@ Sleeper,2025,Austin Abegg,Kissin TDs,Ricky Pearsall,WR,draft,,7,97,1,18,7,63.5,6
 Sleeper,2025,Austin Abegg,Kissin TDs,Brock Bowers,TE,draft,,2,16,1,18,12,171.4,157.1,0,716158801597767680,3,11604
 Sleeper,2025,Austin Abegg,Kissin TDs,Marvin Mims Jr.,WR,draft,,10,128,1,2,1,2.2,2.2,10.4,716158801597767680,3,9494
 Sleeper,2025,Austin Abegg,Kissin TDs,Harrison Butker,K,draft,,15,198,1,9,9,67,67,0,716158801597767680,3,4227
-Sleeper,2025,Austin Abegg,Kissin TDs,New England Patriots,DEF,free_agent,1,,,1,2,2,20,20,0,716158801597767680,3,NE
+Sleeper,2025,Austin Abegg,Kissin TDs,New England Patriots,DEF,unknown,,,,1,2,2,20,20,0,716158801597767680,3,NE
 Sleeper,2025,Austin Abegg,Kissin TDs,Rashee Rice,WR,draft,,6,72,1,18,7,140,140,0,716158801597767680,3,10229
 Sleeper,2025,Austin Abegg,Kissin TDs,Braelon Allen,RB,draft,,9,125,1,3,0,0,0,14.7,716158801597767680,3,11576
 Sleeper,2025,Austin Abegg,Kissin TDs,Luther Burden III,WR,draft,,11,153,1,1,0,0,0,0.7,716158801597767680,3,12519
@@ -3881,8 +3881,8 @@ Sleeper,2025,Austin Joannes,Doctor Fantasy,Chris Boswell,K,draft,,14,188,1,5,4,3
 Sleeper,2025,Austin Joannes,Doctor Fantasy,Baltimore Ravens,DEF,draft,,11,149,1,4,4,6,6,0,734112111084630016,9,BAL
 Sleeper,2025,Austin Joannes,Doctor Fantasy,J.J. McCarthy,QB,draft,,13,177,1,5,1,2.82,2.82,22.22,734112111084630016,9,11565
 Sleeper,2025,Austin Joannes,Doctor Fantasy,Brandon Aiyuk,WR,draft,,10,132,1,14,0,0,0,0,734112111084630016,9,6803
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Gabe Davis,WR,free_agent,1,,,1,4,0,0,0,0,734112111084630016,9,6943
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Romeo Doubs,WR,free_agent,1,,,1,18,3,33.1,33.1,98.1,734112111084630016,9,8121
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Gabe Davis,WR,unknown,,,,1,4,0,0,0,0,734112111084630016,9,6943
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Romeo Doubs,WR,unknown,,,,1,18,3,33.1,33.1,98.1,734112111084630016,9,8121
 Sleeper,2025,Austin Joannes,Doctor Fantasy,Khalil Shakir,WR,draft,,8,104,1,18,7,54.2,37.3,103.7,734112111084630016,9,8134
 Sleeper,2025,Austin Joannes,Doctor Fantasy,Chig Okonkwo,TE,draft,,12,160,1,9,0,0,0,57.1,734112111084630016,9,8210
 Sleeper,2025,Austin Joannes,Doctor Fantasy,Tank Bigsby,RB,draft,,9,121,1,10,0,0,0,15.6,734112111084630016,9,9225
@@ -3908,14 +3908,14 @@ Sleeper,2025,Bryce Poisson,Bushy Beavers,Ladd McConkey,WR,draft,,2,26,1,18,13,16
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Jameson Williams,WR,draft,,4,54,1,18,9,106.7,106.7,61.7,1253422363878375424,10,8148
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Evan Engram,TE,draft,,7,87,1,2,1,5.1,5.1,2.2,1253422363878375424,10,4066
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Calvin Ridley,WR,draft,,5,59,1,11,4,23.2,23.2,26.1,1253422363878375424,10,4981
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Wil Lutz,K,free_agent,1,,,1,6,6,42,42,0,1253422363878375424,10,3678
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Wil Lutz,K,unknown,,,,1,6,6,42,42,0,1253422363878375424,10,3678
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Green Bay Packers,DEF,draft,,14,194,1,18,11,70,70,6,1253422363878375424,10,GB
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Elijah Arroyo,TE,draft,,12,166,1,1,0,0,0,1.7,1253422363878375424,10,12521
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Cam Ward,QB,draft,,15,208,1,6,0,0,0,43.1,1253422363878375424,10,12522
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Adam Thielen,WR,draft,,10,138,1,3,0,0,0,6.6,1253422363878375424,10,1689
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Joe Mixon,RB,draft,,6,82,1,18,0,0,0,0,1253422363878375424,10,4018
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Javonte Williams,RB,draft,,8,110,1,18,12,193.6,193.6,20.4,1253422363878375424,10,7588
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Alec Pierce,WR,free_agent,1,,,1,1,0,0,0,4.6,1253422363878375424,10,8142
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Alec Pierce,WR,unknown,,,,1,1,0,0,0,4.6,1253422363878375424,10,8142
 Sleeper,2025,Bryce Poisson,Bushy Beavers,Jerome Ford,RB,draft,,11,143,1,7,0,0,0,35,1253422363878375424,10,8143
 Sleeper,2025,Chris McKinney,Uncle Tito,Kyler Murray,QB,draft,,7,85,1,5,5,77.78,77.78,0,1253417044339068928,6,5849
 Sleeper,2025,Chris McKinney,Uncle Tito,Alvin Kamara,RB,draft,,3,29,1,18,9,81.6,81.6,19.1,1253417044339068928,6,4035
@@ -3939,7 +3939,7 @@ Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Puka Nacua,WR,draft,,2,19,1,18,14,348.
 Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Zay Flowers,WR,draft,,6,75,1,18,13,184.6,147.6,19.9,1253476821127671808,11,9997
 Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Sam LaPorta,TE,draft,,3,38,1,18,9,106.9,106.9,0,1253476821127671808,11,10859
 Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Jaylen Waddle,WR,draft,,5,66,1,18,12,143.32,126.52,52.1,1253476821127671808,11,7526
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Matt Gay,K,free_agent,1,,,1,1,1,3,3,0,1253476821127671808,11,6083
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Matt Gay,K,unknown,,,,1,1,1,3,3,0,1253476821127671808,11,6083
 Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Minnesota Vikings,DEF,draft,,15,201,1,5,5,48,48,0,1253476821127671808,11,MIN
 Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Xavier Legette,WR,draft,,12,159,1,2,0,0,0,4.8,1253476821127671808,11,11626
 Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Zach Ertz,TE,draft,,11,150,1,14,4,38.5,38.5,89.9,1253476821127671808,11,1339
@@ -3986,12 +3986,12 @@ Sleeper,2025,Hayden Ward,Bear Force One,David Njoku,TE,draft,,7,95,1,11,4,23.6,2
 Sleeper,2025,Hayden Ward,Bear Force One,Deebo Samuel Sr.,WR,draft,,6,74,1,18,11,152.3,152.3,6.7,895410371974983680,5,5872
 Sleeper,2025,Hayden Ward,Bear Force One,Cam Little,K,draft,,11,151,1,3,3,29,29,0,895410371974983680,5,11786
 Sleeper,2025,Hayden Ward,Bear Force One,Philadelphia Eagles,DEF,draft,,9,123,1,13,9,72,72,0,895410371974983680,5,PHI
-Sleeper,2025,Hayden Ward,Bear Force One,Roschon Johnson,RB,free_agent,1,15,200,1,1,0,0,0,0,895410371974983680,5,10235
+Sleeper,2025,Hayden Ward,Bear Force One,Roschon Johnson,RB,draft,,15,200,1,1,0,0,0,0,895410371974983680,5,10235
 Sleeper,2025,Hayden Ward,Bear Force One,Keon Coleman,WR,draft,,8,102,1,6,1,5,5,54.7,895410371974983680,5,11637
 Sleeper,2025,Hayden Ward,Bear Force One,Woody Marks,RB,draft,,12,158,1,17,8,70,70,48.9,895410371974983680,5,12474
-Sleeper,2025,Hayden Ward,Bear Force One,Jayden Higgins,WR,free_agent,1,10,130,1,1,0,0,0,5.2,895410371974983680,5,12484
+Sleeper,2025,Hayden Ward,Bear Force One,Jayden Higgins,WR,draft,,10,130,1,1,0,0,0,5.2,895410371974983680,5,12484
 Sleeper,2025,Hayden Ward,Bear Force One,Tua Tagovailoa,QB,draft,,14,186,1,1,0,0,0,5.26,895410371974983680,5,6768
-Sleeper,2025,Hayden Ward,Bear Force One,Dameon Pierce,RB,free_agent,1,,,1,1,0,0,0,0.5,895410371974983680,5,8129
+Sleeper,2025,Hayden Ward,Bear Force One,Dameon Pierce,RB,unknown,,,,1,1,0,0,0,0.5,895410371974983680,5,8129
 Sleeper,2025,Jake Parsons,Big Bird,Lamar Jackson,QB,draft,,3,32,1,18,10,175.1,175.1,0,858751028768686080,2,4881
 Sleeper,2025,Jake Parsons,Big Bird,Kyren Williams,RB,draft,,2,24,1,18,13,204.9,204.9,0,858751028768686080,2,8150
 Sleeper,2025,Jake Parsons,Big Bird,Tyrone Tracy Jr.,RB,draft,,5,60,1,17,3,21.3,21.3,59.8,858751028768686080,2,11655
@@ -4017,9 +4017,9 @@ Sleeper,2025,Joey Roberts,Shoobie Flojo,Stefon Diggs,WR,draft,,7,88,1,18,9,95.7,
 Sleeper,2025,Joey Roberts,Shoobie Flojo,Will Reichard,K,draft,,14,193,1,2,2,17,17,0,1001557048196222976,14,11792
 Sleeper,2025,Joey Roberts,Shoobie Flojo,Los Angeles Rams,DEF,draft,,15,207,1,2,2,19,19,0,1001557048196222976,14,LAR
 Sleeper,2025,Joey Roberts,Shoobie Flojo,Dylan Sampson,RB,draft,,10,136,1,4,1,10.9,10.9,17.3,1001557048196222976,14,12469
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Sam Darnold,QB,free_agent,1,,,1,1,0,0,0,5.4,1001557048196222976,14,4943
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Sam Darnold,QB,unknown,,,,1,1,0,0,0,5.4,1001557048196222976,14,4943
 Sleeper,2025,Joey Roberts,Shoobie Flojo,J.K. Dobbins,RB,draft,,6,81,1,10,9,105.1,105.1,14.8,1001557048196222976,14,6806
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Wan'Dale Robinson,WR,free_agent,1,,,1,18,7,72.8,72.8,105.2,1001557048196222976,14,8126
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Wan'Dale Robinson,WR,unknown,,,,1,18,7,72.8,72.8,105.2,1001557048196222976,14,8126
 Sleeper,2025,Joey Roberts,Shoobie Flojo,Brenton Strange,TE,draft,,13,172,1,18,2,10.4,10.4,63.5,1001557048196222976,14,9480
 Sleeper,2025,Joey Roberts,Shoobie Flojo,DeMario Douglas,WR,draft,,12,165,1,2,0,0,0,10,1001557048196222976,14,9501
 Sleeper,2025,Joey Roberts,Shoobie Flojo,Tyjae Spears,RB,draft,,11,144,1,18,3,24.1,24.1,49.7,1001557048196222976,14,9508
@@ -4032,7 +4032,7 @@ Sleeper,2025,Nathan Richards,Nater Taterz,Mark Andrews,TE,draft,,6,73,1,18,6,45.
 Sleeper,2025,Nathan Richards,Nater Taterz,Marvin Harrison Jr.,WR,draft,,3,40,1,18,7,86.5,86.5,38.9,1253419240711540736,8,11628
 Sleeper,2025,Nathan Richards,Nater Taterz,Jake Elliott,K,draft,,14,185,1,8,8,52,52,0,1253419240711540736,8,4195
 Sleeper,2025,Nathan Richards,Nater Taterz,Houston Texans,DEF,draft,,10,129,1,18,14,128,102,27,1253419240711540736,8,HOU
-Sleeper,2025,Nathan Richards,Nater Taterz,Chris Rodriguez Jr.,RB,free_agent,1,,,1,1,0,0,0,0,1253419240711540736,8,10219
+Sleeper,2025,Nathan Richards,Nater Taterz,Chris Rodriguez Jr.,RB,unknown,,,,1,1,0,0,0,0,1253419240711540736,8,10219
 Sleeper,2025,Nathan Richards,Nater Taterz,Ray Davis,RB,draft,,11,152,1,2,0,0,0,3.5,1253419240711540736,8,11575
 Sleeper,2025,Nathan Richards,Nater Taterz,Mason Taylor,TE,draft,,13,180,1,1,0,0,0,3,1253419240711540736,8,12498
 Sleeper,2025,Nathan Richards,Nater Taterz,Marquise Brown,WR,draft,,12,157,1,4,0,0,0,48.9,1253419240711540736,8,5848
@@ -4068,686 +4068,705 @@ Sleeper,2025,Walter Mitchell,Dirty Sherm,Trey Benson,RB,draft,,10,133,1,18,1,10.
 Sleeper,2025,Walter Mitchell,Dirty Sherm,Dont'e Thornton Jr.,WR,draft,,11,148,1,2,0,0,0,9.5,1134329802619793408,12,12541
 Sleeper,2025,Walter Mitchell,Dirty Sherm,Nick Chubb,RB,draft,,8,105,1,18,4,15.7,15.7,67.3,1134329802619793408,12,4988
 Sleeper,2025,Walter Mitchell,Dirty Sherm,Jordan Love,QB,draft,,13,176,1,18,1,9.02,9.02,209.4,1134329802619793408,12,6804
-Sleeper,2025,Austin Abegg,Kissin TDs,Michael Penix Jr.,QB,waiver,1,,,2,1,0,0,0,5.3,716158801597767680,3,11559
-Sleeper,2025,Austin Abegg,Kissin TDs,Michael Mayer,TE,free_agent,2,,,2,1,0,0,0,2.9,716158801597767680,3,9482
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Harold Fannin Jr.,TE,waiver,1,,,2,17,12,132.3,132.3,0,1253422363878375424,10,12506
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Kayshon Boutte,WR,waiver,1,,,2,3,0,0,0,16.2,1253422363878375424,10,9504
-Sleeper,2025,Chris McKinney,Uncle Tito,Chad Ryland,K,free_agent,2,,,2,1,1,10,10,0,1253417044339068928,6,10955
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Matt Prater,K,waiver,1,,,2,5,5,39,39,0,1253476821127671808,11,17
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Cole Kmet,TE,free_agent,2,,,2,6,3,13.9,13.9,10.2,1253415068964503552,4,6826
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Quentin Johnston,WR,waiver,1,,,2,17,8,77.5,77.5,34.6,1253415068964503552,4,9754
-Sleeper,2025,Hayden Ward,Bear Force One,Aaron Rodgers,QB,free_agent,2,,,2,2,1,10.42,10.42,11.66,895410371974983680,5,96
-Sleeper,2025,Hayden Ward,Bear Force One,Ollie Gordon II,RB,waiver,2,,,2,1,0,0,0,2.3,895410371974983680,5,12495
-Sleeper,2025,Hayden Ward,Bear Force One,Ty Johnson,RB,free_agent,2,,,2,2,0,0,0,0.6,895410371974983680,5,6039
-Sleeper,2025,Hayden Ward,Bear Force One,Juwan Johnson,TE,free_agent,2,,,2,17,7,71.1,71.1,48.7,895410371974983680,5,7002
-Sleeper,2025,Hayden Ward,Bear Force One,Isaiah Likely,TE,waiver,1,13,179,2,2,0,0,0,0,895410371974983680,5,8131
-Sleeper,2025,Jake Parsons,Big Bird,DJ Giddens,RB,waiver,1,,,2,1,0,0,0,0,858751028768686080,2,12471
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Daniel Jones,QB,waiver,1,,,2,3,1,10.38,10.38,38.66,1001557048196222976,14,5870
-Sleeper,2025,Nathan Richards,Nater Taterz,Dalton Schultz,TE,waiver,1,,,2,17,12,127.9,86.9,32.7,1253419240711540736,8,5001
-Sleeper,2025,Nathan Richards,Nater Taterz,Kenny Gainwell,RB,waiver,1,,,2,17,8,108,77.4,67,1253419240711540736,8,7567
-Sleeper,2025,Tyler Rose,Unverified Sources,Calvin Austin III,WR,waiver,1,,,2,1,0,0,0,3.2,1253479720855535616,13,8125
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Tampa Bay Buccaneers,DEF,free_agent,2,,,2,2,2,18,18,0,1134329802619793408,12,TB
-Sleeper,2025,Austin Abegg,Kissin TDs,Calvin Austin III,WR,waiver,3,,,3,2,2,15.7,15.7,0,716158801597767680,3,8125
-Sleeper,2025,Austin Abegg,Kissin TDs,Kansas City Chiefs,DEF,waiver,2,,,3,1,1,13,13,0,716158801597767680,3,KC
-Sleeper,2025,Austin Abegg,Kissin TDs,Ollie Gordon II,RB,waiver,3,,,3,16,0,0,0,48.5,716158801597767680,3,12495
-Sleeper,2025,Austin Abegg,Kissin TDs,Jeremy McNichols,RB,free_agent,3,,,3,3,0,0,0,18.9,716158801597767680,3,4219
-Sleeper,2025,Austin Abegg,Kissin TDs,Dontayvion Wicks,WR,free_agent,3,,,3,2,0,0,0,8,716158801597767680,3,9486
-Sleeper,2025,Billy Rose,Snooki's Cookie,Sam Darnold,QB,free_agent,3,,,3,5,4,62.42,62.42,27.64,1248314494598270976,1,4943
-Sleeper,2025,Billy Rose,Snooki's Cookie,Atlanta Falcons,DEF,waiver,2,,,3,1,1,3,3,0,1248314494598270976,1,ATL
-Sleeper,2025,Billy Rose,Snooki's Cookie,Chris Rodriguez Jr.,RB,waiver,2,,,3,3,0,0,0,10.5,1248314494598270976,1,10219
-Sleeper,2025,Billy Rose,Snooki's Cookie,Blake Corum,RB,free_agent,3,,,3,4,0,0,0,12.5,1248314494598270976,1,11586
-Sleeper,2025,Billy Rose,Snooki's Cookie,Jake Browning,QB,waiver,2,,,3,1,0,0,0,5.9,1248314494598270976,1,6111
-Sleeper,2025,Billy Rose,Snooki's Cookie,Tyquan Thornton,WR,free_agent,3,,,3,2,0,0,0,26.2,1248314494598270976,1,8188
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Brian Thomas Jr.,WR,trade,2,,,3,16,10,84.2,84.2,0,1253422363878375424,10,11631
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Pat Freiermuth,TE,free_agent,3,,,3,2,0,0,0,1.6,1253422363878375424,10,7600
-Sleeper,2025,Chris McKinney,Uncle Tito,Parker Romo,K,free_agent,3,,,3,1,1,-2,-2,0,1253417044339068928,6,8670
-Sleeper,2025,Chris McKinney,Uncle Tito,Indianapolis Colts,DEF,free_agent,3,,,3,1,1,16,16,0,1253417044339068928,6,IND
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Jalen Nailor,WR,waiver,2,,,3,1,0,0,0,6.7,1253476821127671808,11,8180
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Omarion Hampton,RB,trade,2,,,3,16,4,83.1,83.1,0,1253415068964503552,4,12507
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Evan Engram,TE,trade,2,,,3,2,1,6.9,6.9,0,1253415068964503552,4,4066
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Miles Sanders,RB,free_agent,3,,,3,2,0,0,0,12.8,1253415068964503552,4,6151
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Seattle Seahawks,DEF,waiver,2,,,3,3,3,25,25,0,1134324957397438464,7,SEA
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Justice Hill,RB,free_agent,3,,,3,1,0,0,0,7.5,1134324957397438464,7,5995
-Sleeper,2025,Hayden Ward,Bear Force One,Ray Davis,RB,waiver,3,,,3,1,0,0,0,0,895410371974983680,5,11575
-Sleeper,2025,Jake Parsons,Big Bird,Jordan Mason,RB,trade,2,,,3,16,5,61.7,61.7,40.5,858751028768686080,2,8408
-Sleeper,2025,Jake Parsons,Big Bird,Joey Slye,K,free_agent,3,,,3,1,1,9,9,0,858751028768686080,2,6528
-Sleeper,2025,Jake Parsons,Big Bird,Kyle Monangai,RB,waiver,2,,,3,1,0,0,0,3,858751028768686080,2,12534
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Daniel Carlson,K,free_agent,3,,,3,5,5,24,24,0,1001557048196222976,14,5095
-Sleeper,2025,Joey Roberts,Shoobie Flojo,New England Patriots,DEF,waiver,3,,,3,2,2,13,13,0,1001557048196222976,14,NE
-Sleeper,2025,Joey Roberts,Shoobie Flojo,DeAndre Hopkins,WR,free_agent,3,,,3,1,0,0,0,2.3,1001557048196222976,14,1426
-Sleeper,2025,Nathan Richards,Nater Taterz,Cam Akers,RB,waiver,2,,,3,1,0,0,0,1.9,1253419240711540736,8,6938
-Sleeper,2025,Tyler Rose,Unverified Sources,DK Metcalf,WR,trade,2,,,3,16,13,168.9,146.2,0,1253479720855535616,13,5846
-Sleeper,2025,Tyler Rose,Unverified Sources,Troy Franklin,WR,waiver,2,,,3,2,0,0,0,12.3,1253479720855535616,13,11627
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Hunter Renfrow,WR,waiver,2,,,3,3,0,0,0,7.3,1134329802619793408,12,5955
-Sleeper,2025,Austin Abegg,Kissin TDs,Los Angeles Chargers,DEF,waiver,3,,,4,8,8,43,43,0,716158801597767680,3,LAC
-Sleeper,2025,Austin Abegg,Kissin TDs,Sterling Shepard,WR,waiver,3,,,4,1,0,0,0,4,716158801597767680,3,3200
-Sleeper,2025,Billy Rose,Snooki's Cookie,Detroit Lions,DEF,waiver,3,,,4,2,2,29,29,0,1248314494598270976,1,DET
-Sleeper,2025,Billy Rose,Snooki's Cookie,Braelon Allen,RB,waiver,4,,,4,1,0,0,0,0.6,1248314494598270976,1,11576
-Sleeper,2025,Billy Rose,Snooki's Cookie,Jaxson Dart,QB,waiver,3,,,4,15,7,124.24,102.08,71.86,1248314494598270976,1,12508
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Jalen Tolbert,WR,free_agent,4,,,4,3,0,0,0,11.9,1253422363878375424,10,8117
-Sleeper,2025,Chris McKinney,Uncle Tito,Brandon McManus,K,free_agent,4,,,4,1,1,11,11,0,1253417044339068928,6,1433
-Sleeper,2025,Chris McKinney,Uncle Tito,San Francisco 49ers,DEF,waiver,4,,,4,1,1,0,0,0,1253417044339068928,6,SF
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Rico Dowdle,RB,waiver,3,,,4,15,10,153.2,144.9,30.1,1253476821127671808,11,7021
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Matthew Stafford,QB,free_agent,4,,,4,15,10,207.92,187,28.4,1253476821127671808,11,421
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Devin Singletary,RB,free_agent,4,,,4,3,0,0,0,2.8,1253476821127671808,11,6130
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Marvin Mims Jr.,WR,free_agent,4,,,4,5,1,1.8,1.8,45,1253476821127671808,11,9494
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,KaVontae Turpin,WR,waiver,3,,,4,1,0,0,0,6.4,1134324957397438464,7,8917
-Sleeper,2025,Hayden Ward,Bear Force One,Joey Slye,K,waiver,4,,,4,1,1,-2,-2,0,895410371974983680,5,6528
-Sleeper,2025,Hayden Ward,Bear Force One,Jalen Coker,WR,free_agent,4,,,4,4,0,0,0,0,895410371974983680,5,11646
-Sleeper,2025,Hayden Ward,Bear Force One,Luther Burden III,WR,waiver,3,,,4,1,0,0,0,1.6,895410371974983680,5,12519
-Sleeper,2025,Jake Parsons,Big Bird,Spencer Shrader,K,waiver,3,,,4,2,2,12,12,0,858751028768686080,2,12185
-Sleeper,2025,Jake Parsons,Big Bird,Isaiah Likely,TE,free_agent,4,,,4,1,0,0,0,0,858751028768686080,2,8131
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Tre Tucker,WR,waiver,3,,,4,15,3,27.3,27.3,50.5,1001557048196222976,14,10213
-Sleeper,2025,Nathan Richards,Nater Taterz,Justice Hill,RB,waiver,4,,,4,6,1,2.2,2.2,41.7,1253419240711540736,8,5995
-Sleeper,2025,Tyler Rose,Unverified Sources,Denver Broncos,DEF,waiver,3,,,4,15,11,85,76,9,1253479720855535616,13,DEN
-Sleeper,2025,Austin Abegg,Kissin TDs,Kendrick Bourne,WR,free_agent,5,,,5,8,6,66.5,66.5,0,716158801597767680,3,4454
-Sleeper,2025,Austin Abegg,Kissin TDs,Isaiah Bond,WR,free_agent,5,,,5,1,1,4.9,4.9,0,716158801597767680,3,12503
-Sleeper,2025,Austin Abegg,Kissin TDs,Taysom Hill,TE,free_agent,5,,,5,3,1,0.66,0.66,8.9,716158801597767680,3,4381
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Matt Gay,K,waiver,4,,,5,3,3,18,18,0,734112111084630016,9,6083
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Arizona Cardinals,DEF,waiver,4,,,5,1,1,6,6,0,734112111084630016,9,ARI
-Sleeper,2025,Billy Rose,Snooki's Cookie,Theo Johnson,TE,waiver,4,,,5,2,1,21.3,21.3,4.7,1248314494598270976,1,11597
-Sleeper,2025,Billy Rose,Snooki's Cookie,Emari Demercado,RB,free_agent,5,,,5,5,1,13.4,13.4,10.2,1248314494598270976,1,11199
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Carolina Panthers,DEF,free_agent,5,,,5,1,1,3,3,0,1253422363878375424,10,CAR
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Mason Taylor,TE,waiver,4,,,5,14,0,0,0,67.1,1253422363878375424,10,12498
-Sleeper,2025,Chris McKinney,Uncle Tito,Joshua Karty,K,free_agent,5,,,5,2,2,8,8,0,1253417044339068928,6,11789
-Sleeper,2025,Chris McKinney,Uncle Tito,Cleveland Browns,DEF,free_agent,5,,,5,2,2,32,32,0,1253417044339068928,6,CLE
-Sleeper,2025,Chris McKinney,Uncle Tito,Zavier Scott,RB,waiver,4,,,5,1,0,0,0,-0.2,1253417044339068928,6,11299
-Sleeper,2025,Chris McKinney,Uncle Tito,Darren Waller,TE,waiver,4,,,5,14,4,18.6,18.6,18.8,1253417044339068928,6,2505
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Kendre Miller,RB,waiver,4,,,5,3,0,0,0,10.8,1253476821127671808,11,9757
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Tommy Tremble,TE,waiver,4,,,5,1,1,1.7,1.7,0,1253415068964503552,4,7694
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Sterling Shepard,WR,free_agent,5,,,5,4,1,11.9,11.9,16.4,1134324957397438464,7,3200
-Sleeper,2025,Hayden Ward,Bear Force One,Christian Kirk,WR,free_agent,5,,,5,1,1,10.4,10.4,0,895410371974983680,5,4950
-Sleeper,2025,Hayden Ward,Bear Force One,Malik Washington,WR,waiver,4,,,5,1,1,4,4,0,895410371974983680,5,11610
-Sleeper,2025,Hayden Ward,Bear Force One,Jason Myers,K,waiver,4,,,5,13,9,107,107,0,895410371974983680,5,2747
-Sleeper,2025,Hayden Ward,Bear Force One,Dillon Gabriel,QB,free_agent,5,,,5,2,0,0,0,24.94,895410371974983680,5,12486
-Sleeper,2025,Jake Parsons,Big Bird,Justin Fields,QB,trade,5,,,5,7,4,55.72,55.72,26.3,858751028768686080,2,7591
-Sleeper,2025,Jake Parsons,Big Bird,Evan Engram,TE,free_agent,5,,,5,6,3,32.4,32.4,10.8,858751028768686080,2,4066
-Sleeper,2025,Jake Parsons,Big Bird,New York Giants,DEF,waiver,4,,,5,1,1,1,1,0,858751028768686080,2,NYG
-Sleeper,2025,Jake Parsons,Big Bird,Troy Franklin,WR,trade,5,,,5,12,4,35.6,35.6,43.7,858751028768686080,2,11627
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Indianapolis Colts,DEF,free_agent,5,,,5,7,6,46,46,0,1001557048196222976,14,IND
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Brashard Smith,RB,free_agent,5,,,5,5,0,0,0,26.3,1001557048196222976,14,12455
-Sleeper,2025,Nathan Richards,Nater Taterz,Tua Tagovailoa,QB,waiver,4,,,5,2,1,22.74,22.74,6.6,1253419240711540736,8,6768
-Sleeper,2025,Nathan Richards,Nater Taterz,Isaiah Davis,RB,free_agent,5,,,5,2,0,0,0,7.4,1253419240711540736,8,11571
-Sleeper,2025,Tyler Rose,Unverified Sources,A.J. Brown,WR,trade,5,,,5,14,12,193.2,150.8,0,1253479720855535616,13,5859
-Sleeper,2025,Tyler Rose,Unverified Sources,Jake Tonges,TE,free_agent,5,,,5,7,2,28.9,28.9,7.2,1253479720855535616,13,8698
-Sleeper,2025,Tyler Rose,Unverified Sources,Darius Slayton,WR,waiver,4,,,5,2,1,4.1,4.1,0,1253479720855535616,13,6149
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Michael Carter,RB,free_agent,5,,,5,5,3,26.7,26.7,5.6,1134329802619793408,12,7607
-Sleeper,2025,Walter Mitchell,Dirty Sherm,JuJu Smith-Schuster,WR,free_agent,5,,,5,6,0,0,0,25,1134329802619793408,12,4040
-Sleeper,2025,Austin Abegg,Kissin TDs,Marquise Brown,WR,waiver,5,,,6,3,2,20.5,20.5,9.4,716158801597767680,3,5848
-Sleeper,2025,Austin Abegg,Kissin TDs,Cade Otton,TE,free_agent,6,,,6,3,3,31.6,31.6,0,716158801597767680,3,8111
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Dallas Cowboys,DEF,free_agent,6,,,6,2,2,16,16,0,734112111084630016,9,DAL
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Daniel Jones,QB,waiver,5,,,6,9,5,77.12,77.12,54.12,734112111084630016,9,5870
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Christian Watson,WR,free_agent,6,,,6,2,0,0,0,0,734112111084630016,9,8167
-Sleeper,2025,Billy Rose,Snooki's Cookie,Alec Pierce,WR,free_agent,6,,,6,1,1,6.8,6.8,0,1248314494598270976,1,8142
-Sleeper,2025,Billy Rose,Snooki's Cookie,New England Patriots,DEF,waiver,5,,,6,4,4,36,36,0,1248314494598270976,1,NE
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Joe Flacco,QB,free_agent,6,,,6,7,1,9.62,9.62,113.62,1253422363878375424,10,19
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Jonnu Smith,TE,free_agent,6,,,6,6,1,5.5,5.5,22.7,1253422363878375424,10,4144
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Christian Kirk,WR,waiver,6,,,6,1,0,0,0,0,1253422363878375424,10,4950
-Sleeper,2025,Chris McKinney,Uncle Tito,Trevor Lawrence,QB,free_agent,6,,,6,6,5,82.9,82.9,0,1253417044339068928,6,7523
-Sleeper,2025,Chris McKinney,Uncle Tito,Jacksonville Jaguars,DEF,free_agent,6,,,6,1,1,2,2,0,1253417044339068928,6,JAX
-Sleeper,2025,Chris McKinney,Uncle Tito,Hassan Haskins,RB,waiver,5,,,6,2,0,0,0,5.8,1253417044339068928,6,8123
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Seattle Seahawks,DEF,waiver,6,,,6,13,8,108,104,2,1253476821127671808,11,SEA
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Bhayshul Tuten,RB,waiver,5,,,6,4,2,7,7,9.6,1253415068964503552,4,12490
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Nyheim Miller-Hines,RB,free_agent,6,,,6,1,0,0,0,0,1253415068964503552,4,5347
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Los Angeles Rams,DEF,waiver,5,,,6,2,2,28,28,0,1134324957397438464,7,LAR
-Sleeper,2025,Hayden Ward,Bear Force One,Kimani Vidal,RB,waiver,5,,,6,13,7,101.7,101.7,11.4,895410371974983680,5,11647
-Sleeper,2025,Hayden Ward,Bear Force One,Troy Franklin,WR,waiver,6,,,6,1,1,3.1,3.1,0,895410371974983680,5,11627
-Sleeper,2025,Hayden Ward,Bear Force One,C.J. Stroud,QB,waiver,6,,,6,2,0,0,0,13.66,895410371974983680,5,9758
-Sleeper,2025,Jake Parsons,Big Bird,Eddy Pineiro,K,free_agent,6,,,6,5,5,54,54,0,858751028768686080,2,5189
-Sleeper,2025,Jake Parsons,Big Bird,Ryan Flournoy,WR,free_agent,6,,,6,1,0,0,0,6.3,858751028768686080,2,11783
-Sleeper,2025,Joey Roberts,Shoobie Flojo,AJ Barner,TE,free_agent,6,,,6,4,0,0,0,23.5,1001557048196222976,14,11603
-Sleeper,2025,Nathan Richards,Nater Taterz,Las Vegas Raiders,DEF,waiver,5,,,6,2,2,21,21,0,1253419240711540736,8,LV
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Minnesota Vikings,DEF,waiver,6,,,6,13,5,14,14,31,1134329802619793408,12,MIN
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Kansas City Chiefs,DEF,waiver,6,,,7,2,2,23,23,0,734112111084630016,9,KC
-Sleeper,2025,Billy Rose,Snooki's Cookie,Zonovan Knight,RB,waiver,6,,,7,10,1,9.4,9.4,47.4,1248314494598270976,1,8122
-Sleeper,2025,Billy Rose,Snooki's Cookie,Tez Johnson,WR,waiver,6,,,7,3,1,9.3,9.3,15.8,1248314494598270976,1,12485
-Sleeper,2025,Billy Rose,Snooki's Cookie,Kyle Monangai,RB,free_agent,7,,,7,12,3,36,36,68.6,1248314494598270976,1,12534
-Sleeper,2025,Billy Rose,Snooki's Cookie,Tyler Loop,K,waiver,7,,,7,1,0,0,0,0,1248314494598270976,1,12711
-Sleeper,2025,Billy Rose,Snooki's Cookie,Kyler Murray,QB,waiver,6,,,7,4,0,0,0,0,1248314494598270976,1,5849
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Brandon McManus,K,free_agent,7,,,7,1,1,0,0,0,1253422363878375424,10,1433
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Keon Coleman,WR,free_agent,7,,,7,2,1,6,6,0,1253422363878375424,10,11637
-Sleeper,2025,Chris McKinney,Uncle Tito,Jake Moody,K,free_agent,7,,,7,1,1,14,14,0,1253417044339068928,6,10937
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Chris Boswell,K,waiver,6,,,7,12,10,81,67,0,1253476821127671808,11,1945
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Michael Mayer,TE,free_agent,7,,,7,1,1,2,2,0,1253415068964503552,4,9482
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Chicago Bears,DEF,waiver,6,,,7,12,8,44,44,0,1253415068964503552,4,CHI
-Sleeper,2025,Hayden Ward,Bear Force One,Kayshon Boutte,WR,waiver,6,,,7,1,1,13.5,13.5,0,895410371974983680,5,9504
-Sleeper,2025,Hayden Ward,Bear Force One,Luke McCaffrey,WR,free_agent,7,,,7,1,1,0,0,0,895410371974983680,5,11650
-Sleeper,2025,Jake Parsons,Big Bird,Emanuel Wilson,RB,free_agent,7,,,7,8,1,28.5,28.5,4.9,858751028768686080,2,11435
-Sleeper,2025,Jake Parsons,Big Bird,Luther Burden III,WR,waiver,6,,,7,1,0,0,0,3.1,858751028768686080,2,12519
-Sleeper,2025,Nathan Richards,Nater Taterz,Josh Reynolds,WR,waiver,6,,,7,1,0,0,0,5.9,1253419240711540736,8,4171
-Sleeper,2025,Nathan Richards,Nater Taterz,Jeremy McNichols,RB,free_agent,7,,,7,2,0,0,0,18.3,1253419240711540736,8,4219
-Sleeper,2025,Nathan Richards,Nater Taterz,Lil'Jordan Humphrey,WR,free_agent,7,,,7,1,0,0,0,0,1253419240711540736,8,5938
-Sleeper,2025,Tyler Rose,Unverified Sources,Aaron Rodgers,QB,free_agent,7,,,7,10,1,23.56,23.56,68.9,1253479720855535616,13,96
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Ka'imi Fairbairn,K,free_agent,7,,,7,3,3,39,39,0,1134329802619793408,12,3451
-Sleeper,2025,Austin Abegg,Kissin TDs,Isaiah Davis,RB,free_agent,8,,,8,3,1,17.9,17.9,2.1,716158801597767680,3,11571
-Sleeper,2025,Austin Abegg,Kissin TDs,Christian Watson,WR,free_agent,8,,,8,11,6,102.7,74.7,26.8,716158801597767680,3,8167
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Tyler Loop,K,free_agent,8,,,8,11,9,80,64,0,734112111084630016,9,12711
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Alec Pierce,WR,waiver,7,,,8,11,3,35,35,46.2,734112111084630016,9,8142
-Sleeper,2025,Billy Rose,Snooki's Cookie,Jayden Higgins,WR,free_agent,8,,,8,1,1,13.4,13.4,0,1248314494598270976,1,12484
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Chimere Dike,WR,waiver,7,,,8,11,3,45.3,45.3,16.7,1253422363878375424,10,12540
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Matt Prater,K,free_agent,8,,,8,2,2,14,14,0,1253422363878375424,10,17
-Sleeper,2025,Chris McKinney,Uncle Tito,Marcus Mariota,QB,free_agent,8,,,8,1,1,11.32,11.32,0,1253417044339068928,6,2307
-Sleeper,2025,Chris McKinney,Uncle Tito,Cairo Santos,K,free_agent,8,,,8,11,7,63,63,0,1253417044339068928,6,2020
-Sleeper,2025,Chris McKinney,Uncle Tito,Cincinnati Bengals,DEF,free_agent,8,,,8,1,1,-4,-4,0,1253417044339068928,6,CIN
-Sleeper,2025,Chris McKinney,Uncle Tito,Xavier Legette,WR,free_agent,8,,,8,1,0,0,0,3.7,1253417044339068928,6,11626
-Sleeper,2025,Chris McKinney,Uncle Tito,Parker Washington,WR,waiver,8,,,8,11,6,60.6,60.6,0,1253417044339068928,6,9487
-Sleeper,2025,Chris McKinney,Uncle Tito,Kayshon Boutte,WR,free_agent,8,,,8,11,1,3.5,3.5,30,1253417044339068928,6,9504
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,C.J. Stroud,QB,free_agent,8,,,8,1,1,21.72,21.72,0,1253476821127671808,11,9758
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Buffalo Bills,DEF,waiver,8,,,8,11,3,29,21,39,1253476821127671808,11,BUF
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Tua Tagovailoa,QB,free_agent,8,,,8,1,1,24.2,24.2,0,1253415068964503552,4,6768
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Ty Johnson,RB,free_agent,8,,,8,1,1,0.6,0.6,0,1253415068964503552,4,6039
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Theo Johnson,TE,free_agent,8,,,8,11,4,28.2,28.2,26.2,1253415068964503552,4,11597
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Calvin Austin III,WR,waiver,7,,,8,5,1,6.8,6.8,23.1,1253415068964503552,4,8125
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Tampa Bay Buccaneers,DEF,waiver,7,,,8,1,1,26,26,0,1134324957397438464,7,TB
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Joshua Karty,K,waiver,8,,,8,2,1,2,2,0,1134324957397438464,7,11789
-Sleeper,2025,Hayden Ward,Bear Force One,Jaylin Noel,WR,free_agent,8,,,8,1,1,11.3,11.3,0,895410371974983680,5,12536
-Sleeper,2025,Hayden Ward,Bear Force One,Oronde Gadsden,TE,waiver,7,,,8,11,5,44.6,44.6,1.7,895410371974983680,5,12493
-Sleeper,2025,Hayden Ward,Bear Force One,Evan McPherson,K,waiver,7,,,8,1,1,8,8,0,895410371974983680,5,7839
-Sleeper,2025,Hayden Ward,Bear Force One,Sam Darnold,QB,waiver,8,,,8,3,1,28.2,28.2,4.92,895410371974983680,5,4943
-Sleeper,2025,Hayden Ward,Bear Force One,Detroit Lions,DEF,waiver,8,,,8,3,2,9,9,0,895410371974983680,5,DET
-Sleeper,2025,Jake Parsons,Big Bird,Wil Lutz,K,waiver,7,,,8,1,1,9,9,0,858751028768686080,2,3678
-Sleeper,2025,Jake Parsons,Big Bird,Atlanta Falcons,DEF,waiver,7,,,8,1,1,0,0,0,858751028768686080,2,ATL
-Sleeper,2025,Jake Parsons,Big Bird,Los Angeles Rams,DEF,waiver,8,,,8,11,3,17,17,34,858751028768686080,2,LAR
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Michael Badgley,K,waiver,7,,,8,3,3,27,27,0,1001557048196222976,14,5230
-Sleeper,2025,Nathan Richards,Nater Taterz,Darius Slayton,WR,free_agent,8,,,8,10,3,19.1,19.1,27,1253419240711540736,8,6149
-Sleeper,2025,Austin Abegg,Kissin TDs,Keon Coleman,WR,waiver,9,,,9,7,2,17.3,17.3,12.5,716158801597767680,3,11637
-Sleeper,2025,Austin Abegg,Kissin TDs,Chase McLaughlin,K,waiver,9,,,9,10,7,47,33,0,716158801597767680,3,6650
-Sleeper,2025,Austin Abegg,Kissin TDs,C.J. Stroud,QB,waiver,9,,,9,4,2,26.24,0,4.36,716158801597767680,3,9758
-Sleeper,2025,Billy Rose,Snooki's Cookie,Rashod Bateman,WR,waiver,8,,,9,1,0,0,0,9.3,1248314494598270976,1,7571
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Jeremy McNichols,RB,free_agent,9,,,9,1,1,0,0,0,1253422363878375424,10,4219
-Sleeper,2025,Chris McKinney,Uncle Tito,Baltimore Ravens,DEF,free_agent,9,,,9,6,6,45,45,0,1253417044339068928,6,BAL
-Sleeper,2025,Chris McKinney,Uncle Tito,Dylan Sampson,RB,waiver,8,,,9,2,0,0,0,0.9,1253417044339068928,6,12469
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Marquez Valdes-Scantling,WR,waiver,8,,,9,1,0,0,0,0,1253476821127671808,11,5086
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Noah Fant,TE,free_agent,9,,,9,1,1,10.8,10.8,0,1253415068964503552,4,5857
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Christian Kirk,WR,waiver,8,,,9,10,0,0,0,27.5,1253415068964503552,4,4950
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Samaje Perine,RB,waiver,8,,,9,1,1,0.5,0.5,0,1134324957397438464,7,4147
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Jacksonville Jaguars,DEF,free_agent,9,,,9,2,2,14,14,0,1134324957397438464,7,JAX
-Sleeper,2025,Hayden Ward,Bear Force One,Mack Hollins,WR,free_agent,9,,,9,3,2,15.4,15.4,2.9,895410371974983680,5,4177
-Sleeper,2025,Jake Parsons,Big Bird,Philadelphia Eagles,DEF,waiver,9,,,9,2,1,11,11,0,858751028768686080,2,PHI
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Cade Otton,TE,waiver,9,,,9,4,1,17.2,17.2,10.9,1001557048196222976,14,8111
-Sleeper,2025,Nathan Richards,Nater Taterz,Chad Ryland,K,free_agent,9,,,9,1,1,10,10,0,1253419240711540736,8,10955
-Sleeper,2025,Nathan Richards,Nater Taterz,Devin Singletary,RB,free_agent,9,,,9,5,0,0,0,59,1253419240711540736,8,6130
-Sleeper,2025,Austin Abegg,Kissin TDs,Geno Smith,QB,waiver,9,,,10,1,1,4.42,4.42,0,716158801597767680,3,1373
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Pat Freiermuth,TE,waiver,9,,,10,4,1,6.3,6.3,13.8,734112111084630016,9,7600
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Carolina Panthers,DEF,free_agent,10,,,10,1,1,5,5,0,734112111084630016,9,CAR
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Marquise Brown,WR,trade,10,,,10,3,0,0,0,10,734112111084630016,9,5848
-Sleeper,2025,Billy Rose,Snooki's Cookie,Luke Musgrave,TE,trade,10,,,10,2,2,6.2,6.2,0,1248314494598270976,1,9481
-Sleeper,2025,Billy Rose,Snooki's Cookie,Cleveland Browns,DEF,free_agent,10,,,10,9,7,45,41,0,1248314494598270976,1,CLE
-Sleeper,2025,Billy Rose,Snooki's Cookie,Ty Johnson,RB,free_agent,10,,,10,1,0,0,0,4.6,1248314494598270976,1,6039
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Bhayshul Tuten,RB,free_agent,10,,,10,9,2,3.7,3.7,20.8,1253422363878375424,10,12490
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Will Reichard,K,free_agent,10,,,10,3,3,24,24,0,1253422363878375424,10,11792
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Olamide Zaccheaus,WR,free_agent,10,,,10,2,0,0,0,1.5,1253476821127671808,11,6271
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Matt Prater,K,free_agent,10,,,10,9,1,1,1,29,1253415068964503552,4,17
-Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Sean Tucker,RB,free_agent,10,,,10,9,2,5.6,5.6,51,1253415068964503552,4,9506
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Jeremy McNichols,RB,waiver,10,,,10,1,1,3.9,3.9,0,1134324957397438464,7,4219
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Jake Elliott,K,free_agent,10,,,10,9,5,35,35,0,1134324957397438464,7,4195
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Devin Neal,RB,waiver,9,,,10,2,0,0,0,6.1,1134324957397438464,7,12476
-Sleeper,2025,Hayden Ward,Bear Force One,Tez Johnson,WR,trade,10,,,10,4,0,0,0,35.6,895410371974983680,5,12485
-Sleeper,2025,Hayden Ward,Bear Force One,Joe Burrow,QB,free_agent,10,,,10,9,2,42.6,42.6,0,895410371974983680,5,6770
-Sleeper,2025,Joey Roberts,Shoobie Flojo,J.J. McCarthy,QB,waiver,9,,,10,1,1,14.72,14.72,0,1001557048196222976,14,11565
-Sleeper,2025,Nathan Richards,Nater Taterz,Brandon McManus,K,waiver,9,,,10,1,1,0,0,0,1253419240711540736,8,1433
-Sleeper,2025,Nathan Richards,Nater Taterz,Elic Ayomanor,WR,waiver,10,,,10,5,1,3.1,3.1,9.9,1253419240711540736,8,12499
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Nick Folk,K,free_agent,10,,,10,9,5,30,30,0,1134329802619793408,12,650
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Malik Washington,WR,waiver,9,,,10,2,0,0,0,16.5,1134329802619793408,12,11610
-Sleeper,2025,Austin Abegg,Kissin TDs,Blake Corum,RB,waiver,10,,,11,8,3,43,28.1,18,716158801597767680,3,11586
-Sleeper,2025,Austin Abegg,Kissin TDs,Sam Darnold,QB,waiver,10,,,11,4,0,0,0,48.3,716158801597767680,3,4943
-Sleeper,2025,Austin Abegg,Kissin TDs,New Orleans Saints,DEF,waiver,11,,,11,6,3,42,11,0,716158801597767680,3,NO
-Sleeper,2025,Austin Joannes,Doctor Fantasy,San Francisco 49ers,DEF,free_agent,11,,,11,3,3,26,26,0,734112111084630016,9,SF
-Sleeper,2025,Billy Rose,Snooki's Cookie,Jameis Winston,QB,free_agent,11,,,11,1,1,11.04,11.04,0,1248314494598270976,1,2306
-Sleeper,2025,Billy Rose,Snooki's Cookie,Dawson Knox,TE,waiver,10,,,11,1,0,0,0,3.3,1248314494598270976,1,5906
-Sleeper,2025,Billy Rose,Snooki's Cookie,C.J. Stroud,QB,free_agent,11,,,11,5,1,12.62,12.62,9.04,1248314494598270976,1,9758
-Sleeper,2025,Chris McKinney,Uncle Tito,Tyler Lockett,WR,waiver,10,,,11,2,0,0,0,16.5,1253417044339068928,6,2374
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Chris Rodriguez Jr.,RB,waiver,10,,,11,8,3,24.8,24.8,0,1134324957397438464,7,10219
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Dallas Cowboys,DEF,free_agent,11,,,11,1,1,9,9,0,1134324957397438464,7,DAL
-Sleeper,2025,Hayden Ward,Bear Force One,Atlanta Falcons,DEF,waiver,10,,,11,3,3,22,22,0,895410371974983680,5,ATL
-Sleeper,2025,Jake Parsons,Big Bird,New England Patriots,DEF,waiver,10,,,11,8,2,15,15,11,858751028768686080,2,NE
-Sleeper,2025,Jake Parsons,Big Bird,Isaiah Davis,RB,waiver,10,,,11,3,0,0,0,1.8,858751028768686080,2,11571
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Riley Patterson,K,free_agent,11,,,11,6,2,24,24,0,1001557048196222976,14,7922
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Kansas City Chiefs,DEF,free_agent,11,,,11,1,1,2,2,0,1001557048196222976,14,KC
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Tyler Badie,RB,free_agent,11,,,11,1,0,0,0,1,1001557048196222976,14,8208
-Sleeper,2025,Nathan Richards,Nater Taterz,Michael Wilson,WR,free_agent,11,,,11,8,7,154.6,105.1,0,1253419240711540736,8,10232
-Sleeper,2025,Nathan Richards,Nater Taterz,Daniel Carlson,K,free_agent,11,,,11,2,2,15,15,0,1253419240711540736,8,5095
-Sleeper,2025,Tyler Rose,Unverified Sources,Pittsburgh Steelers,DEF,free_agent,11,,,11,6,3,38,31,9,1253479720855535616,13,PIT
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Noah Fant,TE,free_agent,11,,,11,8,1,6.6,6.6,5.7,1134329802619793408,12,5857
-Sleeper,2025,Billy Rose,Snooki's Cookie,Trevor Lawrence,QB,free_agent,12,,,12,4,1,17.14,17.14,41.02,1248314494598270976,1,7523
-Sleeper,2025,Billy Rose,Snooki's Cookie,Brock Wright,TE,waiver,11,,,12,2,1,5.9,5.9,0,1248314494598270976,1,7891
-Sleeper,2025,Chris McKinney,Uncle Tito,Jacoby Brissett,QB,waiver,11,,,12,7,3,57.36,57.36,0,1253417044339068928,6,3257
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,David Njoku,TE,waiver,12,,,12,1,1,0,0,0,1253476821127671808,11,4033
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Isaiah Likely,TE,waiver,11,,,12,7,1,0,0,27,1253476821127671808,11,8131
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Michael Carter,RB,free_agent,12,,,12,7,1,8.8,8.8,16.5,1134324957397438464,7,7607
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Detroit Lions,DEF,waiver,11,,,12,1,1,3,3,0,1134324957397438464,7,DET
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Ty Johnson,RB,free_agent,12,,,12,7,0,0,0,19.6,1134324957397438464,7,6039
-Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Los Angeles Chargers,DEF,waiver,12,,,12,7,2,20,20,0,1134324957397438464,7,LAC
-Sleeper,2025,Hayden Ward,Bear Force One,AJ Barner,TE,waiver,11,,,12,1,1,3.8,3.8,0,895410371974983680,5,11603
-Sleeper,2025,Jake Parsons,Big Bird,Cam Little,K,waiver,11,,,12,7,3,30,30,0,858751028768686080,2,11786
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Andy Borregales,K,free_agent,12,,,12,2,2,32,32,0,1001557048196222976,14,12713
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Jacksonville Jaguars,DEF,free_agent,12,,,12,7,3,31,31,0,1001557048196222976,14,JAX
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Cedric Tillman,WR,free_agent,12,,,12,7,0,0,0,4.8,1001557048196222976,14,10444
-Sleeper,2025,Nathan Richards,Nater Taterz,Wil Lutz,K,waiver,12,,,12,2,1,9,9,0,1253419240711540736,8,3678
-Sleeper,2025,Tyler Rose,Unverified Sources,Harrison Butker,K,free_agent,12,,,12,2,1,16,16,4,1253479720855535616,13,4227
-Sleeper,2025,Walter Mitchell,Dirty Sherm,Andrei Iosivas,WR,free_agent,12,,,12,7,2,20.5,20.5,3.7,1134329802619793408,12,10226
-Sleeper,2025,Austin Abegg,Kissin TDs,Tampa Bay Buccaneers,DEF,waiver,12,,,13,3,2,12,12,0,716158801597767680,3,TB
-Sleeper,2025,Austin Abegg,Kissin TDs,Brandin Cooks,WR,waiver,12,,,13,2,0,0,0,2.3,716158801597767680,3,2197
-Sleeper,2025,Billy Rose,Snooki's Cookie,Mike Gesicki,TE,waiver,12,,,13,1,1,3.9,3.9,0,1248314494598270976,1,4993
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Evan McPherson,K,free_agent,13,,,13,6,2,28,28,0,1253422363878375424,10,7839
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Indianapolis Colts,DEF,free_agent,13,,,13,6,2,6,6,0,1253422363878375424,10,IND
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Greg Dortch,WR,waiver,12,,,13,1,0,0,0,3.4,1253422363878375424,10,5970
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Jayden Higgins,WR,waiver,12,,,13,6,0,0,0,17.9,1253476821127671808,11,12484
-Sleeper,2025,Hayden Ward,Bear Force One,John Metchie III,WR,waiver,12,,,13,6,0,0,0,13.1,895410371974983680,5,8147
-Sleeper,2025,Joey Roberts,Shoobie Flojo,Devin Neal,RB,waiver,12,,,13,6,2,25.3,25.3,0,1001557048196222976,14,12476
-Sleeper,2025,Nathan Richards,Nater Taterz,Malik Washington,WR,free_agent,13,,,13,1,0,0,0,7,1253419240711540736,8,11610
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Samaje Perine,RB,waiver,13,,,14,1,1,4.8,4.8,0,734112111084630016,9,4147
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Miami Dolphins,DEF,free_agent,14,,,14,5,3,27,16,0,734112111084630016,9,MIA
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Cade Otton,TE,free_agent,14,,,14,5,0,0,0,4.9,734112111084630016,9,8111
-Sleeper,2025,Billy Rose,Snooki's Cookie,Colby Parkinson,TE,free_agent,14,,,14,5,3,40.8,12.2,0,1248314494598270976,1,6865
-Sleeper,2025,Billy Rose,Snooki's Cookie,Kansas City Chiefs,DEF,waiver,13,,,14,5,0,0,0,4,1248314494598270976,1,KC
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Adonai Mitchell,WR,waiver,13,,,14,5,0,0,0,3.4,1253422363878375424,10,11625
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Geno Smith,QB,free_agent,14,,,14,5,0,0,0,9.04,1253422363878375424,10,1373
-Sleeper,2025,Bryce Poisson,Bushy Beavers,Tyrod Taylor,QB,waiver,13,,,14,1,0,0,0,-1.76,1253422363878375424,10,827
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,San Francisco 49ers,DEF,waiver,14,,,14,5,0,0,0,0,1253476821127671808,11,SF
-Sleeper,2025,Hayden Ward,Bear Force One,Devaughn Vele,WR,waiver,13,,,14,5,0,0,0,7,895410371974983680,5,11834
-Sleeper,2025,Jake Parsons,Big Bird,AJ Barner,TE,waiver,13,,,14,5,0,0,0,5.7,858751028768686080,2,11603
-Sleeper,2025,Nathan Richards,Nater Taterz,Harrison Mevis,K,free_agent,14,,,14,5,4,40,9,0,1253419240711540736,8,12015
-Sleeper,2025,Nathan Richards,Nater Taterz,Tennessee Titans,DEF,free_agent,14,,,14,1,1,8,8,0,1253419240711540736,8,TEN
-Sleeper,2025,Nathan Richards,Nater Taterz,Luther Burden III,WR,free_agent,14,,,14,5,0,0,0,11,1253419240711540736,8,12519
-Sleeper,2025,Tyler Rose,Unverified Sources,Evan Engram,TE,waiver,13,,,14,4,1,2.8,2.8,0,1253479720855535616,13,4066
-Sleeper,2025,Austin Abegg,Kissin TDs,Jaylen Wright,RB,waiver,14,,,15,4,0,0,0,0,716158801597767680,3,11643
-Sleeper,2025,Austin Abegg,Kissin TDs,Tua Tagovailoa,QB,free_agent,15,,,15,1,0,0,0,0,716158801597767680,3,6768
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Cooper Kupp,WR,free_agent,15,,,15,1,0,0,0,0,734112111084630016,9,4039
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Trevor Lawrence,QB,waiver,15,,,15,4,0,0,0,0,734112111084630016,9,7523
-Sleeper,2025,Billy Rose,Snooki's Cookie,Brian Robinson Jr.,RB,free_agent,15,,,15,3,0,0,0,0,1248314494598270976,1,8154
-Sleeper,2025,Chris McKinney,Uncle Tito,Carolina Panthers,DEF,free_agent,15,,,15,1,0,0,0,0,1253417044339068928,6,CAR
-Sleeper,2025,Nathan Richards,Nater Taterz,Tyler Shough,QB,waiver,14,,,15,4,3,57.12,0,0,1253419240711540736,8,12545
-Sleeper,2025,Nathan Richards,Nater Taterz,Samaje Perine,RB,free_agent,15,,,15,4,0,0,0,0,1253419240711540736,8,4147
-Sleeper,2025,Austin Abegg,Kissin TDs,J.J. McCarthy,QB,waiver,15,,,16,3,0,0,0,0,716158801597767680,3,11565
-Sleeper,2025,Austin Joannes,Doctor Fantasy,Jalen Coker,WR,waiver,15,,,16,3,2,11.3,0,0,734112111084630016,9,11646
-Sleeper,2025,Chris McKinney,Uncle Tito,Tampa Bay Buccaneers,DEF,free_agent,16,,,16,3,0,0,0,0,1253417044339068928,6,TB
-Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Dawson Knox,TE,waiver,15,,,16,3,1,2,0,0,1253476821127671808,11,5906
-Sleeper,2025,Nathan Richards,Nater Taterz,Terrance Ferguson,TE,free_agent,17,,,17,1,0,0,0,0,1253419240711540736,8,12487
-Sleeper,2025,Nathan Richards,Nater Taterz,Jake Tonges,TE,free_agent,17,,,17,1,0,0,0,0,1253419240711540736,8,8698
-Sleeper,2025,Tyler Rose,Unverified Sources,Taysom Hill,TE,free_agent,17,,,17,2,1,0,0,0,1253479720855535616,13,4381
-Sleeper,2025,Tyler Rose,Unverified Sources,Davis Allen,TE,free_agent,17,,,17,2,0,0,0,0,1253479720855535616,13,10214
-Sleeper,2025,Tyler Rose,Unverified Sources,Kyle Williams,WR,free_agent,17,,,17,1,0,0,0,0,1253479720855535616,13,12547
-Sleeper,2025,Tyler Rose,Unverified Sources,Cooper Kupp,WR,free_agent,17,,,17,2,0,0,0,0,1253479720855535616,13,4039
-Sleeper,2025,Tyler Rose,Unverified Sources,Cole Kmet,TE,free_agent,17,,,18,1,0,0,0,0,1253479720855535616,13,6826
-Sleeper,2026,Austin Abegg,Kissin TDs,Lamar Jackson,QB,draft,,4,45,1,8,5,80.08,80.08,0,716158801597767680,3,4881
-Sleeper,2026,Austin Abegg,Kissin TDs,Kenneth Walker III,RB,draft,,2,17,1,8,7,169.1,169.1,0,716158801597767680,3,8151
-Sleeper,2026,Austin Abegg,Kissin TDs,Travis Etienne Jr.,RB,draft,,3,40,1,8,3,30.9,30.9,0,716158801597767680,3,7543
-Sleeper,2026,Austin Abegg,Kissin TDs,Chris Godwin Jr.,WR,draft,,6,73,1,8,8,53.1,53.1,0,716158801597767680,3,4037
-Sleeper,2026,Austin Abegg,Kissin TDs,Brian Thomas Jr.,WR,draft,,5,68,1,8,2,7,7,26.7,716158801597767680,3,11631
+Sleeper,2025,Austin Abegg,Kissin TDs,Michael Penix Jr.,QB,unknown,,,,2,1,0,0,0,5.3,716158801597767680,3,11559
+Sleeper,2025,Austin Abegg,Kissin TDs,Michael Mayer,TE,unknown,,,,2,1,0,0,0,2.9,716158801597767680,3,9482
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Harold Fannin Jr.,TE,unknown,,,,2,17,12,132.3,132.3,0,1253422363878375424,10,12506
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Kayshon Boutte,WR,unknown,,,,2,3,0,0,0,16.2,1253422363878375424,10,9504
+Sleeper,2025,Chris McKinney,Uncle Tito,Chad Ryland,K,unknown,,,,2,1,1,10,10,0,1253417044339068928,6,10955
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Matt Prater,K,unknown,,,,2,5,5,39,39,0,1253476821127671808,11,17
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Cole Kmet,TE,unknown,,,,2,6,3,13.9,13.9,10.2,1253415068964503552,4,6826
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Quentin Johnston,WR,unknown,,,,2,17,8,77.5,77.5,34.6,1253415068964503552,4,9754
+Sleeper,2025,Hayden Ward,Bear Force One,Aaron Rodgers,QB,unknown,,,,2,2,1,10.42,10.42,11.66,895410371974983680,5,96
+Sleeper,2025,Hayden Ward,Bear Force One,Ollie Gordon II,RB,unknown,,,,2,1,0,0,0,2.3,895410371974983680,5,12495
+Sleeper,2025,Hayden Ward,Bear Force One,Ty Johnson,RB,unknown,,,,2,2,0,0,0,0.6,895410371974983680,5,6039
+Sleeper,2025,Hayden Ward,Bear Force One,Juwan Johnson,TE,unknown,,,,2,17,7,71.1,71.1,48.7,895410371974983680,5,7002
+Sleeper,2025,Hayden Ward,Bear Force One,Isaiah Likely,TE,draft,,13,179,2,2,0,0,0,0,895410371974983680,5,8131
+Sleeper,2025,Jake Parsons,Big Bird,DJ Giddens,RB,unknown,,,,2,1,0,0,0,0,858751028768686080,2,12471
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Daniel Jones,QB,unknown,,,,2,3,1,10.38,10.38,38.66,1001557048196222976,14,5870
+Sleeper,2025,Nathan Richards,Nater Taterz,Dalton Schultz,TE,unknown,,,,2,17,12,127.9,86.9,32.7,1253419240711540736,8,5001
+Sleeper,2025,Nathan Richards,Nater Taterz,Kenny Gainwell,RB,unknown,,,,2,17,8,108,77.4,67,1253419240711540736,8,7567
+Sleeper,2025,Tyler Rose,Unverified Sources,Calvin Austin III,WR,unknown,,,,2,1,0,0,0,3.2,1253479720855535616,13,8125
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Tampa Bay Buccaneers,DEF,unknown,,,,2,2,2,18,18,0,1134329802619793408,12,TB
+Sleeper,2025,Austin Abegg,Kissin TDs,Calvin Austin III,WR,unknown,,,,3,2,2,15.7,15.7,0,716158801597767680,3,8125
+Sleeper,2025,Austin Abegg,Kissin TDs,Kansas City Chiefs,DEF,unknown,,,,3,1,1,13,13,0,716158801597767680,3,KC
+Sleeper,2025,Austin Abegg,Kissin TDs,Ollie Gordon II,RB,unknown,,,,3,16,0,0,0,48.5,716158801597767680,3,12495
+Sleeper,2025,Austin Abegg,Kissin TDs,Jeremy McNichols,RB,unknown,,,,3,3,0,0,0,18.9,716158801597767680,3,4219
+Sleeper,2025,Austin Abegg,Kissin TDs,Dontayvion Wicks,WR,unknown,,,,3,2,0,0,0,8,716158801597767680,3,9486
+Sleeper,2025,Billy Rose,Snooki's Cookie,Sam Darnold,QB,unknown,,,,3,5,4,62.42,62.42,27.64,1248314494598270976,1,4943
+Sleeper,2025,Billy Rose,Snooki's Cookie,Atlanta Falcons,DEF,unknown,,,,3,1,1,3,3,0,1248314494598270976,1,ATL
+Sleeper,2025,Billy Rose,Snooki's Cookie,Chris Rodriguez Jr.,RB,unknown,,,,3,3,0,0,0,10.5,1248314494598270976,1,10219
+Sleeper,2025,Billy Rose,Snooki's Cookie,Blake Corum,RB,unknown,,,,3,4,0,0,0,12.5,1248314494598270976,1,11586
+Sleeper,2025,Billy Rose,Snooki's Cookie,Jake Browning,QB,unknown,,,,3,1,0,0,0,5.9,1248314494598270976,1,6111
+Sleeper,2025,Billy Rose,Snooki's Cookie,Tyquan Thornton,WR,unknown,,,,3,2,0,0,0,26.2,1248314494598270976,1,8188
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Brian Thomas Jr.,WR,unknown,,,,3,16,10,84.2,84.2,0,1253422363878375424,10,11631
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Pat Freiermuth,TE,unknown,,,,3,2,0,0,0,1.6,1253422363878375424,10,7600
+Sleeper,2025,Chris McKinney,Uncle Tito,Parker Romo,K,unknown,,,,3,1,1,-2,-2,0,1253417044339068928,6,8670
+Sleeper,2025,Chris McKinney,Uncle Tito,Indianapolis Colts,DEF,unknown,,,,3,1,1,16,16,0,1253417044339068928,6,IND
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Jalen Nailor,WR,unknown,,,,3,1,0,0,0,6.7,1253476821127671808,11,8180
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Omarion Hampton,RB,unknown,,,,3,16,4,83.1,83.1,0,1253415068964503552,4,12507
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Evan Engram,TE,unknown,,,,3,2,1,6.9,6.9,0,1253415068964503552,4,4066
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Miles Sanders,RB,unknown,,,,3,2,0,0,0,12.8,1253415068964503552,4,6151
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Seattle Seahawks,DEF,unknown,,,,3,3,3,25,25,0,1134324957397438464,7,SEA
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Justice Hill,RB,unknown,,,,3,1,0,0,0,7.5,1134324957397438464,7,5995
+Sleeper,2025,Hayden Ward,Bear Force One,Ray Davis,RB,unknown,,,,3,1,0,0,0,0,895410371974983680,5,11575
+Sleeper,2025,Jake Parsons,Big Bird,Jordan Mason,RB,unknown,,,,3,16,5,61.7,61.7,40.5,858751028768686080,2,8408
+Sleeper,2025,Jake Parsons,Big Bird,Joey Slye,K,unknown,,,,3,1,1,9,9,0,858751028768686080,2,6528
+Sleeper,2025,Jake Parsons,Big Bird,Kyle Monangai,RB,unknown,,,,3,1,0,0,0,3,858751028768686080,2,12534
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Daniel Carlson,K,unknown,,,,3,5,5,24,24,0,1001557048196222976,14,5095
+Sleeper,2025,Joey Roberts,Shoobie Flojo,New England Patriots,DEF,unknown,,,,3,2,2,13,13,0,1001557048196222976,14,NE
+Sleeper,2025,Joey Roberts,Shoobie Flojo,DeAndre Hopkins,WR,unknown,,,,3,1,0,0,0,2.3,1001557048196222976,14,1426
+Sleeper,2025,Nathan Richards,Nater Taterz,Cam Akers,RB,unknown,,,,3,1,0,0,0,1.9,1253419240711540736,8,6938
+Sleeper,2025,Tyler Rose,Unverified Sources,DK Metcalf,WR,unknown,,,,3,16,13,168.9,146.2,0,1253479720855535616,13,5846
+Sleeper,2025,Tyler Rose,Unverified Sources,Troy Franklin,WR,unknown,,,,3,2,0,0,0,12.3,1253479720855535616,13,11627
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Hunter Renfrow,WR,unknown,,,,3,3,0,0,0,7.3,1134329802619793408,12,5955
+Sleeper,2025,Austin Abegg,Kissin TDs,Los Angeles Chargers,DEF,unknown,,,,4,8,8,43,43,0,716158801597767680,3,LAC
+Sleeper,2025,Austin Abegg,Kissin TDs,Sterling Shepard,WR,unknown,,,,4,1,0,0,0,4,716158801597767680,3,3200
+Sleeper,2025,Billy Rose,Snooki's Cookie,Detroit Lions,DEF,unknown,,,,4,2,2,29,29,0,1248314494598270976,1,DET
+Sleeper,2025,Billy Rose,Snooki's Cookie,Braelon Allen,RB,unknown,,,,4,1,0,0,0,0.6,1248314494598270976,1,11576
+Sleeper,2025,Billy Rose,Snooki's Cookie,Jaxson Dart,QB,unknown,,,,4,15,7,124.24,102.08,71.86,1248314494598270976,1,12508
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Jalen Tolbert,WR,unknown,,,,4,3,0,0,0,11.9,1253422363878375424,10,8117
+Sleeper,2025,Chris McKinney,Uncle Tito,Brandon McManus,K,unknown,,,,4,1,1,11,11,0,1253417044339068928,6,1433
+Sleeper,2025,Chris McKinney,Uncle Tito,San Francisco 49ers,DEF,unknown,,,,4,1,1,0,0,0,1253417044339068928,6,SF
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Rico Dowdle,RB,unknown,,,,4,15,10,153.2,144.9,30.1,1253476821127671808,11,7021
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Matthew Stafford,QB,unknown,,,,4,15,10,207.92,187,28.4,1253476821127671808,11,421
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Devin Singletary,RB,unknown,,,,4,3,0,0,0,2.8,1253476821127671808,11,6130
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Marvin Mims Jr.,WR,unknown,,,,4,5,1,1.8,1.8,45,1253476821127671808,11,9494
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,KaVontae Turpin,WR,unknown,,,,4,1,0,0,0,6.4,1134324957397438464,7,8917
+Sleeper,2025,Hayden Ward,Bear Force One,Joey Slye,K,unknown,,,,4,1,1,-2,-2,0,895410371974983680,5,6528
+Sleeper,2025,Hayden Ward,Bear Force One,Jalen Coker,WR,unknown,,,,4,4,0,0,0,0,895410371974983680,5,11646
+Sleeper,2025,Hayden Ward,Bear Force One,Luther Burden III,WR,unknown,,,,4,1,0,0,0,1.6,895410371974983680,5,12519
+Sleeper,2025,Jake Parsons,Big Bird,Spencer Shrader,K,unknown,,,,4,2,2,12,12,0,858751028768686080,2,12185
+Sleeper,2025,Jake Parsons,Big Bird,Isaiah Likely,TE,unknown,,,,4,1,0,0,0,0,858751028768686080,2,8131
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Tre Tucker,WR,unknown,,,,4,15,3,27.3,27.3,50.5,1001557048196222976,14,10213
+Sleeper,2025,Nathan Richards,Nater Taterz,Justice Hill,RB,unknown,,,,4,6,1,2.2,2.2,41.7,1253419240711540736,8,5995
+Sleeper,2025,Tyler Rose,Unverified Sources,Denver Broncos,DEF,unknown,,,,4,15,11,85,76,9,1253479720855535616,13,DEN
+Sleeper,2025,Austin Abegg,Kissin TDs,Kendrick Bourne,WR,unknown,,,,5,8,6,66.5,66.5,0,716158801597767680,3,4454
+Sleeper,2025,Austin Abegg,Kissin TDs,Isaiah Bond,WR,unknown,,,,5,1,1,4.9,4.9,0,716158801597767680,3,12503
+Sleeper,2025,Austin Abegg,Kissin TDs,Taysom Hill,TE,unknown,,,,5,3,1,0.66,0.66,8.9,716158801597767680,3,4381
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Matt Gay,K,unknown,,,,5,3,3,18,18,0,734112111084630016,9,6083
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Arizona Cardinals,DEF,unknown,,,,5,1,1,6,6,0,734112111084630016,9,ARI
+Sleeper,2025,Billy Rose,Snooki's Cookie,Theo Johnson,TE,unknown,,,,5,2,1,21.3,21.3,4.7,1248314494598270976,1,11597
+Sleeper,2025,Billy Rose,Snooki's Cookie,Emari Demercado,RB,unknown,,,,5,5,1,13.4,13.4,10.2,1248314494598270976,1,11199
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Carolina Panthers,DEF,unknown,,,,5,1,1,3,3,0,1253422363878375424,10,CAR
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Mason Taylor,TE,unknown,,,,5,14,0,0,0,67.1,1253422363878375424,10,12498
+Sleeper,2025,Chris McKinney,Uncle Tito,Joshua Karty,K,unknown,,,,5,2,2,8,8,0,1253417044339068928,6,11789
+Sleeper,2025,Chris McKinney,Uncle Tito,Cleveland Browns,DEF,unknown,,,,5,2,2,32,32,0,1253417044339068928,6,CLE
+Sleeper,2025,Chris McKinney,Uncle Tito,Zavier Scott,RB,unknown,,,,5,1,0,0,0,-0.2,1253417044339068928,6,11299
+Sleeper,2025,Chris McKinney,Uncle Tito,Darren Waller,TE,unknown,,,,5,14,4,18.6,18.6,18.8,1253417044339068928,6,2505
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Kendre Miller,RB,unknown,,,,5,3,0,0,0,10.8,1253476821127671808,11,9757
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Tommy Tremble,TE,unknown,,,,5,1,1,1.7,1.7,0,1253415068964503552,4,7694
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Sterling Shepard,WR,unknown,,,,5,4,1,11.9,11.9,16.4,1134324957397438464,7,3200
+Sleeper,2025,Hayden Ward,Bear Force One,Christian Kirk,WR,unknown,,,,5,1,1,10.4,10.4,0,895410371974983680,5,4950
+Sleeper,2025,Hayden Ward,Bear Force One,Malik Washington,WR,unknown,,,,5,1,1,4,4,0,895410371974983680,5,11610
+Sleeper,2025,Hayden Ward,Bear Force One,Jason Myers,K,unknown,,,,5,13,9,107,107,0,895410371974983680,5,2747
+Sleeper,2025,Hayden Ward,Bear Force One,Dillon Gabriel,QB,unknown,,,,5,2,0,0,0,24.94,895410371974983680,5,12486
+Sleeper,2025,Jake Parsons,Big Bird,Justin Fields,QB,unknown,,,,5,7,4,55.72,55.72,26.3,858751028768686080,2,7591
+Sleeper,2025,Jake Parsons,Big Bird,Evan Engram,TE,unknown,,,,5,6,3,32.4,32.4,10.8,858751028768686080,2,4066
+Sleeper,2025,Jake Parsons,Big Bird,New York Giants,DEF,unknown,,,,5,1,1,1,1,0,858751028768686080,2,NYG
+Sleeper,2025,Jake Parsons,Big Bird,Troy Franklin,WR,unknown,,,,5,12,4,35.6,35.6,43.7,858751028768686080,2,11627
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Indianapolis Colts,DEF,unknown,,,,5,7,6,46,46,0,1001557048196222976,14,IND
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Brashard Smith,RB,unknown,,,,5,5,0,0,0,26.3,1001557048196222976,14,12455
+Sleeper,2025,Nathan Richards,Nater Taterz,Tua Tagovailoa,QB,unknown,,,,5,2,1,22.74,22.74,6.6,1253419240711540736,8,6768
+Sleeper,2025,Nathan Richards,Nater Taterz,Isaiah Davis,RB,unknown,,,,5,2,0,0,0,7.4,1253419240711540736,8,11571
+Sleeper,2025,Tyler Rose,Unverified Sources,A.J. Brown,WR,unknown,,,,5,14,12,193.2,150.8,0,1253479720855535616,13,5859
+Sleeper,2025,Tyler Rose,Unverified Sources,Jake Tonges,TE,unknown,,,,5,7,2,28.9,28.9,7.2,1253479720855535616,13,8698
+Sleeper,2025,Tyler Rose,Unverified Sources,Darius Slayton,WR,unknown,,,,5,2,1,4.1,4.1,0,1253479720855535616,13,6149
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Michael Carter,RB,unknown,,,,5,5,3,26.7,26.7,5.6,1134329802619793408,12,7607
+Sleeper,2025,Walter Mitchell,Dirty Sherm,JuJu Smith-Schuster,WR,unknown,,,,5,6,0,0,0,25,1134329802619793408,12,4040
+Sleeper,2025,Austin Abegg,Kissin TDs,Marquise Brown,WR,unknown,,,,6,3,2,20.5,20.5,9.4,716158801597767680,3,5848
+Sleeper,2025,Austin Abegg,Kissin TDs,Cade Otton,TE,unknown,,,,6,3,3,31.6,31.6,0,716158801597767680,3,8111
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Dallas Cowboys,DEF,unknown,,,,6,2,2,16,16,0,734112111084630016,9,DAL
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Daniel Jones,QB,unknown,,,,6,9,5,77.12,77.12,54.12,734112111084630016,9,5870
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Christian Watson,WR,unknown,,,,6,2,0,0,0,0,734112111084630016,9,8167
+Sleeper,2025,Billy Rose,Snooki's Cookie,Alec Pierce,WR,unknown,,,,6,1,1,6.8,6.8,0,1248314494598270976,1,8142
+Sleeper,2025,Billy Rose,Snooki's Cookie,New England Patriots,DEF,unknown,,,,6,4,4,36,36,0,1248314494598270976,1,NE
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Joe Flacco,QB,unknown,,,,6,7,1,9.62,9.62,113.62,1253422363878375424,10,19
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Jonnu Smith,TE,unknown,,,,6,6,1,5.5,5.5,22.7,1253422363878375424,10,4144
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Christian Kirk,WR,unknown,,,,6,1,0,0,0,0,1253422363878375424,10,4950
+Sleeper,2025,Chris McKinney,Uncle Tito,Trevor Lawrence,QB,unknown,,,,6,6,5,82.9,82.9,0,1253417044339068928,6,7523
+Sleeper,2025,Chris McKinney,Uncle Tito,Jacksonville Jaguars,DEF,unknown,,,,6,1,1,2,2,0,1253417044339068928,6,JAX
+Sleeper,2025,Chris McKinney,Uncle Tito,Hassan Haskins,RB,unknown,,,,6,2,0,0,0,5.8,1253417044339068928,6,8123
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Seattle Seahawks,DEF,unknown,,,,6,13,8,108,104,2,1253476821127671808,11,SEA
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Bhayshul Tuten,RB,unknown,,,,6,4,2,7,7,9.6,1253415068964503552,4,12490
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Nyheim Miller-Hines,RB,unknown,,,,6,1,0,0,0,0,1253415068964503552,4,5347
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Los Angeles Rams,DEF,unknown,,,,6,2,2,28,28,0,1134324957397438464,7,LAR
+Sleeper,2025,Hayden Ward,Bear Force One,Kimani Vidal,RB,unknown,,,,6,13,7,101.7,101.7,11.4,895410371974983680,5,11647
+Sleeper,2025,Hayden Ward,Bear Force One,Troy Franklin,WR,unknown,,,,6,1,1,3.1,3.1,0,895410371974983680,5,11627
+Sleeper,2025,Hayden Ward,Bear Force One,C.J. Stroud,QB,unknown,,,,6,2,0,0,0,13.66,895410371974983680,5,9758
+Sleeper,2025,Jake Parsons,Big Bird,Eddy Pineiro,K,unknown,,,,6,5,5,54,54,0,858751028768686080,2,5189
+Sleeper,2025,Jake Parsons,Big Bird,Ryan Flournoy,WR,unknown,,,,6,1,0,0,0,6.3,858751028768686080,2,11783
+Sleeper,2025,Joey Roberts,Shoobie Flojo,AJ Barner,TE,unknown,,,,6,4,0,0,0,23.5,1001557048196222976,14,11603
+Sleeper,2025,Nathan Richards,Nater Taterz,Las Vegas Raiders,DEF,unknown,,,,6,2,2,21,21,0,1253419240711540736,8,LV
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Minnesota Vikings,DEF,unknown,,,,6,13,5,14,14,31,1134329802619793408,12,MIN
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Kansas City Chiefs,DEF,unknown,,,,7,2,2,23,23,0,734112111084630016,9,KC
+Sleeper,2025,Billy Rose,Snooki's Cookie,Zonovan Knight,RB,unknown,,,,7,10,1,9.4,9.4,47.4,1248314494598270976,1,8122
+Sleeper,2025,Billy Rose,Snooki's Cookie,Tez Johnson,WR,unknown,,,,7,3,1,9.3,9.3,15.8,1248314494598270976,1,12485
+Sleeper,2025,Billy Rose,Snooki's Cookie,Kyle Monangai,RB,unknown,,,,7,12,3,36,36,68.6,1248314494598270976,1,12534
+Sleeper,2025,Billy Rose,Snooki's Cookie,Tyler Loop,K,unknown,,,,7,1,0,0,0,0,1248314494598270976,1,12711
+Sleeper,2025,Billy Rose,Snooki's Cookie,Kyler Murray,QB,unknown,,,,7,4,0,0,0,0,1248314494598270976,1,5849
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Brandon McManus,K,unknown,,,,7,1,1,0,0,0,1253422363878375424,10,1433
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Keon Coleman,WR,unknown,,,,7,2,1,6,6,0,1253422363878375424,10,11637
+Sleeper,2025,Chris McKinney,Uncle Tito,Jake Moody,K,unknown,,,,7,1,1,14,14,0,1253417044339068928,6,10937
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Chris Boswell,K,unknown,,,,7,12,10,81,67,0,1253476821127671808,11,1945
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Michael Mayer,TE,unknown,,,,7,1,1,2,2,0,1253415068964503552,4,9482
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Chicago Bears,DEF,unknown,,,,7,12,8,44,44,0,1253415068964503552,4,CHI
+Sleeper,2025,Hayden Ward,Bear Force One,Kayshon Boutte,WR,unknown,,,,7,1,1,13.5,13.5,0,895410371974983680,5,9504
+Sleeper,2025,Hayden Ward,Bear Force One,Luke McCaffrey,WR,unknown,,,,7,1,1,0,0,0,895410371974983680,5,11650
+Sleeper,2025,Jake Parsons,Big Bird,Emanuel Wilson,RB,unknown,,,,7,8,1,28.5,28.5,4.9,858751028768686080,2,11435
+Sleeper,2025,Jake Parsons,Big Bird,Luther Burden III,WR,unknown,,,,7,1,0,0,0,3.1,858751028768686080,2,12519
+Sleeper,2025,Nathan Richards,Nater Taterz,Josh Reynolds,WR,unknown,,,,7,1,0,0,0,5.9,1253419240711540736,8,4171
+Sleeper,2025,Nathan Richards,Nater Taterz,Jeremy McNichols,RB,unknown,,,,7,2,0,0,0,18.3,1253419240711540736,8,4219
+Sleeper,2025,Nathan Richards,Nater Taterz,Lil'Jordan Humphrey,WR,unknown,,,,7,1,0,0,0,0,1253419240711540736,8,5938
+Sleeper,2025,Tyler Rose,Unverified Sources,Aaron Rodgers,QB,unknown,,,,7,10,1,23.56,23.56,68.9,1253479720855535616,13,96
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Ka'imi Fairbairn,K,unknown,,,,7,3,3,39,39,0,1134329802619793408,12,3451
+Sleeper,2025,Austin Abegg,Kissin TDs,Isaiah Davis,RB,unknown,,,,8,3,1,17.9,17.9,2.1,716158801597767680,3,11571
+Sleeper,2025,Austin Abegg,Kissin TDs,Christian Watson,WR,unknown,,,,8,11,6,102.7,74.7,26.8,716158801597767680,3,8167
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Tyler Loop,K,unknown,,,,8,11,9,80,64,0,734112111084630016,9,12711
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Alec Pierce,WR,unknown,,,,8,11,3,35,35,46.2,734112111084630016,9,8142
+Sleeper,2025,Billy Rose,Snooki's Cookie,Jayden Higgins,WR,unknown,,,,8,1,1,13.4,13.4,0,1248314494598270976,1,12484
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Chimere Dike,WR,unknown,,,,8,11,3,45.3,45.3,16.7,1253422363878375424,10,12540
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Matt Prater,K,unknown,,,,8,2,2,14,14,0,1253422363878375424,10,17
+Sleeper,2025,Chris McKinney,Uncle Tito,Marcus Mariota,QB,unknown,,,,8,1,1,11.32,11.32,0,1253417044339068928,6,2307
+Sleeper,2025,Chris McKinney,Uncle Tito,Cairo Santos,K,unknown,,,,8,11,7,63,63,0,1253417044339068928,6,2020
+Sleeper,2025,Chris McKinney,Uncle Tito,Cincinnati Bengals,DEF,unknown,,,,8,1,1,-4,-4,0,1253417044339068928,6,CIN
+Sleeper,2025,Chris McKinney,Uncle Tito,Xavier Legette,WR,unknown,,,,8,1,0,0,0,3.7,1253417044339068928,6,11626
+Sleeper,2025,Chris McKinney,Uncle Tito,Parker Washington,WR,unknown,,,,8,11,6,60.6,60.6,0,1253417044339068928,6,9487
+Sleeper,2025,Chris McKinney,Uncle Tito,Kayshon Boutte,WR,unknown,,,,8,11,1,3.5,3.5,30,1253417044339068928,6,9504
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,C.J. Stroud,QB,unknown,,,,8,1,1,21.72,21.72,0,1253476821127671808,11,9758
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Buffalo Bills,DEF,unknown,,,,8,11,3,29,21,39,1253476821127671808,11,BUF
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Tua Tagovailoa,QB,unknown,,,,8,1,1,24.2,24.2,0,1253415068964503552,4,6768
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Ty Johnson,RB,unknown,,,,8,1,1,0.6,0.6,0,1253415068964503552,4,6039
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Theo Johnson,TE,unknown,,,,8,11,4,28.2,28.2,26.2,1253415068964503552,4,11597
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Calvin Austin III,WR,unknown,,,,8,5,1,6.8,6.8,23.1,1253415068964503552,4,8125
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Tampa Bay Buccaneers,DEF,unknown,,,,8,1,1,26,26,0,1134324957397438464,7,TB
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Joshua Karty,K,unknown,,,,8,2,1,2,2,0,1134324957397438464,7,11789
+Sleeper,2025,Hayden Ward,Bear Force One,Jaylin Noel,WR,unknown,,,,8,1,1,11.3,11.3,0,895410371974983680,5,12536
+Sleeper,2025,Hayden Ward,Bear Force One,Oronde Gadsden,TE,unknown,,,,8,11,5,44.6,44.6,1.7,895410371974983680,5,12493
+Sleeper,2025,Hayden Ward,Bear Force One,Evan McPherson,K,unknown,,,,8,1,1,8,8,0,895410371974983680,5,7839
+Sleeper,2025,Hayden Ward,Bear Force One,Sam Darnold,QB,unknown,,,,8,3,1,28.2,28.2,4.92,895410371974983680,5,4943
+Sleeper,2025,Hayden Ward,Bear Force One,Detroit Lions,DEF,unknown,,,,8,3,2,9,9,0,895410371974983680,5,DET
+Sleeper,2025,Jake Parsons,Big Bird,Wil Lutz,K,unknown,,,,8,1,1,9,9,0,858751028768686080,2,3678
+Sleeper,2025,Jake Parsons,Big Bird,Atlanta Falcons,DEF,unknown,,,,8,1,1,0,0,0,858751028768686080,2,ATL
+Sleeper,2025,Jake Parsons,Big Bird,Los Angeles Rams,DEF,unknown,,,,8,11,3,17,17,34,858751028768686080,2,LAR
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Michael Badgley,K,unknown,,,,8,3,3,27,27,0,1001557048196222976,14,5230
+Sleeper,2025,Nathan Richards,Nater Taterz,Darius Slayton,WR,unknown,,,,8,10,3,19.1,19.1,27,1253419240711540736,8,6149
+Sleeper,2025,Austin Abegg,Kissin TDs,Keon Coleman,WR,unknown,,,,9,7,2,17.3,17.3,12.5,716158801597767680,3,11637
+Sleeper,2025,Austin Abegg,Kissin TDs,Chase McLaughlin,K,unknown,,,,9,10,7,47,33,0,716158801597767680,3,6650
+Sleeper,2025,Austin Abegg,Kissin TDs,C.J. Stroud,QB,unknown,,,,9,4,2,26.24,0,4.36,716158801597767680,3,9758
+Sleeper,2025,Billy Rose,Snooki's Cookie,Rashod Bateman,WR,unknown,,,,9,1,0,0,0,9.3,1248314494598270976,1,7571
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Jeremy McNichols,RB,unknown,,,,9,1,1,0,0,0,1253422363878375424,10,4219
+Sleeper,2025,Chris McKinney,Uncle Tito,Baltimore Ravens,DEF,unknown,,,,9,6,6,45,45,0,1253417044339068928,6,BAL
+Sleeper,2025,Chris McKinney,Uncle Tito,Dylan Sampson,RB,unknown,,,,9,2,0,0,0,0.9,1253417044339068928,6,12469
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Marquez Valdes-Scantling,WR,unknown,,,,9,1,0,0,0,0,1253476821127671808,11,5086
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Noah Fant,TE,unknown,,,,9,1,1,10.8,10.8,0,1253415068964503552,4,5857
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Christian Kirk,WR,unknown,,,,9,10,0,0,0,27.5,1253415068964503552,4,4950
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Samaje Perine,RB,unknown,,,,9,1,1,0.5,0.5,0,1134324957397438464,7,4147
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Jacksonville Jaguars,DEF,unknown,,,,9,2,2,14,14,0,1134324957397438464,7,JAX
+Sleeper,2025,Hayden Ward,Bear Force One,Mack Hollins,WR,unknown,,,,9,3,2,15.4,15.4,2.9,895410371974983680,5,4177
+Sleeper,2025,Jake Parsons,Big Bird,Philadelphia Eagles,DEF,unknown,,,,9,2,1,11,11,0,858751028768686080,2,PHI
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Cade Otton,TE,unknown,,,,9,4,1,17.2,17.2,10.9,1001557048196222976,14,8111
+Sleeper,2025,Nathan Richards,Nater Taterz,Chad Ryland,K,unknown,,,,9,1,1,10,10,0,1253419240711540736,8,10955
+Sleeper,2025,Nathan Richards,Nater Taterz,Devin Singletary,RB,unknown,,,,9,5,0,0,0,59,1253419240711540736,8,6130
+Sleeper,2025,Austin Abegg,Kissin TDs,Geno Smith,QB,unknown,,,,10,1,1,4.42,4.42,0,716158801597767680,3,1373
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Pat Freiermuth,TE,unknown,,,,10,4,1,6.3,6.3,13.8,734112111084630016,9,7600
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Carolina Panthers,DEF,unknown,,,,10,1,1,5,5,0,734112111084630016,9,CAR
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Marquise Brown,WR,unknown,,,,10,3,0,0,0,10,734112111084630016,9,5848
+Sleeper,2025,Billy Rose,Snooki's Cookie,Luke Musgrave,TE,unknown,,,,10,2,2,6.2,6.2,0,1248314494598270976,1,9481
+Sleeper,2025,Billy Rose,Snooki's Cookie,Cleveland Browns,DEF,unknown,,,,10,9,7,45,41,0,1248314494598270976,1,CLE
+Sleeper,2025,Billy Rose,Snooki's Cookie,Ty Johnson,RB,unknown,,,,10,1,0,0,0,4.6,1248314494598270976,1,6039
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Bhayshul Tuten,RB,unknown,,,,10,9,2,3.7,3.7,20.8,1253422363878375424,10,12490
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Will Reichard,K,unknown,,,,10,3,3,24,24,0,1253422363878375424,10,11792
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Olamide Zaccheaus,WR,unknown,,,,10,2,0,0,0,1.5,1253476821127671808,11,6271
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Matt Prater,K,unknown,,,,10,9,1,1,1,29,1253415068964503552,4,17
+Sleeper,2025,Griffin Gaule,Tsutomu Yamaguchi,Sean Tucker,RB,unknown,,,,10,9,2,5.6,5.6,51,1253415068964503552,4,9506
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Jeremy McNichols,RB,unknown,,,,10,1,1,3.9,3.9,0,1134324957397438464,7,4219
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Jake Elliott,K,unknown,,,,10,9,5,35,35,0,1134324957397438464,7,4195
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Devin Neal,RB,unknown,,,,10,2,0,0,0,6.1,1134324957397438464,7,12476
+Sleeper,2025,Hayden Ward,Bear Force One,Tez Johnson,WR,unknown,,,,10,4,0,0,0,35.6,895410371974983680,5,12485
+Sleeper,2025,Hayden Ward,Bear Force One,Joe Burrow,QB,unknown,,,,10,9,2,42.6,42.6,0,895410371974983680,5,6770
+Sleeper,2025,Joey Roberts,Shoobie Flojo,J.J. McCarthy,QB,unknown,,,,10,1,1,14.72,14.72,0,1001557048196222976,14,11565
+Sleeper,2025,Nathan Richards,Nater Taterz,Brandon McManus,K,unknown,,,,10,1,1,0,0,0,1253419240711540736,8,1433
+Sleeper,2025,Nathan Richards,Nater Taterz,Elic Ayomanor,WR,unknown,,,,10,5,1,3.1,3.1,9.9,1253419240711540736,8,12499
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Nick Folk,K,unknown,,,,10,9,5,30,30,0,1134329802619793408,12,650
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Malik Washington,WR,unknown,,,,10,2,0,0,0,16.5,1134329802619793408,12,11610
+Sleeper,2025,Austin Abegg,Kissin TDs,Blake Corum,RB,unknown,,,,11,8,3,43,28.1,18,716158801597767680,3,11586
+Sleeper,2025,Austin Abegg,Kissin TDs,Sam Darnold,QB,unknown,,,,11,4,0,0,0,48.3,716158801597767680,3,4943
+Sleeper,2025,Austin Abegg,Kissin TDs,New Orleans Saints,DEF,unknown,,,,11,6,3,42,11,0,716158801597767680,3,NO
+Sleeper,2025,Austin Joannes,Doctor Fantasy,San Francisco 49ers,DEF,unknown,,,,11,3,3,26,26,0,734112111084630016,9,SF
+Sleeper,2025,Billy Rose,Snooki's Cookie,Jameis Winston,QB,unknown,,,,11,1,1,11.04,11.04,0,1248314494598270976,1,2306
+Sleeper,2025,Billy Rose,Snooki's Cookie,Dawson Knox,TE,unknown,,,,11,1,0,0,0,3.3,1248314494598270976,1,5906
+Sleeper,2025,Billy Rose,Snooki's Cookie,C.J. Stroud,QB,unknown,,,,11,5,1,12.62,12.62,9.04,1248314494598270976,1,9758
+Sleeper,2025,Chris McKinney,Uncle Tito,Tyler Lockett,WR,unknown,,,,11,2,0,0,0,16.5,1253417044339068928,6,2374
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Chris Rodriguez Jr.,RB,unknown,,,,11,8,3,24.8,24.8,0,1134324957397438464,7,10219
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Dallas Cowboys,DEF,unknown,,,,11,1,1,9,9,0,1134324957397438464,7,DAL
+Sleeper,2025,Hayden Ward,Bear Force One,Atlanta Falcons,DEF,unknown,,,,11,3,3,22,22,0,895410371974983680,5,ATL
+Sleeper,2025,Jake Parsons,Big Bird,New England Patriots,DEF,unknown,,,,11,8,2,15,15,11,858751028768686080,2,NE
+Sleeper,2025,Jake Parsons,Big Bird,Isaiah Davis,RB,unknown,,,,11,3,0,0,0,1.8,858751028768686080,2,11571
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Riley Patterson,K,unknown,,,,11,6,2,24,24,0,1001557048196222976,14,7922
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Kansas City Chiefs,DEF,unknown,,,,11,1,1,2,2,0,1001557048196222976,14,KC
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Tyler Badie,RB,unknown,,,,11,1,0,0,0,1,1001557048196222976,14,8208
+Sleeper,2025,Nathan Richards,Nater Taterz,Michael Wilson,WR,unknown,,,,11,8,7,154.6,105.1,0,1253419240711540736,8,10232
+Sleeper,2025,Nathan Richards,Nater Taterz,Daniel Carlson,K,unknown,,,,11,2,2,15,15,0,1253419240711540736,8,5095
+Sleeper,2025,Tyler Rose,Unverified Sources,Pittsburgh Steelers,DEF,unknown,,,,11,6,3,38,31,9,1253479720855535616,13,PIT
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Noah Fant,TE,unknown,,,,11,8,1,6.6,6.6,5.7,1134329802619793408,12,5857
+Sleeper,2025,Billy Rose,Snooki's Cookie,Trevor Lawrence,QB,unknown,,,,12,4,1,17.14,17.14,41.02,1248314494598270976,1,7523
+Sleeper,2025,Billy Rose,Snooki's Cookie,Brock Wright,TE,unknown,,,,12,2,1,5.9,5.9,0,1248314494598270976,1,7891
+Sleeper,2025,Chris McKinney,Uncle Tito,Jacoby Brissett,QB,unknown,,,,12,7,3,57.36,57.36,0,1253417044339068928,6,3257
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,David Njoku,TE,unknown,,,,12,1,1,0,0,0,1253476821127671808,11,4033
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Isaiah Likely,TE,unknown,,,,12,7,1,0,0,27,1253476821127671808,11,8131
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Michael Carter,RB,unknown,,,,12,7,1,8.8,8.8,16.5,1134324957397438464,7,7607
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Detroit Lions,DEF,unknown,,,,12,1,1,3,3,0,1134324957397438464,7,DET
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Ty Johnson,RB,unknown,,,,12,7,0,0,0,19.6,1134324957397438464,7,6039
+Sleeper,2025,Harlan Lane,Coast Trash Cowboy,Los Angeles Chargers,DEF,unknown,,,,12,7,2,20,20,0,1134324957397438464,7,LAC
+Sleeper,2025,Hayden Ward,Bear Force One,AJ Barner,TE,unknown,,,,12,1,1,3.8,3.8,0,895410371974983680,5,11603
+Sleeper,2025,Jake Parsons,Big Bird,Cam Little,K,unknown,,,,12,7,3,30,30,0,858751028768686080,2,11786
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Andy Borregales,K,unknown,,,,12,2,2,32,32,0,1001557048196222976,14,12713
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Jacksonville Jaguars,DEF,unknown,,,,12,7,3,31,31,0,1001557048196222976,14,JAX
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Cedric Tillman,WR,unknown,,,,12,7,0,0,0,4.8,1001557048196222976,14,10444
+Sleeper,2025,Nathan Richards,Nater Taterz,Wil Lutz,K,unknown,,,,12,2,1,9,9,0,1253419240711540736,8,3678
+Sleeper,2025,Tyler Rose,Unverified Sources,Harrison Butker,K,unknown,,,,12,2,1,16,16,4,1253479720855535616,13,4227
+Sleeper,2025,Walter Mitchell,Dirty Sherm,Andrei Iosivas,WR,unknown,,,,12,7,2,20.5,20.5,3.7,1134329802619793408,12,10226
+Sleeper,2025,Austin Abegg,Kissin TDs,Tampa Bay Buccaneers,DEF,unknown,,,,13,3,2,12,12,0,716158801597767680,3,TB
+Sleeper,2025,Austin Abegg,Kissin TDs,Brandin Cooks,WR,unknown,,,,13,2,0,0,0,2.3,716158801597767680,3,2197
+Sleeper,2025,Billy Rose,Snooki's Cookie,Mike Gesicki,TE,unknown,,,,13,1,1,3.9,3.9,0,1248314494598270976,1,4993
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Evan McPherson,K,unknown,,,,13,6,2,28,28,0,1253422363878375424,10,7839
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Indianapolis Colts,DEF,unknown,,,,13,6,2,6,6,0,1253422363878375424,10,IND
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Greg Dortch,WR,unknown,,,,13,1,0,0,0,3.4,1253422363878375424,10,5970
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Jayden Higgins,WR,unknown,,,,13,6,0,0,0,17.9,1253476821127671808,11,12484
+Sleeper,2025,Hayden Ward,Bear Force One,John Metchie III,WR,unknown,,,,13,6,0,0,0,13.1,895410371974983680,5,8147
+Sleeper,2025,Joey Roberts,Shoobie Flojo,Devin Neal,RB,unknown,,,,13,6,2,25.3,25.3,0,1001557048196222976,14,12476
+Sleeper,2025,Nathan Richards,Nater Taterz,Malik Washington,WR,unknown,,,,13,1,0,0,0,7,1253419240711540736,8,11610
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Samaje Perine,RB,unknown,,,,14,1,1,4.8,4.8,0,734112111084630016,9,4147
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Miami Dolphins,DEF,unknown,,,,14,5,3,27,16,0,734112111084630016,9,MIA
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Cade Otton,TE,unknown,,,,14,5,0,0,0,4.9,734112111084630016,9,8111
+Sleeper,2025,Billy Rose,Snooki's Cookie,Colby Parkinson,TE,unknown,,,,14,5,3,40.8,12.2,0,1248314494598270976,1,6865
+Sleeper,2025,Billy Rose,Snooki's Cookie,Kansas City Chiefs,DEF,unknown,,,,14,5,0,0,0,4,1248314494598270976,1,KC
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Adonai Mitchell,WR,unknown,,,,14,5,0,0,0,3.4,1253422363878375424,10,11625
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Geno Smith,QB,unknown,,,,14,5,0,0,0,9.04,1253422363878375424,10,1373
+Sleeper,2025,Bryce Poisson,Bushy Beavers,Tyrod Taylor,QB,unknown,,,,14,1,0,0,0,-1.76,1253422363878375424,10,827
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,San Francisco 49ers,DEF,unknown,,,,14,5,0,0,0,0,1253476821127671808,11,SF
+Sleeper,2025,Hayden Ward,Bear Force One,Devaughn Vele,WR,unknown,,,,14,5,0,0,0,7,895410371974983680,5,11834
+Sleeper,2025,Jake Parsons,Big Bird,AJ Barner,TE,unknown,,,,14,5,0,0,0,5.7,858751028768686080,2,11603
+Sleeper,2025,Nathan Richards,Nater Taterz,Harrison Mevis,K,unknown,,,,14,5,4,40,9,0,1253419240711540736,8,12015
+Sleeper,2025,Nathan Richards,Nater Taterz,Tennessee Titans,DEF,unknown,,,,14,1,1,8,8,0,1253419240711540736,8,TEN
+Sleeper,2025,Nathan Richards,Nater Taterz,Luther Burden III,WR,unknown,,,,14,5,0,0,0,11,1253419240711540736,8,12519
+Sleeper,2025,Tyler Rose,Unverified Sources,Evan Engram,TE,unknown,,,,14,4,1,2.8,2.8,0,1253479720855535616,13,4066
+Sleeper,2025,Austin Abegg,Kissin TDs,Jaylen Wright,RB,unknown,,,,15,4,0,0,0,0,716158801597767680,3,11643
+Sleeper,2025,Austin Abegg,Kissin TDs,Tua Tagovailoa,QB,unknown,,,,15,1,0,0,0,0,716158801597767680,3,6768
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Cooper Kupp,WR,unknown,,,,15,1,0,0,0,0,734112111084630016,9,4039
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Trevor Lawrence,QB,unknown,,,,15,4,0,0,0,0,734112111084630016,9,7523
+Sleeper,2025,Billy Rose,Snooki's Cookie,Brian Robinson Jr.,RB,unknown,,,,15,3,0,0,0,0,1248314494598270976,1,8154
+Sleeper,2025,Chris McKinney,Uncle Tito,Carolina Panthers,DEF,unknown,,,,15,1,0,0,0,0,1253417044339068928,6,CAR
+Sleeper,2025,Nathan Richards,Nater Taterz,Tyler Shough,QB,unknown,,,,15,4,3,57.12,0,0,1253419240711540736,8,12545
+Sleeper,2025,Nathan Richards,Nater Taterz,Samaje Perine,RB,unknown,,,,15,4,0,0,0,0,1253419240711540736,8,4147
+Sleeper,2025,Austin Abegg,Kissin TDs,J.J. McCarthy,QB,unknown,,,,16,3,0,0,0,0,716158801597767680,3,11565
+Sleeper,2025,Austin Joannes,Doctor Fantasy,Jalen Coker,WR,unknown,,,,16,3,2,11.3,0,0,734112111084630016,9,11646
+Sleeper,2025,Chris McKinney,Uncle Tito,Tampa Bay Buccaneers,DEF,unknown,,,,16,3,0,0,0,0,1253417044339068928,6,TB
+Sleeper,2025,Connor Schwartz,SMOKIN DARTS,Dawson Knox,TE,unknown,,,,16,3,1,2,0,0,1253476821127671808,11,5906
+Sleeper,2025,Nathan Richards,Nater Taterz,Terrance Ferguson,TE,unknown,,,,17,1,0,0,0,0,1253419240711540736,8,12487
+Sleeper,2025,Nathan Richards,Nater Taterz,Jake Tonges,TE,unknown,,,,17,1,0,0,0,0,1253419240711540736,8,8698
+Sleeper,2025,Tyler Rose,Unverified Sources,Taysom Hill,TE,unknown,,,,17,2,1,0,0,0,1253479720855535616,13,4381
+Sleeper,2025,Tyler Rose,Unverified Sources,Davis Allen,TE,unknown,,,,17,2,0,0,0,0,1253479720855535616,13,10214
+Sleeper,2025,Tyler Rose,Unverified Sources,Kyle Williams,WR,unknown,,,,17,1,0,0,0,0,1253479720855535616,13,12547
+Sleeper,2025,Tyler Rose,Unverified Sources,Cooper Kupp,WR,unknown,,,,17,2,0,0,0,0,1253479720855535616,13,4039
+Sleeper,2025,Tyler Rose,Unverified Sources,Cole Kmet,TE,unknown,,,,18,1,0,0,0,0,1253479720855535616,13,6826
+Sleeper,2026,Austin Abegg,Kissin TDs,Lamar Jackson,QB,draft,,4,45,1,9,5,80.08,80.08,0,716158801597767680,3,4881
+Sleeper,2026,Austin Abegg,Kissin TDs,Kenneth Walker III,RB,draft,,2,17,1,9,8,207.4,207.4,0,716158801597767680,3,8151
+Sleeper,2026,Austin Abegg,Kissin TDs,Travis Etienne Jr.,RB,draft,,3,40,1,9,3,30.9,30.9,0,716158801597767680,3,7543
+Sleeper,2026,Austin Abegg,Kissin TDs,Chris Godwin Jr.,WR,draft,,6,73,1,9,9,57.9,57.9,0,716158801597767680,3,4037
+Sleeper,2026,Austin Abegg,Kissin TDs,Brian Thomas Jr.,WR,draft,,5,68,1,9,2,7,7,26.7,716158801597767680,3,11631
 Sleeper,2026,Austin Abegg,Kissin TDs,Mark Andrews,TE,draft,,9,124,1,7,4,29.9,29.9,20.5,716158801597767680,3,5012
-Sleeper,2026,Austin Abegg,Kissin TDs,CeeDee Lamb,WR,draft,,1,12,1,8,8,174.3,174.3,0,716158801597767680,3,6786
-Sleeper,2026,Austin Abegg,Kissin TDs,Will Reichard,K,free_agent,1,,,1,1,1,7,7,0,716158801597767680,3,11792
+Sleeper,2026,Austin Abegg,Kissin TDs,CeeDee Lamb,WR,draft,,1,12,1,9,9,209.8,209.8,0,716158801597767680,3,6786
+Sleeper,2026,Austin Abegg,Kissin TDs,Will Reichard,K,unknown,,,,1,1,1,7,7,0,716158801597767680,3,11792
 Sleeper,2026,Austin Abegg,Kissin TDs,Jacksonville Jaguars,DEF,draft,,14,185,1,1,1,14,14,0,716158801597767680,3,JAX
 Sleeper,2026,Austin Abegg,Kissin TDs,Jonathon Brooks,RB,draft,,7,96,1,4,0,0,0,9.3,716158801597767680,3,11583
 Sleeper,2026,Austin Abegg,Kissin TDs,Woody Marks,RB,draft,,10,129,1,2,0,0,0,13.5,716158801597767680,3,12474
 Sleeper,2026,Austin Abegg,Kissin TDs,Malachi Fields,WR,draft,,15,208,1,3,0,0,0,13.4,716158801597767680,3,13285
-Sleeper,2026,Austin Abegg,Kissin TDs,Stefon Diggs,WR,draft,,8,101,1,8,5,66.7,66.7,15.5,716158801597767680,3,2449
-Sleeper,2026,Austin Abegg,Kissin TDs,Dalton Schultz,TE,draft,,12,157,1,8,3,16.2,16.2,51,716158801597767680,3,5001
-Sleeper,2026,Austin Abegg,Kissin TDs,Tank Dell,WR,draft,,13,180,1,8,1,5.5,5.5,0,716158801597767680,3,9502
+Sleeper,2026,Austin Abegg,Kissin TDs,Stefon Diggs,WR,draft,,8,101,1,9,6,74.8,74.8,15.5,716158801597767680,3,2449
+Sleeper,2026,Austin Abegg,Kissin TDs,Dalton Schultz,TE,draft,,12,157,1,9,3,16.2,16.2,57.2,716158801597767680,3,5001
+Sleeper,2026,Austin Abegg,Kissin TDs,Tank Dell,WR,draft,,13,180,1,9,1,5.5,5.5,23.5,716158801597767680,3,9502
 Sleeper,2026,Austin Abegg,Kissin TDs,Keaton Mitchell,RB,draft,,11,152,1,2,0,0,0,5.8,716158801597767680,3,9511
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Dak Prescott,QB,draft,,7,93,1,8,4,74.98,74.98,72.96,734112111084630016,9,3294
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Derrick Henry,RB,draft,,2,20,1,8,8,140.7,140.7,0,734112111084630016,9,3198
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Saquon Barkley,RB,draft,,1,9,1,8,6,50.5,50.5,0,734112111084630016,9,4866
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Tee Higgins,WR,draft,,3,37,1,8,7,145.6,145.6,0,734112111084630016,9,6801
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Christian Watson,WR,draft,,5,65,1,8,8,154.8,154.8,0,734112111084630016,9,8167
-Sleeper,2026,Austin Joannes,Doctor Fantasy,George Kittle,TE,draft,,6,76,1,8,6,87.5,87.5,18,734112111084630016,9,4217
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Quinshon Judkins,RB,draft,,4,48,1,8,7,86.6,86.6,0,734112111084630016,9,12512
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Ka'imi Fairbairn,K,draft,,14,188,1,8,7,76,76,0,734112111084630016,9,3451
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Seattle Seahawks,DEF,draft,,12,160,1,8,8,60,60,0,734112111084630016,9,SEA
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Jared Goff,QB,draft,,13,177,1,8,4,90.8,90.8,55.26,734112111084630016,9,3163
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Dallas Goedert,TE,draft,,9,121,1,8,3,20.7,20.7,43.3,734112111084630016,9,5022
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Justice Hill,RB,draft,,15,205,1,8,2,13.7,13.7,29.2,734112111084630016,9,5995
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Dak Prescott,QB,draft,,7,93,1,9,4,74.98,74.98,92.46,734112111084630016,9,3294
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Derrick Henry,RB,draft,,2,20,1,9,9,146.28,146.28,0,734112111084630016,9,3198
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Saquon Barkley,RB,draft,,1,9,1,9,7,58.7,58.7,0,734112111084630016,9,4866
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Tee Higgins,WR,draft,,3,37,1,9,8,165.8,165.8,0,734112111084630016,9,6801
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Christian Watson,WR,draft,,5,65,1,9,9,186.9,186.9,0,734112111084630016,9,8167
+Sleeper,2026,Austin Joannes,Doctor Fantasy,George Kittle,TE,draft,,6,76,1,9,7,97.3,97.3,18,734112111084630016,9,4217
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Quinshon Judkins,RB,draft,,4,48,1,9,8,92.1,92.1,0,734112111084630016,9,12512
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Ka'imi Fairbairn,K,draft,,14,188,1,9,8,93,93,0,734112111084630016,9,3451
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Seattle Seahawks,DEF,draft,,12,160,1,9,9,71,71,0,734112111084630016,9,SEA
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Jared Goff,QB,draft,,13,177,1,9,5,96.1,96.1,55.26,734112111084630016,9,3163
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Dallas Goedert,TE,draft,,9,121,1,9,3,20.7,20.7,53.3,734112111084630016,9,5022
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Justice Hill,RB,draft,,15,205,1,9,2,13.7,13.7,48.4,734112111084630016,9,5995
 Sleeper,2026,Austin Joannes,Doctor Fantasy,Jerry Jeudy,WR,draft,,11,149,1,2,0,0,0,4.6,734112111084630016,9,6783
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Alec Pierce,WR,draft,,8,104,1,8,0,0,0,12.2,734112111084630016,9,8142
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Tank Bigsby,RB,draft,,10,132,1,8,0,0,0,17.1,734112111084630016,9,9225
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Alec Pierce,WR,draft,,8,104,1,9,0,0,0,12.2,734112111084630016,9,8142
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Tank Bigsby,RB,draft,,10,132,1,9,0,0,0,17.1,734112111084630016,9,9225
 Sleeper,2026,Billy Rose,Snooki's Cookie,Jaxson Dart,QB,draft,,7,90,1,2,2,27.4,27.4,0,1248314494598270976,1,12508
-Sleeper,2026,Billy Rose,Snooki's Cookie,Cam Skattebo,RB,draft,,4,51,1,8,5,51.3,51.3,21.1,1248314494598270976,1,12481
-Sleeper,2026,Billy Rose,Snooki's Cookie,Rhamondre Stevenson,RB,draft,,5,62,1,8,8,98.9,98.9,0,1248314494598270976,1,7611
-Sleeper,2026,Billy Rose,Snooki's Cookie,Puka Nacua,WR,draft,,1,6,1,8,7,142.6,142.6,0,1248314494598270976,1,9493
+Sleeper,2026,Billy Rose,Snooki's Cookie,Cam Skattebo,RB,draft,,4,51,1,9,5,51.3,51.3,21.1,1248314494598270976,1,12481
+Sleeper,2026,Billy Rose,Snooki's Cookie,Rhamondre Stevenson,RB,draft,,5,62,1,9,9,113.7,113.7,0,1248314494598270976,1,7611
+Sleeper,2026,Billy Rose,Snooki's Cookie,Puka Nacua,WR,draft,,1,6,1,9,8,179.6,179.6,0,1248314494598270976,1,9493
 Sleeper,2026,Billy Rose,Snooki's Cookie,Ladd McConkey,WR,draft,,3,34,1,7,5,39,39,0,1248314494598270976,1,11635
-Sleeper,2026,Billy Rose,Snooki's Cookie,Harold Fannin Jr.,TE,draft,,6,79,1,8,8,92.1,92.1,0,1248314494598270976,1,12506
-Sleeper,2026,Billy Rose,Snooki's Cookie,Malik Nabers,WR,draft,,2,23,1,8,7,128.5,128.5,0,1248314494598270976,1,11632
+Sleeper,2026,Billy Rose,Snooki's Cookie,Harold Fannin Jr.,TE,draft,,6,79,1,9,9,104.3,104.3,0,1248314494598270976,1,12506
+Sleeper,2026,Billy Rose,Snooki's Cookie,Malik Nabers,WR,draft,,2,23,1,9,8,137.8,137.8,0,1248314494598270976,1,11632
 Sleeper,2026,Billy Rose,Snooki's Cookie,Harrison Butker,K,draft,,14,191,1,7,6,52,52,0,1248314494598270976,1,4227
-Sleeper,2026,Billy Rose,Snooki's Cookie,Los Angeles Rams,DEF,draft,,11,146,1,8,8,45,45,0,1248314494598270976,1,LAR
-Sleeper,2026,Billy Rose,Snooki's Cookie,Devaughn Vele,WR,draft,,15,202,1,8,2,23.3,23.3,62.5,1248314494598270976,1,11834
-Sleeper,2026,Billy Rose,Snooki's Cookie,Jordyn Tyson,WR,draft,,8,107,1,8,0,0,0,0,1248314494598270976,1,13281
+Sleeper,2026,Billy Rose,Snooki's Cookie,Los Angeles Rams,DEF,draft,,11,146,1,9,8,45,45,13,1248314494598270976,1,LAR
+Sleeper,2026,Billy Rose,Snooki's Cookie,Devaughn Vele,WR,draft,,15,202,1,9,2,23.3,23.3,66.2,1248314494598270976,1,11834
+Sleeper,2026,Billy Rose,Snooki's Cookie,Jordyn Tyson,WR,draft,,8,107,1,9,1,5,5,0,1248314494598270976,1,13281
 Sleeper,2026,Billy Rose,Snooki's Cookie,Jonah Coleman,RB,draft,,12,163,1,4,0,0,0,14.8,1248314494598270976,1,13345
 Sleeper,2026,Billy Rose,Snooki's Cookie,De'Zhaun Stribling,WR,draft,,9,118,1,2,0,0,0,0,1248314494598270976,1,13417
 Sleeper,2026,Billy Rose,Snooki's Cookie,T.J. Hockenson,TE,draft,,13,174,1,3,0,0,0,22.6,1248314494598270976,1,5844
-Sleeper,2026,Billy Rose,Snooki's Cookie,Darnell Mooney,WR,free_agent,1,,,1,1,0,0,0,4.7,1248314494598270976,1,7090
-Sleeper,2026,Billy Rose,Snooki's Cookie,Tyler Allgeier,RB,draft,,10,135,1,8,2,47,47,40.1,1248314494598270976,1,8132
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Josh Allen,QB,draft,,3,29,1,8,7,189.82,189.82,0,1253422363878375424,10,4984
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Bijan Robinson,RB,draft,,1,1,1,8,8,158.3,158.3,0,1253422363878375424,10,9509
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Javonte Williams,RB,draft,,2,28,1,8,8,139.2,139.2,0,1253422363878375424,10,7588
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Jameson Williams,WR,draft,,4,56,1,8,7,102.7,102.7,0,1253422363878375424,10,8148
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Courtland Sutton,WR,draft,,6,84,1,8,4,20.1,20.1,28,1253422363878375424,10,5045
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Dalton Kincaid,TE,draft,,7,85,1,8,6,77.4,77.4,3.7,1253422363878375424,10,10236
+Sleeper,2026,Billy Rose,Snooki's Cookie,Darnell Mooney,WR,unknown,,,,1,1,0,0,0,4.7,1248314494598270976,1,7090
+Sleeper,2026,Billy Rose,Snooki's Cookie,Tyler Allgeier,RB,draft,,10,135,1,9,3,53.6,53.6,40.1,1248314494598270976,1,8132
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Josh Allen,QB,draft,,3,29,1,9,8,202.68,202.68,0,1253422363878375424,10,4984
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Bijan Robinson,RB,draft,,1,1,1,9,9,187,187,0,1253422363878375424,10,9509
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Javonte Williams,RB,draft,,2,28,1,9,9,163.6,163.6,0,1253422363878375424,10,7588
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Jameson Williams,WR,draft,,4,56,1,9,8,107.7,107.7,0,1253422363878375424,10,8148
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Courtland Sutton,WR,draft,,6,84,1,9,4,20.1,20.1,43.5,1253422363878375424,10,5045
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Dalton Kincaid,TE,draft,,7,85,1,9,6,77.4,77.4,9.5,1253422363878375424,10,10236
 Sleeper,2026,Bryce Poisson,Bushy Beavers,Jadarian Price,RB,draft,,5,57,1,1,1,7.8,7.8,0,1253422363878375424,10,13286
 Sleeper,2026,Bryce Poisson,Bushy Beavers,Joey Slye,K,draft,,15,197,1,1,1,5,5,0,1253422363878375424,10,6528
 Sleeper,2026,Bryce Poisson,Bushy Beavers,Philadelphia Eagles,DEF,draft,,12,168,1,3,3,8,8,0,1253422363878375424,10,PHI
 Sleeper,2026,Bryce Poisson,Bushy Beavers,Gunnar Helm,TE,draft,,14,196,1,4,0,0,0,17,1253422363878375424,10,12502
 Sleeper,2026,Bryce Poisson,Bushy Beavers,Kaleb Johnson,RB,draft,,13,169,1,5,0,0,0,10.6,1253422363878375424,10,12504
 Sleeper,2026,Bryce Poisson,Bushy Beavers,Ja'Kobi Lane,WR,draft,,10,140,1,1,0,0,0,2.1,1253422363878375424,10,13293
-Sleeper,2026,Bryce Poisson,Bushy Beavers,KC Concepcion Jr.,WR,draft,,9,113,1,8,2,14.9,14.9,56.7,1253422363878375424,10,13298
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Rashod Bateman,WR,free_agent,1,,,1,2,0,0,0,0,1253422363878375424,10,7571
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Wan'Dale Robinson,WR,draft,,8,112,1,8,4,32.2,32.2,45.1,1253422363878375424,10,8126
+Sleeper,2026,Bryce Poisson,Bushy Beavers,KC Concepcion Jr.,WR,draft,,9,113,1,9,2,14.9,14.9,76.5,1253422363878375424,10,13298
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Rashod Bateman,WR,unknown,,,,1,2,0,0,0,0,1253422363878375424,10,7571
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Wan'Dale Robinson,WR,draft,,8,112,1,9,4,32.2,32.2,45.1,1253422363878375424,10,8126
 Sleeper,2026,Bryce Poisson,Bushy Beavers,Zach Charbonnet,RB,draft,,11,141,1,8,0,0,0,5.9,1253422363878375424,10,9753
 Sleeper,2026,Chris McKinney,Uncle Tito,Jalen Hurts,QB,draft,,5,60,1,6,5,81.02,81.02,0,1253417044339068928,6,6904
-Sleeper,2026,Chris McKinney,Uncle Tito,Christian McCaffrey,RB,draft,,1,4,1,8,7,144,144,0,1253417044339068928,6,4034
-Sleeper,2026,Chris McKinney,Uncle Tito,Jacory Croskey-Merritt,RB,draft,,8,109,1,8,5,44.9,44.9,0,1253417044339068928,6,12533
-Sleeper,2026,Chris McKinney,Uncle Tito,DeVonta Smith,WR,draft,,3,32,1,8,3,50.5,50.5,20.5,1253417044339068928,6,7525
-Sleeper,2026,Chris McKinney,Uncle Tito,Carnell Tate,WR,draft,,6,81,1,8,4,38.3,38.3,41,1253417044339068928,6,13279
-Sleeper,2026,Chris McKinney,Uncle Tito,Juwan Johnson,TE,draft,,11,144,1,8,7,67.5,67.5,0,1253417044339068928,6,7002
-Sleeper,2026,Chris McKinney,Uncle Tito,Michael Wilson,WR,draft,,7,88,1,8,8,110.68,110.68,0,1253417044339068928,6,10232
+Sleeper,2026,Chris McKinney,Uncle Tito,Christian McCaffrey,RB,draft,,1,4,1,9,8,166.7,166.7,0,1253417044339068928,6,4034
+Sleeper,2026,Chris McKinney,Uncle Tito,Jacory Croskey-Merritt,RB,draft,,8,109,1,9,5,44.9,44.9,0,1253417044339068928,6,12533
+Sleeper,2026,Chris McKinney,Uncle Tito,DeVonta Smith,WR,draft,,3,32,1,9,3,50.5,50.5,20.5,1253417044339068928,6,7525
+Sleeper,2026,Chris McKinney,Uncle Tito,Carnell Tate,WR,draft,,6,81,1,9,4,38.3,38.3,41,1253417044339068928,6,13279
+Sleeper,2026,Chris McKinney,Uncle Tito,Juwan Johnson,TE,draft,,11,144,1,9,7,67.5,67.5,11.4,1253417044339068928,6,7002
+Sleeper,2026,Chris McKinney,Uncle Tito,Michael Wilson,WR,draft,,7,88,1,9,9,122.68,122.68,0,1253417044339068928,6,10232
 Sleeper,2026,Chris McKinney,Uncle Tito,Jake Bates,K,draft,,14,193,1,5,5,49,49,0,1253417044339068928,6,11539
 Sleeper,2026,Chris McKinney,Uncle Tito,Dallas Cowboys,DEF,draft,,15,200,1,7,7,20,20,0,1253417044339068928,6,DAL
-Sleeper,2026,Chris McKinney,Uncle Tito,Tre Tucker,WR,draft,,12,165,1,8,2,8.4,8.4,95.4,1253417044339068928,6,10213
-Sleeper,2026,Chris McKinney,Uncle Tito,Brock Bowers,TE,draft,,2,25,1,8,6,127.7,127.7,0,1253417044339068928,6,11604
+Sleeper,2026,Chris McKinney,Uncle Tito,Tre Tucker,WR,draft,,12,165,1,9,3,17.9,17.9,95.4,1253417044339068928,6,10213
+Sleeper,2026,Chris McKinney,Uncle Tito,Brock Bowers,TE,draft,,2,25,1,9,7,152,152,0,1253417044339068928,6,11604
 Sleeper,2026,Chris McKinney,Uncle Tito,Dylan Sampson,RB,draft,,13,172,1,1,0,0,0,0,1253417044339068928,6,12469
-Sleeper,2026,Chris McKinney,Uncle Tito,Josh Jacobs,RB,draft,,4,53,1,8,2,43.3,43.3,0,1253417044339068928,6,5850
-Sleeper,2026,Chris McKinney,Uncle Tito,Romeo Doubs,WR,draft,,9,116,1,8,1,12.6,12.6,45.5,1253417044339068928,6,8121
+Sleeper,2026,Chris McKinney,Uncle Tito,Josh Jacobs,RB,draft,,4,53,1,9,3,43.8,43.8,0,1253417044339068928,6,5850
+Sleeper,2026,Chris McKinney,Uncle Tito,Romeo Doubs,WR,draft,,9,116,1,9,1,12.6,12.6,45.5,1253417044339068928,6,8121
 Sleeper,2026,Chris McKinney,Uncle Tito,Tyjae Spears,RB,draft,,10,137,1,5,1,1.8,1.8,13.9,1253417044339068928,6,9508
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Matthew Stafford,QB,draft,,7,89,1,8,8,131.64,131.64,0,1253476821127671808,11,421
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Jonathan Taylor,RB,draft,,1,5,1,8,8,144.2,144.2,0,1253476821127671808,11,6813
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kyren Williams,RB,draft,,3,33,1,8,8,150,150,0,1253476821127671808,11,8150
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Drake London,WR,draft,,2,24,1,8,8,113.8,113.8,0,1253476821127671808,11,8112
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Davante Adams,WR,draft,,4,52,1,8,6,106,106,0,1253476821127671808,11,2133
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kyle Pitts Sr.,TE,draft,,6,80,1,8,4,17.2,17.2,48.5,1253476821127671808,11,7553
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Jaylen Warren,RB,draft,,5,61,1,8,8,150.8,150.8,0,1253476821127671808,11,8228
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Matthew Stafford,QB,draft,,7,89,1,9,9,142.86,142.86,0,1253476821127671808,11,421
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Jonathan Taylor,RB,draft,,1,5,1,9,9,153.6,153.6,0,1253476821127671808,11,6813
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kyren Williams,RB,draft,,3,33,1,9,9,159.1,159.1,0,1253476821127671808,11,8150
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Drake London,WR,draft,,2,24,1,9,9,125.6,125.6,0,1253476821127671808,11,8112
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Davante Adams,WR,draft,,4,52,1,9,6,106,106,0,1253476821127671808,11,2133
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kyle Pitts Sr.,TE,draft,,6,80,1,9,4,17.2,17.2,53.8,1253476821127671808,11,7553
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Jaylen Warren,RB,draft,,5,61,1,9,8,150.8,150.8,0,1253476821127671808,11,8228
 Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Tyler Loop,K,draft,,14,192,1,8,8,66,66,0,1253476821127671808,11,12711
 Sleeper,2026,Connor Schwartz,SMOKIN DARTS,New England Patriots,DEF,draft,,13,173,1,3,3,26,26,0,1253476821127671808,11,NE
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kyle Monangai,RB,draft,,9,117,1,8,0,0,0,64.3,1253476821127671808,11,12534
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Denzel Boston,WR,draft,,10,136,1,8,1,5.7,5.7,82.2,1253476821127671808,11,13346
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kyler Murray,QB,draft,,15,201,1,8,0,0,0,73.58,1253476821127671808,11,5849
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Brenton Strange,TE,draft,,11,145,1,8,3,30.7,30.7,36.7,1253476821127671808,11,9480
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kayshon Boutte,WR,free_agent,1,,,1,3,0,0,0,13.9,1253476821127671808,11,9504
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Quentin Johnston,WR,draft,,8,108,1,8,0,0,0,32.5,1253476821127671808,11,9754
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Jordan Love,QB,draft,,13,178,1,8,5,93,93,57.84,1253415068964503552,4,6804
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kyle Monangai,RB,draft,,9,117,1,9,0,0,0,64.3,1253476821127671808,11,12534
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Denzel Boston,WR,draft,,10,136,1,9,1,5.7,5.7,98,1253476821127671808,11,13346
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kyler Murray,QB,draft,,15,201,1,9,0,0,0,73.58,1253476821127671808,11,5849
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Brenton Strange,TE,draft,,11,145,1,9,4,34.9,34.9,36.7,1253476821127671808,11,9480
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kayshon Boutte,WR,unknown,,,,1,3,0,0,0,13.9,1253476821127671808,11,9504
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Quentin Johnston,WR,draft,,8,108,1,9,0,0,0,46.8,1253476821127671808,11,9754
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Jordan Love,QB,draft,,13,178,1,9,5,93,93,94.02,1253415068964503552,4,6804
 Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,James Cook III,RB,draft,,1,10,1,5,5,95.3,95.3,0,1253415068964503552,4,8138
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,D'Andre Swift,RB,draft,,4,47,1,8,8,152.7,152.7,0,1253415068964503552,4,6790
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,George Pickens,WR,draft,,2,19,1,8,8,106.3,106.3,0,1253415068964503552,4,8137
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,D'Andre Swift,RB,draft,,4,47,1,9,9,155.8,155.8,0,1253415068964503552,4,6790
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,George Pickens,WR,draft,,2,19,1,9,8,106.3,106.3,0,1253415068964503552,4,8137
 Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Emeka Egbuka,WR,draft,,3,38,1,5,5,53.3,53.3,0,1253415068964503552,4,12514
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Tyler Warren,TE,draft,,5,66,1,8,6,75.7,75.7,0,1253415068964503552,4,12518
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Tyler Warren,TE,draft,,5,66,1,9,7,84.1,84.1,0,1253415068964503552,4,12518
 Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Jayden Reed,WR,draft,,6,75,1,6,1,5,5,1.4,1253415068964503552,4,10222
 Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Harrison Mevis,K,draft,,14,187,1,2,2,4,4,0,1253415068964503552,4,12015
 Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Houston Texans,DEF,draft,,11,150,1,7,7,43,43,0,1253415068964503552,4,HOU
 Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Tyrone Tracy Jr.,RB,draft,,15,206,1,3,0,0,0,-0.3,1253415068964503552,4,11655
 Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Tre' Harris,WR,draft,,12,159,1,5,0,0,0,37.5,1253415068964503552,4,12509
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Makai Lemon,WR,draft,,7,94,1,5,0,0,0,25.3,1253415068964503552,4,13294
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Patrick Mahomes,QB,draft,,8,103,1,8,2,32.94,32.94,93.56,1253415068964503552,4,4046
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Aaron Jones Sr.,RB,draft,,9,122,1,8,6,73.8,73.8,10,1253415068964503552,4,4199
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Makai Lemon,WR,draft,,7,94,1,6,1,12.1,12.1,25.3,1253415068964503552,4,13294
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Patrick Mahomes,QB,draft,,8,103,1,9,3,49.42,49.42,93.56,1253415068964503552,4,4046
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Aaron Jones Sr.,RB,draft,,9,122,1,9,7,76.9,76.9,10,1253415068964503552,4,4199
 Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Rashid Shaheed,WR,draft,,10,131,1,7,0,0,0,42.2,1253415068964503552,4,8676
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Drake Maye,QB,draft,,4,43,1,8,7,134.76,134.76,26.16,1134324957397438464,7,11564
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Bucky Irving,RB,draft,,3,42,1,8,8,136.6,136.6,0,1134324957397438464,7,11584
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,J.K. Dobbins,RB,draft,,6,71,1,8,5,35.4,35.4,23.9,1134324957397438464,7,6806
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Justin Jefferson,WR,draft,,1,14,1,8,6,86.4,86.4,0,1134324957397438464,7,6794
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,A.J. Brown,WR,draft,,2,15,1,8,3,19.1,19.1,0,1134324957397438464,7,5859
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Travis Kelce,TE,draft,,8,99,1,8,7,84,84,0,1134324957397438464,7,1466
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Marvin Harrison Jr.,WR,draft,,5,70,1,8,1,4.3,4.3,29.2,1134324957397438464,7,11628
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Drake Maye,QB,draft,,4,43,1,9,8,153.02,153.02,26.16,1134324957397438464,7,11564
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Bucky Irving,RB,draft,,3,42,1,9,9,165.1,165.1,0,1134324957397438464,7,11584
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,J.K. Dobbins,RB,draft,,6,71,1,9,6,38.6,38.6,23.9,1134324957397438464,7,6806
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Justin Jefferson,WR,draft,,1,14,1,9,7,95.2,95.2,0,1134324957397438464,7,6794
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,A.J. Brown,WR,draft,,2,15,1,9,3,19.1,19.1,0,1134324957397438464,7,5859
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Travis Kelce,TE,draft,,8,99,1,9,8,101.3,101.3,0,1134324957397438464,7,1466
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Marvin Harrison Jr.,WR,draft,,5,70,1,9,1,4.3,4.3,33.2,1134324957397438464,7,11628
 Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Cameron Dicker,K,draft,,13,182,1,3,3,13,13,0,1134324957397438464,7,8259
 Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Minnesota Vikings,DEF,draft,,14,183,1,1,1,10,10,0,1134324957397438464,7,MIN
 Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Chris Rodriguez Jr.,RB,draft,,9,126,1,3,0,0,0,13.3,1134324957397438464,7,10219
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Alvin Kamara,RB,draft,,11,154,1,8,3,40.3,40.3,25.5,1134324957397438464,7,4035
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Alvin Kamara,RB,draft,,11,154,1,9,3,40.3,40.3,33.4,1134324957397438464,7,4035
 Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Sam Darnold,QB,draft,,15,210,1,1,0,0,0,0.52,1134324957397438464,7,4943
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Khalil Shakir,WR,draft,,10,127,1,8,4,32.8,32.8,33.6,1134324957397438464,7,8134
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Khalil Shakir,WR,draft,,10,127,1,9,5,42.6,42.6,33.6,1134324957397438464,7,8134
 Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Brian Robinson Jr.,RB,draft,,12,155,1,2,0,0,0,11.8,1134324957397438464,7,8154
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Jordan Addison,WR,draft,,7,98,1,8,4,44.8,44.8,4.3,1134324957397438464,7,9756
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Jordan Addison,WR,draft,,7,98,1,9,4,44.8,44.8,9.1,1134324957397438464,7,9756
 Sleeper,2026,Hayden Ward,Bear Force One,Baker Mayfield,QB,draft,,11,151,1,3,2,23.82,23.82,11.28,895410371974983680,5,4892
-Sleeper,2026,Hayden Ward,Bear Force One,Chase Brown,RB,draft,,1,11,1,8,7,90.9,90.9,0,895410371974983680,5,9224
-Sleeper,2026,Hayden Ward,Bear Force One,David Montgomery,RB,draft,,4,46,1,8,4,44.4,44.4,1.1,895410371974983680,5,5892
-Sleeper,2026,Hayden Ward,Bear Force One,Rashee Rice,WR,draft,,2,18,1,8,3,40.5,40.5,15.8,895410371974983680,5,10229
-Sleeper,2026,Hayden Ward,Bear Force One,Jaylen Waddle,WR,draft,,3,39,1,8,6,59.5,59.5,21.3,895410371974983680,5,7526
-Sleeper,2026,Hayden Ward,Bear Force One,Tucker Kraft,TE,draft,,5,67,1,8,8,88.5,88.5,0,895410371974983680,5,9484
-Sleeper,2026,Hayden Ward,Bear Force One,Parker Washington,WR,draft,,6,74,1,8,7,98.5,98.5,0,895410371974983680,5,9487
+Sleeper,2026,Hayden Ward,Bear Force One,Chase Brown,RB,draft,,1,11,1,9,8,101.4,101.4,0,895410371974983680,5,9224
+Sleeper,2026,Hayden Ward,Bear Force One,David Montgomery,RB,draft,,4,46,1,9,4,44.4,44.4,1.1,895410371974983680,5,5892
+Sleeper,2026,Hayden Ward,Bear Force One,Rashee Rice,WR,draft,,2,18,1,9,4,50.4,50.4,15.8,895410371974983680,5,10229
+Sleeper,2026,Hayden Ward,Bear Force One,Jaylen Waddle,WR,draft,,3,39,1,9,7,62.7,62.7,21.3,895410371974983680,5,7526
+Sleeper,2026,Hayden Ward,Bear Force One,Tucker Kraft,TE,draft,,5,67,1,9,9,90.4,90.4,0,895410371974983680,5,9484
+Sleeper,2026,Hayden Ward,Bear Force One,Parker Washington,WR,draft,,6,74,1,9,8,113.6,113.6,0,895410371974983680,5,9487
 Sleeper,2026,Hayden Ward,Bear Force One,Jason Myers,K,draft,,14,186,1,3,3,22,22,0,895410371974983680,5,2747
 Sleeper,2026,Hayden Ward,Bear Force One,Indianapolis Colts,DEF,draft,,15,207,1,1,1,1,1,0,895410371974983680,5,IND
-Sleeper,2026,Hayden Ward,Bear Force One,Xavier Worthy,WR,draft,,9,123,1,8,1,4.1,4.1,51.9,895410371974983680,5,11624
-Sleeper,2026,Hayden Ward,Bear Force One,Terrance Ferguson,TE,free_agent,1,13,179,1,7,0,0,0,1.9,895410371974983680,5,12487
-Sleeper,2026,Hayden Ward,Bear Force One,Emmett Johnson,RB,free_agent,1,,,1,2,0,0,0,14.3,895410371974983680,5,13337
-Sleeper,2026,Hayden Ward,Bear Force One,Samaje Perine,RB,free_agent,1,,,1,5,0,0,0,30.1,895410371974983680,5,4147
-Sleeper,2026,Hayden Ward,Bear Force One,Trevor Lawrence,QB,draft,,7,95,1,8,5,102.34,102.34,32.26,895410371974983680,5,7523
-Sleeper,2026,Hayden Ward,Bear Force One,Josh Downs,WR,draft,,8,102,1,8,4,33.7,33.7,36,895410371974983680,5,9500
-Sleeper,2026,Jake Parsons,Big Bird,Joe Burrow,QB,draft,,4,49,1,8,4,111.12,111.12,66.48,858751028768686080,2,6770
-Sleeper,2026,Jake Parsons,Big Bird,Tony Pollard,RB,draft,,5,64,1,8,7,113,113,7.5,858751028768686080,2,5967
+Sleeper,2026,Hayden Ward,Bear Force One,Xavier Worthy,WR,draft,,9,123,1,9,1,4.1,4.1,62.7,895410371974983680,5,11624
+Sleeper,2026,Hayden Ward,Bear Force One,Terrance Ferguson,TE,draft,,13,179,1,8,0,0,0,1.9,895410371974983680,5,12487
+Sleeper,2026,Hayden Ward,Bear Force One,Emmett Johnson,RB,unknown,,,,1,2,0,0,0,14.3,895410371974983680,5,13337
+Sleeper,2026,Hayden Ward,Bear Force One,Samaje Perine,RB,unknown,,,,1,5,0,0,0,30.1,895410371974983680,5,4147
+Sleeper,2026,Hayden Ward,Bear Force One,Trevor Lawrence,QB,draft,,7,95,1,9,6,116.92,116.92,32.26,895410371974983680,5,7523
+Sleeper,2026,Hayden Ward,Bear Force One,Josh Downs,WR,draft,,8,102,1,9,4,33.7,33.7,41.4,895410371974983680,5,9500
+Sleeper,2026,Jake Parsons,Big Bird,Joe Burrow,QB,draft,,4,49,1,9,5,140.66,140.66,66.48,858751028768686080,2,6770
+Sleeper,2026,Jake Parsons,Big Bird,Tony Pollard,RB,draft,,5,64,1,9,7,113,113,7.5,858751028768686080,2,5967
 Sleeper,2026,Jake Parsons,Big Bird,MarShawn Lloyd,RB,draft,,7,92,1,5,1,3.7,3.7,39,858751028768686080,2,11581
-Sleeper,2026,Jake Parsons,Big Bird,Jaxon Smith-Njigba,WR,draft,,1,8,1,8,8,234.96,234.96,0,858751028768686080,2,9488
+Sleeper,2026,Jake Parsons,Big Bird,Jaxon Smith-Njigba,WR,draft,,1,8,1,9,9,247.06,247.06,0,858751028768686080,2,9488
 Sleeper,2026,Jake Parsons,Big Bird,Nico Collins,WR,draft,,2,21,1,1,1,21.2,21.2,0,858751028768686080,2,7569
-Sleeper,2026,Jake Parsons,Big Bird,Greg Dulcich,TE,free_agent,1,,,1,1,1,3.8,3.8,0,858751028768686080,2,8172
+Sleeper,2026,Jake Parsons,Big Bird,Greg Dulcich,TE,unknown,,,,1,1,1,3.8,3.8,0,858751028768686080,2,8172
 Sleeper,2026,Jake Parsons,Big Bird,Garrett Wilson,WR,draft,,3,36,1,5,5,90.4,90.4,0,858751028768686080,2,8146
-Sleeper,2026,Jake Parsons,Big Bird,Chase McLaughlin,K,free_agent,1,,,1,4,4,41,41,0,858751028768686080,2,6650
+Sleeper,2026,Jake Parsons,Big Bird,Chase McLaughlin,K,unknown,,,,1,4,4,41,41,0,858751028768686080,2,6650
 Sleeper,2026,Jake Parsons,Big Bird,Los Angeles Chargers,DEF,draft,,14,189,1,1,1,1,1,0,858751028768686080,2,LAC
-Sleeper,2026,Jake Parsons,Big Bird,Blake Corum,RB,draft,,8,105,1,8,1,10.2,10.2,72.6,858751028768686080,2,11586
+Sleeper,2026,Jake Parsons,Big Bird,Blake Corum,RB,draft,,8,105,1,9,1,10.2,10.2,84.4,858751028768686080,2,11586
 Sleeper,2026,Jake Parsons,Big Bird,Pat Bryant,WR,draft,,13,176,1,2,0,0,0,9.8,858751028768686080,2,12492
-Sleeper,2026,Jake Parsons,Big Bird,Matthew Golden,WR,draft,,9,120,1,8,6,99,99,38.5,858751028768686080,2,12501
+Sleeper,2026,Jake Parsons,Big Bird,Matthew Golden,WR,draft,,9,120,1,9,7,133.4,133.4,38.5,858751028768686080,2,12501
 Sleeper,2026,Jake Parsons,Big Bird,Mike Washington Jr.,RB,draft,,11,148,1,1,0,0,0,4.1,858751028768686080,2,13305
 Sleeper,2026,Jake Parsons,Big Bird,Deebo Samuel Sr.,WR,draft,,10,133,1,3,1,16.4,16.4,24.5,858751028768686080,2,5872
-Sleeper,2026,Jake Parsons,Big Bird,Jordan Mason,RB,draft,,6,77,1,8,1,6.8,6.8,13.9,858751028768686080,2,8408
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Brock Purdy,QB,draft,,10,134,1,8,7,148.02,148.02,0,1001557048196222976,14,8183
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Ashton Jeanty,RB,draft,,2,22,1,8,8,134.3,134.3,0,1001557048196222976,14,12527
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Rico Dowdle,RB,draft,,7,91,1,8,3,25.1,25.1,19.5,1001557048196222976,14,7021
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Amon-Ra St. Brown,WR,draft,,1,7,1,8,7,145,145,0,1001557048196222976,14,7547
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Zay Flowers,WR,draft,,3,35,1,8,6,113.8,113.8,15.4,1001557048196222976,14,9997
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Sam LaPorta,TE,draft,,6,78,1,8,7,85.9,85.9,0,1001557048196222976,14,10859
+Sleeper,2026,Jake Parsons,Big Bird,Jordan Mason,RB,draft,,6,77,1,9,1,6.8,6.8,20.1,858751028768686080,2,8408
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Brock Purdy,QB,draft,,10,134,1,9,8,173.3,173.3,0,1001557048196222976,14,8183
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Ashton Jeanty,RB,draft,,2,22,1,9,9,141.3,141.3,0,1001557048196222976,14,12527
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Rico Dowdle,RB,draft,,7,91,1,9,3,25.1,25.1,19.5,1001557048196222976,14,7021
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Amon-Ra St. Brown,WR,draft,,1,7,1,9,8,161.6,161.6,0,1001557048196222976,14,7547
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Zay Flowers,WR,draft,,3,35,1,9,7,119.1,119.1,15.4,1001557048196222976,14,9997
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Sam LaPorta,TE,draft,,6,78,1,9,8,93.1,93.1,0,1001557048196222976,14,10859
 Sleeper,2026,Joey Roberts,Shoobie Flojo,DJ Moore,WR,draft,,4,50,1,8,4,38.3,38.3,16.6,1001557048196222976,14,4983
 Sleeper,2026,Joey Roberts,Shoobie Flojo,Cam Little,K,draft,,14,190,1,6,6,57,57,0,1001557048196222976,14,11786
 Sleeper,2026,Joey Roberts,Shoobie Flojo,Baltimore Ravens,DEF,draft,,13,175,1,2,2,10,10,0,1001557048196222976,14,BAL
 Sleeper,2026,Joey Roberts,Shoobie Flojo,AJ Barner,TE,draft,,12,162,1,1,0,0,0,3.3,1001557048196222976,14,11603
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Jalen Coker,WR,draft,,9,119,1,8,5,45.6,45.6,36.8,1001557048196222976,14,11646
-Sleeper,2026,Joey Roberts,Shoobie Flojo,TreVeyon Henderson,RB,draft,,5,63,1,8,3,12.9,12.9,20.9,1001557048196222976,14,12529
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Rachaad White,RB,draft,,8,106,1,8,2,29.7,29.7,33.1,1001557048196222976,14,8136
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Jalen Coker,WR,draft,,9,119,1,9,6,52.2,52.2,36.8,1001557048196222976,14,11646
+Sleeper,2026,Joey Roberts,Shoobie Flojo,TreVeyon Henderson,RB,draft,,5,63,1,9,3,12.9,12.9,20.9,1001557048196222976,14,12529
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Rachaad White,RB,draft,,8,106,1,9,3,36.6,36.6,33.1,1001557048196222976,14,8136
 Sleeper,2026,Joey Roberts,Shoobie Flojo,Jalen Nailor,WR,draft,,11,147,1,3,0,0,0,10.2,1001557048196222976,14,8180
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Chig Okonkwo,TE,draft,,15,203,1,7,1,13.9,13.9,9.3,1001557048196222976,14,8210
-Sleeper,2026,Nathan Richards,Nater Taterz,Caleb Williams,QB,draft,,6,72,1,8,4,81.08,81.08,16.5,1253419240711540736,8,11560
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Chig Okonkwo,TE,draft,,15,203,1,8,1,13.9,13.9,21,1001557048196222976,14,8210
+Sleeper,2026,Nathan Richards,Nater Taterz,Caleb Williams,QB,draft,,6,72,1,9,5,94.84,94.84,16.5,1253419240711540736,8,11560
 Sleeper,2026,Nathan Richards,Nater Taterz,De'Von Achane,RB,draft,,1,13,1,4,3,24.6,24.6,0,1253419240711540736,8,9226
-Sleeper,2026,Nathan Richards,Nater Taterz,Omarion Hampton,RB,draft,,2,16,1,8,6,54.3,54.3,7.9,1253419240711540736,8,12507
-Sleeper,2026,Nathan Richards,Nater Taterz,Tetairoa McMillan,WR,draft,,4,44,1,8,7,112.9,112.9,0,1253419240711540736,8,12526
-Sleeper,2026,Nathan Richards,Nater Taterz,Mike Evans,WR,draft,,5,69,1,8,6,91,91,0,1253419240711540736,8,2216
+Sleeper,2026,Nathan Richards,Nater Taterz,Omarion Hampton,RB,draft,,2,16,1,9,7,60.3,60.3,7.9,1253419240711540736,8,12507
+Sleeper,2026,Nathan Richards,Nater Taterz,Tetairoa McMillan,WR,draft,,4,44,1,9,8,128.5,128.5,0,1253419240711540736,8,12526
+Sleeper,2026,Nathan Richards,Nater Taterz,Mike Evans,WR,draft,,5,69,1,9,6,91,91,0,1253419240711540736,8,2216
 Sleeper,2026,Nathan Richards,Nater Taterz,Colston Loveland,TE,draft,,3,41,1,3,2,1.3,1.3,7.1,1253419240711540736,8,12517
-Sleeper,2026,Nathan Richards,Nater Taterz,RJ Harvey,RB,draft,,8,100,1,8,5,57.7,57.7,10.7,1253419240711540736,8,12489
-Sleeper,2026,Nathan Richards,Nater Taterz,Brandon Aubrey,K,draft,,7,97,1,8,8,74,74,0,1253419240711540736,8,11533
-Sleeper,2026,Nathan Richards,Nater Taterz,Pittsburgh Steelers,DEF,draft,,14,184,1,8,7,75,75,5,1253419240711540736,8,PIT
+Sleeper,2026,Nathan Richards,Nater Taterz,RJ Harvey,RB,draft,,8,100,1,9,5,57.7,57.7,10.7,1253419240711540736,8,12489
+Sleeper,2026,Nathan Richards,Nater Taterz,Brandon Aubrey,K,draft,,7,97,1,9,9,84,84,0,1253419240711540736,8,11533
+Sleeper,2026,Nathan Richards,Nater Taterz,Pittsburgh Steelers,DEF,draft,,14,184,1,9,7,75,75,5,1253419240711540736,8,PIT
 Sleeper,2026,Nathan Richards,Nater Taterz,Ray Davis,RB,draft,,15,209,1,1,0,0,0,0.3,1253419240711540736,8,11575
 Sleeper,2026,Nathan Richards,Nater Taterz,Travis Hunter,DB,draft,,10,128,1,1,0,0,0,2.1,1253419240711540736,8,12530
 Sleeper,2026,Nathan Richards,Nater Taterz,Keenan Allen,WR,draft,,13,181,1,5,0,0,0,38.5,1253419240711540736,8,1479
 Sleeper,2026,Nathan Richards,Nater Taterz,Cooper Kupp,WR,draft,,11,153,1,1,0,0,0,5.5,1253419240711540736,8,4039
 Sleeper,2026,Nathan Richards,Nater Taterz,Najee Harris,RB,draft,,12,156,1,5,0,0,0,6.2,1253419240711540736,8,7528
 Sleeper,2026,Nathan Richards,Nater Taterz,Jake Ferguson,TE,draft,,9,125,1,7,5,38.6,38.6,5.9,1253419240711540736,8,8110
-Sleeper,2026,Tyler Rose,Unverified Sources,Jayden Daniels,QB,draft,,6,82,1,8,4,68.38,68.38,34.26,1253479720855535616,13,11566
-Sleeper,2026,Tyler Rose,Unverified Sources,Breece Hall,RB,draft,,3,31,1,8,3,44.5,44.5,0,1253479720855535616,13,8155
-Sleeper,2026,Tyler Rose,Unverified Sources,Bhayshul Tuten,RB,draft,,5,59,1,8,7,120.3,120.3,0,1253479720855535616,13,12490
-Sleeper,2026,Tyler Rose,Unverified Sources,Ja'Marr Chase,WR,draft,,1,3,1,8,7,130.2,130.2,0,1253479720855535616,13,7564
+Sleeper,2026,Tyler Rose,Unverified Sources,Jayden Daniels,QB,draft,,6,82,1,9,5,82.94,82.94,34.26,1253479720855535616,13,11566
+Sleeper,2026,Tyler Rose,Unverified Sources,Breece Hall,RB,draft,,3,31,1,9,3,44.5,44.5,11.7,1253479720855535616,13,8155
+Sleeper,2026,Tyler Rose,Unverified Sources,Bhayshul Tuten,RB,draft,,5,59,1,9,8,129.2,129.2,0,1253479720855535616,13,12490
+Sleeper,2026,Tyler Rose,Unverified Sources,Ja'Marr Chase,WR,draft,,1,3,1,9,8,163.7,163.7,0,1253479720855535616,13,7564
 Sleeper,2026,Tyler Rose,Unverified Sources,Terry McLaurin,WR,draft,,4,54,1,6,6,46,46,0,1253479720855535616,13,5927
-Sleeper,2026,Tyler Rose,Unverified Sources,Trey McBride,TE,draft,,2,26,1,8,8,152.4,152.4,0,1253479720855535616,13,8130
-Sleeper,2026,Tyler Rose,Unverified Sources,DK Metcalf,WR,draft,,7,87,1,8,7,61.4,61.4,18.5,1253479720855535616,13,5846
+Sleeper,2026,Tyler Rose,Unverified Sources,Trey McBride,TE,draft,,2,26,1,9,9,164.8,164.8,0,1253479720855535616,13,8130
+Sleeper,2026,Tyler Rose,Unverified Sources,DK Metcalf,WR,draft,,7,87,1,9,7,61.4,61.4,18.5,1253479720855535616,13,5846
 Sleeper,2026,Tyler Rose,Unverified Sources,Chris Boswell,K,draft,,14,194,1,5,5,43,43,0,1253479720855535616,13,1945
-Sleeper,2026,Tyler Rose,Unverified Sources,Denver Broncos,DEF,draft,,12,166,1,8,8,65,65,0,1253479720855535616,13,DEN
-Sleeper,2026,Tyler Rose,Unverified Sources,Bo Nix,QB,draft,,11,143,1,8,4,73.8,73.8,43.32,1253479720855535616,13,11563
-Sleeper,2026,Tyler Rose,Unverified Sources,Braelon Allen,RB,draft,,15,199,1,8,5,88.4,88.4,17.2,1253479720855535616,13,11576
+Sleeper,2026,Tyler Rose,Unverified Sources,Denver Broncos,DEF,draft,,12,166,1,9,9,72,72,0,1253479720855535616,13,DEN
+Sleeper,2026,Tyler Rose,Unverified Sources,Bo Nix,QB,draft,,11,143,1,9,4,73.8,73.8,59,1253479720855535616,13,11563
+Sleeper,2026,Tyler Rose,Unverified Sources,Braelon Allen,RB,draft,,15,199,1,9,6,93.8,93.8,17.2,1253479720855535616,13,11576
 Sleeper,2026,Tyler Rose,Unverified Sources,Caleb Douglas,WR,draft,,13,171,1,4,0,0,0,18.3,1253479720855535616,13,13296
-Sleeper,2026,Tyler Rose,Unverified Sources,Hunter Henry,TE,draft,,10,138,1,8,2,20.1,20.1,53.5,1253479720855535616,13,3214
-Sleeper,2026,Tyler Rose,Unverified Sources,Jakobi Meyers,WR,draft,,9,115,1,8,2,19.6,19.6,45.5,1253479720855535616,13,5947
+Sleeper,2026,Tyler Rose,Unverified Sources,Hunter Henry,TE,draft,,10,138,1,9,2,20.1,20.1,60,1253479720855535616,13,3214
+Sleeper,2026,Tyler Rose,Unverified Sources,Jakobi Meyers,WR,draft,,9,115,1,9,3,30.1,30.1,45.5,1253479720855535616,13,5947
 Sleeper,2026,Tyler Rose,Unverified Sources,Kenny Gainwell,RB,draft,,8,110,1,6,0,0,0,30.2,1253479720855535616,13,7567
 Sleeper,2026,Walter Mitchell,Dirty Sherm,Justin Herbert,QB,draft,,6,83,1,5,4,43.44,43.44,10.24,1134329802619793408,12,6797
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Jahmyr Gibbs,RB,draft,,1,2,1,8,7,203.8,203.8,0,1134329802619793408,12,9221
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Jeremiyah Love,RB,draft,,2,27,1,8,6,53.4,53.4,0,1134329802619793408,12,13287
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Chris Olave,WR,draft,,3,30,1,8,7,130.6,130.6,0,1134329802619793408,12,8144
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Luther Burden III,WR,draft,,4,55,1,8,8,117.6,117.6,0,1134329802619793408,12,12519
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Isaiah Likely,TE,draft,,8,111,1,8,7,112.5,112.5,0,1134329802619793408,12,8131
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Jahmyr Gibbs,RB,draft,,1,2,1,9,8,217.2,217.2,0,1134329802619793408,12,9221
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Jeremiyah Love,RB,draft,,2,27,1,9,6,53.4,53.4,0,1134329802619793408,12,13287
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Chris Olave,WR,draft,,3,30,1,9,8,147.4,147.4,0,1134329802619793408,12,8144
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Luther Burden III,WR,draft,,4,55,1,9,9,139.3,139.3,0,1134329802619793408,12,12519
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Isaiah Likely,TE,draft,,8,111,1,9,8,128.8,128.8,0,1134329802619793408,12,8131
 Sleeper,2026,Walter Mitchell,Dirty Sherm,Michael Pittman Jr.,WR,draft,,9,114,1,7,1,8.8,8.8,7.1,1134329802619793408,12,6819
 Sleeper,2026,Walter Mitchell,Dirty Sherm,Evan McPherson,K,draft,,15,198,1,5,5,54,54,0,1134329802619793408,12,7839
 Sleeper,2026,Walter Mitchell,Dirty Sherm,Detroit Lions,DEF,draft,,14,195,1,1,1,10,10,0,1134329802619793408,12,DET
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Jacob Saylors,RB,free_agent,1,,,1,1,0,0,0,0,1134329802619793408,12,11237
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Malik Washington,WR,draft,,11,142,1,8,3,33.6,33.6,38.1,1134329802619793408,12,11610
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Rome Odunze,WR,draft,,5,58,1,8,1,6.9,6.9,65.9,1134329802619793408,12,11620
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Jacob Saylors,RB,unknown,,,,1,1,0,0,0,0,1134329802619793408,12,11237
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Malik Washington,WR,draft,,11,142,1,9,4,37.7,37.7,38.1,1134329802619793408,12,11610
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Rome Odunze,WR,draft,,5,58,1,9,1,6.9,6.9,81.9,1134329802619793408,12,11620
 Sleeper,2026,Walter Mitchell,Dirty Sherm,Jaylin Noel,WR,draft,,12,167,1,2,0,0,0,12.7,1134329802619793408,12,12536
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Kaelon Black,RB,draft,,13,170,1,8,1,4.7,4.7,26,1134329802619793408,12,13414
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Chuba Hubbard,RB,draft,,7,86,1,8,6,113.3,113.3,23.7,1134329802619793408,12,7594
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Kaelon Black,RB,draft,,13,170,1,9,1,4.7,4.7,33,1134329802619793408,12,13414
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Chuba Hubbard,RB,draft,,7,86,1,9,7,126.9,126.9,23.7,1134329802619793408,12,7594
 Sleeper,2026,Walter Mitchell,Dirty Sherm,Isiah Pacheco,RB,draft,,10,139,1,8,0,0,0,0,1134329802619793408,12,8205
-Sleeper,2026,Austin Abegg,Kissin TDs,Eddy Pineiro,K,waiver,1,,,2,3,3,17,17,0,716158801597767680,3,5189
-Sleeper,2026,Austin Abegg,Kissin TDs,Tampa Bay Buccaneers,DEF,waiver,1,,,2,1,1,3,3,0,716158801597767680,3,TB
-Sleeper,2026,Billy Rose,Snooki's Cookie,Cooper Kupp,WR,waiver,2,,,2,7,1,7.7,7.7,38.4,1248314494598270976,1,4039
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Trey Smack,K,free_agent,2,,,2,2,2,9,9,0,1253422363878375424,10,13545
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Chris Brooks,RB,free_agent,2,,,2,3,0,0,0,9.5,1253422363878375424,10,11370
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Nico Collins,WR,trade,2,,,2,7,5,56.9,56.9,0,1253422363878375424,10,7569
-Sleeper,2026,Bryce Poisson,Bushy Beavers,DeMario Douglas,WR,waiver,1,,,2,7,0,0,0,74.2,1253422363878375424,10,9501
-Sleeper,2026,Chris McKinney,Uncle Tito,Raheim Sanders,RB,waiver,1,,,2,1,0,0,0,2.1,1253417044339068928,6,12472
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Green Bay Packers,DEF,free_agent,2,,,2,3,3,13,13,0,1134324957397438464,7,GB
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Jauan Jennings,WR,waiver,1,,,2,4,1,1.8,1.8,1.1,1134324957397438464,7,7049
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Malik Willis,QB,free_agent,2,,,2,1,0,0,0,13.48,1134324957397438464,7,8161
-Sleeper,2026,Hayden Ward,Bear Force One,Cairo Santos,K,waiver,1,,,2,2,2,4,4,0,895410371974983680,5,2020
-Sleeper,2026,Hayden Ward,Bear Force One,Kansas City Chiefs,DEF,waiver,1,,,2,2,2,12,12,0,895410371974983680,5,KC
-Sleeper,2026,Hayden Ward,Bear Force One,David Njoku,TE,waiver,1,,,2,1,0,0,0,1.9,895410371974983680,5,4033
-Sleeper,2026,Jake Parsons,Big Bird,Tyler Shough,QB,waiver,1,,,2,6,4,89.08,89.08,13.66,858751028768686080,2,12545
-Sleeper,2026,Jake Parsons,Big Bird,Jadarian Price,RB,trade,2,,,2,7,2,6.2,6.2,5.7,858751028768686080,2,13286
-Sleeper,2026,Jake Parsons,Big Bird,Kenyon Sadiq,TE,waiver,1,,,2,1,1,3.7,3.7,0,858751028768686080,2,13330
-Sleeper,2026,Jake Parsons,Big Bird,San Francisco 49ers,DEF,waiver,1,,,2,2,2,10,10,0,858751028768686080,2,SF
-Sleeper,2026,Jake Parsons,Big Bird,Dontayvion Wicks,WR,free_agent,2,,,2,4,0,0,0,33.7,858751028768686080,2,9486
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Devin Singletary,RB,waiver,1,,,2,2,0,0,0,0.9,1001557048196222976,14,6130
-Sleeper,2026,Nathan Richards,Nater Taterz,Demarcus Robinson,WR,waiver,1,,,2,1,0,0,0,6.4,1253419240711540736,8,3286
-Sleeper,2026,Nathan Richards,Nater Taterz,Mack Hollins,WR,waiver,1,,,2,1,0,0,0,3.8,1253419240711540736,8,4177
-Sleeper,2026,Nathan Richards,Nater Taterz,Mike Gesicki,TE,waiver,1,,,2,1,0,0,0,0,1253419240711540736,8,4993
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Cincinnati Bengals,DEF,free_agent,2,,,2,7,6,48,48,0,1134329802619793408,12,CIN
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Pat Freiermuth,TE,waiver,1,,,2,7,1,11.6,11.6,51.8,1134329802619793408,12,7600
-Sleeper,2026,Austin Abegg,Kissin TDs,Minnesota Vikings,DEF,waiver,2,,,3,6,5,56,56,0,716158801597767680,3,MIN
-Sleeper,2026,Austin Abegg,Kissin TDs,Emmett Johnson,RB,trade,2,,,3,6,0,0,0,40.1,716158801597767680,3,13337
-Sleeper,2026,Austin Abegg,Kissin TDs,Bryce Young,QB,waiver,2,,,3,6,2,26.26,26.26,45.46,716158801597767680,3,9228
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Emanuel Wilson,RB,waiver,2,,,3,1,0,0,0,1.4,734112111084630016,9,11435
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Tyreek Hill,WR,free_agent,3,,,3,6,0,0,0,0,734112111084630016,9,3321
-Sleeper,2026,Billy Rose,Snooki's Cookie,Jameis Winston,QB,waiver,2,,,3,2,2,12.6,12.6,0,1248314494598270976,1,2306
-Sleeper,2026,Billy Rose,Snooki's Cookie,Malik Willis,QB,waiver,3,,,3,2,0,0,0,12.5,1248314494598270976,1,8161
-Sleeper,2026,Chris McKinney,Uncle Tito,Darren Waller,TE,free_agent,3,,,3,3,0,0,0,16.7,1253417044339068928,6,2505
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Spencer Shrader,K,waiver,2,,,3,6,6,68,68,0,1253415068964503552,4,12185
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Ryan Flournoy,WR,free_agent,3,,,3,2,0,0,0,11.9,1134324957397438464,7,11783
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,C.J. Stroud,QB,waiver,2,,,3,6,1,23.08,23.08,72.12,1134324957397438464,7,9758
-Sleeper,2026,Hayden Ward,Bear Force One,Tyler Bass,K,free_agent,3,,,3,1,1,6,6,0,895410371974983680,5,7042
-Sleeper,2026,Hayden Ward,Bear Force One,Woody Marks,RB,trade,2,,,3,6,2,19.2,19.2,29.8,895410371974983680,5,12474
-Sleeper,2026,Jake Parsons,Big Bird,Oronde Gadsden,TE,waiver,2,,,3,3,1,0,0,8.8,858751028768686080,2,12493
-Sleeper,2026,Jake Parsons,Big Bird,Demond Claiborne,RB,free_agent,3,,,3,1,0,0,0,0.1,858751028768686080,2,13347
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Carolina Panthers,DEF,free_agent,3,,,3,1,1,5,5,0,1001557048196222976,14,CAR
-Sleeper,2026,Nathan Richards,Nater Taterz,Kirk Cousins,QB,free_agent,3,,,3,4,4,77.06,77.06,0,1253419240711540736,8,1166
-Sleeper,2026,Nathan Richards,Nater Taterz,Rashod Bateman,WR,waiver,2,,,3,2,1,5.7,5.7,6.6,1253419240711540736,8,7571
-Sleeper,2026,Nathan Richards,Nater Taterz,New York Giants,DEF,free_agent,3,,,3,1,1,9,9,0,1253419240711540736,8,NYG
-Sleeper,2026,Nathan Richards,Nater Taterz,Keon Coleman,WR,waiver,2,,,3,6,3,25,25,30.3,1253419240711540736,8,11637
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Adonai Mitchell,WR,waiver,2,,,3,2,0,0,0,0,1134329802619793408,12,11625
-Sleeper,2026,Austin Abegg,Kissin TDs,Kendre Miller,RB,waiver,3,,,4,5,4,25.7,25.7,0,716158801597767680,3,9757
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Mack Hollins,WR,free_agent,4,,,4,1,0,0,0,8.3,734112111084630016,9,4177
-Sleeper,2026,Billy Rose,Snooki's Cookie,Sam Darnold,QB,waiver,3,,,4,5,3,39.14,39.14,25,1248314494598270976,1,4943
-Sleeper,2026,Billy Rose,Snooki's Cookie,Emanuel Wilson,RB,waiver,3,,,4,5,2,18.4,18.4,47.5,1248314494598270976,1,11435
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Will Reichard,K,waiver,3,,,4,5,4,49,49,0,1253422363878375424,10,11792
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Chicago Bears,DEF,waiver,3,,,4,5,5,37,37,0,1253422363878375424,10,CHI
-Sleeper,2026,Chris McKinney,Uncle Tito,Jaylen Wright,RB,waiver,3,,,4,5,1,0.5,0.5,2.6,1253417044339068928,6,11643
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kenyon Sadiq,TE,waiver,3,,,4,4,1,0,0,4.1,1253476821127671808,11,13330
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Baltimore Ravens,DEF,waiver,3,,,4,4,4,20,20,0,1253476821127671808,11,BAL
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Isaiah Davis,RB,free_agent,4,,,4,1,0,0,0,0,1253415068964503552,4,11571
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Konata Mumpfield,WR,free_agent,4,,,4,1,0,0,0,1.7,1253415068964503552,4,12718
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Ollie Gordon II,RB,waiver,3,,,4,5,4,61,61,0,1134324957397438464,7,12495
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Matt Gay,K,free_agent,4,,,4,5,5,52,52,0,1134324957397438464,7,6083
-Sleeper,2026,Hayden Ward,Bear Force One,Ryan Fitzgerald,K,free_agent,4,,,4,1,1,7,7,0,895410371974983680,5,12961
-Sleeper,2026,Hayden Ward,Bear Force One,Jacksonville Jaguars,DEF,waiver,3,,,4,5,4,35,35,0,895410371974983680,5,JAX
-Sleeper,2026,Hayden Ward,Bear Force One,Mike Washington Jr.,RB,free_agent,4,,,4,1,0,0,0,2.7,895410371974983680,5,13305
-Sleeper,2026,Hayden Ward,Bear Force One,Keaton Mitchell,RB,waiver,3,,,4,2,1,5.9,5.9,11.3,895410371974983680,5,9511
-Sleeper,2026,Jake Parsons,Big Bird,Brian Robinson Jr.,RB,waiver,3,,,4,2,2,27.3,27.3,0,858751028768686080,2,8154
-Sleeper,2026,Jake Parsons,Big Bird,Colston Loveland,TE,trade,3,,,4,5,5,65.5,65.5,0,858751028768686080,2,12517
-Sleeper,2026,Jake Parsons,Big Bird,Indianapolis Colts,DEF,free_agent,4,,,4,3,3,13,13,0,858751028768686080,2,IND
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Las Vegas Raiders,DEF,waiver,3,,,4,1,1,2,2,0,1001557048196222976,14,LV
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Raheim Sanders,RB,free_agent,4,,,4,1,0,0,0,3.6,1001557048196222976,14,12472
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Kalif Raymond,WR,waiver,3,,,4,4,0,0,0,9.8,1001557048196222976,14,3634
-Sleeper,2026,Nathan Richards,Nater Taterz,Deebo Samuel Sr.,WR,trade,3,,,4,5,2,20.5,20.5,0,1253419240711540736,8,5872
-Sleeper,2026,Nathan Richards,Nater Taterz,AJ Barner,TE,free_agent,4,,,4,2,0,0,0,7.2,1253419240711540736,8,11603
-Sleeper,2026,Austin Abegg,Kissin TDs,Jacoby Brissett,QB,free_agent,5,,,5,1,1,25.28,25.28,0,716158801597767680,3,3257
-Sleeper,2026,Austin Abegg,Kissin TDs,Austin Ekeler,RB,waiver,4,,,5,1,1,2.4,2.4,0,716158801597767680,3,4663
-Sleeper,2026,Austin Abegg,Kissin TDs,Tyler Bass,K,free_agent,5,,,5,2,2,29,29,0,716158801597767680,3,7042
-Sleeper,2026,Austin Abegg,Kissin TDs,Kansas City Chiefs,DEF,waiver,5,,,5,2,1,17,17,0,716158801597767680,3,KC
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Will Shipley,RB,trade,5,,,5,1,0,0,0,8.3,734112111084630016,9,11577
-Sleeper,2026,Billy Rose,Snooki's Cookie,Harrison Mevis,K,waiver,4,,,5,1,1,3,3,0,1248314494598270976,1,12015
-Sleeper,2026,Billy Rose,Snooki's Cookie,Dohnte Meyers,WR,waiver,4,,,5,1,0,0,0,3.2,1248314494598270976,1,13264
-Sleeper,2026,Bryce Poisson,Bushy Beavers,T.J. Hockenson,TE,waiver,4,,,5,4,3,31,31,0,1253422363878375424,10,5844
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Deshaun Watson,QB,waiver,4,,,5,1,1,12.2,12.2,0,1253415068964503552,4,4017
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Mike Gesicki,TE,trade,5,,,5,2,0,0,0,7.4,1253415068964503552,4,4993
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Cade Otton,TE,free_agent,5,,,5,1,1,5.5,5.5,0,1134324957397438464,7,8111
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,New York Jets,DEF,waiver,4,,,5,2,2,19,19,0,1134324957397438464,7,NYJ
-Sleeper,2026,Hayden Ward,Bear Force One,Tyler Higbee,TE,waiver,4,,,5,4,3,10,10,13.3,895410371974983680,5,3271
-Sleeper,2026,Jake Parsons,Big Bird,Joey Slye,K,waiver,4,,,5,1,1,3,3,0,858751028768686080,2,6528
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Efton Chism III,WR,free_agent,5,,,5,1,1,10.9,10.9,0,1001557048196222976,14,12542
-Sleeper,2026,Joey Roberts,Shoobie Flojo,New England Patriots,DEF,free_agent,5,,,5,4,4,26,26,0,1001557048196222976,14,NE
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Mike Washington Jr.,RB,waiver,5,,,5,1,0,0,0,2,1001557048196222976,14,13305
-Sleeper,2026,Nathan Richards,Nater Taterz,Roschon Johnson,RB,free_agent,5,,,5,2,1,1.3,1.3,9,1253419240711540736,8,10235
-Sleeper,2026,Tyler Rose,Unverified Sources,Roman Wilson,WR,waiver,4,,,5,4,0,0,0,0,1253479720855535616,13,11630
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Aaron Rodgers,QB,waiver,4,,,5,4,4,56.98,56.98,0,1134329802619793408,12,96
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Keenan Allen,WR,waiver,6,,,6,2,1,16.2,16.2,6.1,734112111084630016,9,1479
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Eddy Pineiro,K,waiver,5,,,6,1,1,4,4,0,1253422363878375424,10,5189
-Sleeper,2026,Chris McKinney,Uncle Tito,Cam Ward,QB,free_agent,6,,,6,1,1,6.78,6.78,0,1253417044339068928,6,12522
-Sleeper,2026,Chris McKinney,Uncle Tito,Nick Folk,K,free_agent,6,,,6,2,2,11,11,0,1253417044339068928,6,650
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,MarShawn Lloyd,RB,trade,5,,,6,3,1,1,1,8.1,1253415068964503552,4,11581
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Garrett Wilson,WR,trade,5,,,6,3,3,27.3,27.3,0,1253415068964503552,4,8146
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Michael Mayer,TE,free_agent,6,,,6,3,2,22.7,22.7,10.3,1253415068964503552,4,9482
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Germie Bernard,WR,waiver,5,,,6,3,3,39.4,39.4,0,1253415068964503552,4,13274
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Brian Robinson Jr.,RB,trade,5,,,6,3,0,0,0,3,1253415068964503552,4,8154
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,San Francisco 49ers,DEF,waiver,5,,,6,1,1,7,7,0,1134324957397438464,7,SF
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Kendrick Bourne,WR,waiver,5,,,6,3,1,3.9,3.9,13.6,1134324957397438464,7,4454
-Sleeper,2026,Hayden Ward,Bear Force One,Kimani Vidal,RB,waiver,5,,,6,3,2,12,12,0,895410371974983680,5,11647
-Sleeper,2026,Hayden Ward,Bear Force One,Jacoby Brissett,QB,free_agent,6,,,6,1,0,0,0,6.92,895410371974983680,5,3257
-Sleeper,2026,Jake Parsons,Big Bird,James Cook III,RB,trade,5,,,6,3,2,42.4,42.4,0,858751028768686080,2,8138
-Sleeper,2026,Jake Parsons,Big Bird,Emeka Egbuka,WR,trade,5,,,6,3,1,17.8,17.8,0,858751028768686080,2,12514
-Sleeper,2026,Jake Parsons,Big Bird,Chris Boswell,K,free_agent,6,,,6,3,3,37,37,0,858751028768686080,2,1945
-Sleeper,2026,Jake Parsons,Big Bird,Jaleel McLaughlin,RB,free_agent,6,,,6,1,0,0,0,9.5,858751028768686080,2,11439
-Sleeper,2026,Jake Parsons,Big Bird,AJ Barner,TE,waiver,6,,,6,3,0,0,0,17.5,858751028768686080,2,11603
-Sleeper,2026,Jake Parsons,Big Bird,Tre' Harris,WR,trade,5,,,6,1,0,0,0,0,858751028768686080,2,12509
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Keaton Mitchell,RB,free_agent,6,,,6,1,1,0.4,0.4,0,1001557048196222976,14,9511
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Evan McPherson,K,waiver,6,,,6,3,2,10,10,0,1001557048196222976,14,7839
-Sleeper,2026,Nathan Richards,Nater Taterz,Dameon Pierce,RB,waiver,5,,,6,2,2,26.8,26.8,0,1253419240711540736,8,8129
-Sleeper,2026,Nathan Richards,Nater Taterz,Evan Engram,TE,waiver,5,,,6,1,1,3.3,3.3,0,1253419240711540736,8,4066
-Sleeper,2026,Nathan Richards,Nater Taterz,Brandin Cooks,WR,free_agent,6,,,6,2,0,0,0,4.6,1253419240711540736,8,2197
-Sleeper,2026,Tyler Rose,Unverified Sources,Dominic Zvada,K,waiver,5,,,6,1,1,8,8,0,1253479720855535616,13,13833
-Sleeper,2026,Tyler Rose,Unverified Sources,Jake Bates,K,waiver,6,,,6,3,2,15,15,0,1253479720855535616,13,11539
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Chase McLaughlin,K,free_agent,6,,,6,3,3,41,41,0,1134329802619793408,12,6650
-Sleeper,2026,Walter Mitchell,Dirty Sherm,New York Giants,DEF,free_agent,6,,,6,1,1,1,1,0,1134329802619793408,12,NYG
-Sleeper,2026,Austin Abegg,Kissin TDs,Trey Smack,K,free_agent,7,,,7,1,1,4,4,0,716158801597767680,3,13545
-Sleeper,2026,Austin Abegg,Kissin TDs,Ja'Kobi Lane,WR,waiver,6,,,7,2,0,0,0,7.8,716158801597767680,3,13293
-Sleeper,2026,Billy Rose,Snooki's Cookie,Baker Mayfield,QB,free_agent,7,,,7,1,1,6.66,6.66,0,1248314494598270976,1,4892
-Sleeper,2026,Billy Rose,Snooki's Cookie,Tyrone Tracy Jr.,RB,waiver,6,,,7,2,0,0,0,8.7,1248314494598270976,1,11655
-Sleeper,2026,Billy Rose,Snooki's Cookie,Cam Little,K,waiver,7,,,7,2,1,6,6,0,1248314494598270976,1,11786
-Sleeper,2026,Bryce Poisson,Bushy Beavers,Michael Penix Jr.,QB,waiver,6,,,7,2,1,20.42,20.42,-1.9,1253422363878375424,10,11559
-Sleeper,2026,Chris McKinney,Uncle Tito,Geno Smith,QB,free_agent,7,,,7,2,2,41.48,41.48,0,1253417044339068928,6,1373
-Sleeper,2026,Chris McKinney,Uncle Tito,Tanner McKee,QB,free_agent,7,,,7,1,0,0,0,10.54,1253417044339068928,6,9230
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Omar Cooper Jr.,WR,waiver,6,12,164,7,2,1,0,0,24.5,1253476821127671808,11,13276
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Seth McGowan,RB,free_agent,7,,,7,2,0,0,0,8.7,1253415068964503552,4,13424
-Sleeper,2026,Hayden Ward,Bear Force One,Kirk Cousins,QB,waiver,7,,,7,2,1,20.4,20.4,28.18,895410371974983680,5,1166
-Sleeper,2026,Hayden Ward,Bear Force One,Cleveland Browns,DEF,waiver,6,,,7,1,1,6,6,0,895410371974983680,5,CLE
-Sleeper,2026,Jake Parsons,Big Bird,Makai Lemon,WR,free_agent,7,,,7,2,2,31.4,31.4,0,858751028768686080,2,13294
-Sleeper,2026,Jake Parsons,Big Bird,Tennessee Titans,DEF,waiver,6,,,7,1,1,5,5,0,858751028768686080,2,TEN
-Sleeper,2026,Jake Parsons,Big Bird,Jaylin Noel,WR,waiver,6,,,7,1,0,0,0,1.7,858751028768686080,2,12536
-Sleeper,2026,Nathan Richards,Nater Taterz,Christian Kirk,WR,free_agent,7,,,7,1,1,0,0,0,1253419240711540736,8,4950
-Sleeper,2026,Nathan Richards,Nater Taterz,Samaje Perine,RB,free_agent,7,,,7,2,1,2.9,2.9,7.6,1253419240711540736,8,4147
-Sleeper,2026,Nathan Richards,Nater Taterz,Treylon Burks,WR,waiver,7,,,7,2,1,11.1,11.1,0,1253419240711540736,8,8135
-Sleeper,2026,Tyler Rose,Unverified Sources,Zonovan Knight,RB,free_agent,7,,,7,1,1,9.3,9.3,0,1253479720855535616,13,8122
-Sleeper,2026,Tyler Rose,Unverified Sources,Antonio Williams,WR,waiver,7,,,7,2,0,0,0,10.4,1253479720855535616,13,13301
-Sleeper,2026,Tyler Rose,Unverified Sources,Jonah Coleman,RB,waiver,6,,,7,2,0,0,0,29.3,1253479720855535616,13,13345
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Ryan Flournoy,WR,waiver,6,,,7,2,0,0,0,24.1,1134329802619793408,12,11783
-Sleeper,2026,Austin Abegg,Kissin TDs,Kenny Gainwell,RB,waiver,7,,,8,1,1,16,16,0,716158801597767680,3,7567
-Sleeper,2026,Austin Abegg,Kissin TDs,Mason Taylor,TE,waiver,7,,,8,1,1,4.9,4.9,0,716158801597767680,3,12498
-Sleeper,2026,Austin Abegg,Kissin TDs,Jason Myers,K,free_agent,8,,,8,1,1,1,1,0,716158801597767680,3,2747
-Sleeper,2026,Austin Joannes,Doctor Fantasy,Drew Stevens,K,free_agent,8,,,8,1,1,16,16,0,734112111084630016,9,13968
-Sleeper,2026,Billy Rose,Snooki's Cookie,Tre' Harris,WR,free_agent,8,,,8,1,1,6.1,6.1,0,1248314494598270976,1,12509
-Sleeper,2026,Billy Rose,Snooki's Cookie,Tyler Shough,QB,trade,8,,,8,1,0,0,0,0,1248314494598270976,1,12545
-Sleeper,2026,Chris McKinney,Uncle Tito,Elic Ayomanor,WR,free_agent,8,,,8,1,1,6.4,6.4,0,1253417044339068928,6,12499
-Sleeper,2026,Chris McKinney,Uncle Tito,Tyler Bass,K,free_agent,8,,,8,1,1,16,16,0,1253417044339068928,6,7042
-Sleeper,2026,Chris McKinney,Uncle Tito,Tampa Bay Buccaneers,DEF,free_agent,8,,,8,1,1,21,21,0,1253417044339068928,6,TB
-Sleeper,2026,Chris McKinney,Uncle Tito,Devin Singletary,RB,free_agent,8,,,8,1,0,0,0,0,1253417044339068928,6,6130
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kansas City Chiefs,DEF,waiver,7,,,8,1,1,0,0,0,1253476821127671808,11,KC
-Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Keenan Allen,WR,waiver,8,,,8,1,0,0,0,13.7,1253476821127671808,11,1479
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Washington Commanders,DEF,free_agent,8,,,8,1,1,14,14,0,1253415068964503552,4,WAS
-Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Caleb Douglas,WR,waiver,7,,,8,1,0,0,0,8.3,1253415068964503552,4,13296
-Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Las Vegas Raiders,DEF,free_agent,8,,,8,1,1,9,9,0,1134324957397438464,7,LV
-Sleeper,2026,Hayden Ward,Bear Force One,Chad Ryland,K,free_agent,8,,,8,1,1,9,9,0,895410371974983680,5,10955
-Sleeper,2026,Jake Parsons,Big Bird,Green Bay Packers,DEF,waiver,7,,,8,1,1,13,13,0,858751028768686080,2,GB
-Sleeper,2026,Jake Parsons,Big Bird,Ladd McConkey,WR,trade,8,,,8,1,0,0,0,12.6,858751028768686080,2,11635
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Jacoby Brissett,QB,waiver,7,,,8,1,1,3.46,3.46,0,1001557048196222976,14,3257
-Sleeper,2026,Joey Roberts,Shoobie Flojo,Dylan Sampson,RB,waiver,7,,,8,1,0,0,0,12.9,1001557048196222976,14,12469
-Sleeper,2026,Nathan Richards,Nater Taterz,Darnell Washington,TE,waiver,7,,,8,1,1,12.4,12.4,0,1253419240711540736,8,9479
-Sleeper,2026,Nathan Richards,Nater Taterz,Austin Ekeler,RB,free_agent,8,,,8,1,0,0,0,5.6,1253419240711540736,8,4663
-Sleeper,2026,Nathan Richards,Nater Taterz,Colby Parkinson,TE,free_agent,8,,,8,1,0,0,0,0,1253419240711540736,8,6865
-Sleeper,2026,Nathan Richards,Nater Taterz,Cade Otton,TE,free_agent,8,,,8,1,0,0,0,0,1253419240711540736,8,8111
-Sleeper,2026,Tyler Rose,Unverified Sources,Mike Washington Jr.,RB,waiver,7,,,8,1,0,0,0,8.3,1253479720855535616,13,13305
-Sleeper,2026,Walter Mitchell,Dirty Sherm,Malik Willis,QB,waiver,7,,,8,1,0,0,0,14.64,1134329802619793408,12,8161
+Sleeper,2026,Austin Abegg,Kissin TDs,Eddy Pineiro,K,unknown,,,,2,3,3,17,17,0,716158801597767680,3,5189
+Sleeper,2026,Austin Abegg,Kissin TDs,Tampa Bay Buccaneers,DEF,unknown,,,,2,1,1,3,3,0,716158801597767680,3,TB
+Sleeper,2026,Billy Rose,Snooki's Cookie,Cooper Kupp,WR,unknown,,,,2,8,1,7.7,7.7,44.6,1248314494598270976,1,4039
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Trey Smack,K,unknown,,,,2,2,2,9,9,0,1253422363878375424,10,13545
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Chris Brooks,RB,unknown,,,,2,3,0,0,0,9.5,1253422363878375424,10,11370
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Nico Collins,WR,unknown,,,,2,8,6,72.4,72.4,0,1253422363878375424,10,7569
+Sleeper,2026,Bryce Poisson,Bushy Beavers,DeMario Douglas,WR,unknown,,,,2,7,0,0,0,74.2,1253422363878375424,10,9501
+Sleeper,2026,Chris McKinney,Uncle Tito,Raheim Sanders,RB,unknown,,,,2,1,0,0,0,2.1,1253417044339068928,6,12472
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Green Bay Packers,DEF,unknown,,,,2,3,3,13,13,0,1134324957397438464,7,GB
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Jauan Jennings,WR,unknown,,,,2,4,1,1.8,1.8,1.1,1134324957397438464,7,7049
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Malik Willis,QB,unknown,,,,2,1,0,0,0,13.48,1134324957397438464,7,8161
+Sleeper,2026,Hayden Ward,Bear Force One,Cairo Santos,K,unknown,,,,2,2,2,4,4,0,895410371974983680,5,2020
+Sleeper,2026,Hayden Ward,Bear Force One,Kansas City Chiefs,DEF,unknown,,,,2,2,2,12,12,0,895410371974983680,5,KC
+Sleeper,2026,Hayden Ward,Bear Force One,David Njoku,TE,unknown,,,,2,1,0,0,0,1.9,895410371974983680,5,4033
+Sleeper,2026,Jake Parsons,Big Bird,Tyler Shough,QB,unknown,,,,2,6,4,89.08,89.08,13.66,858751028768686080,2,12545
+Sleeper,2026,Jake Parsons,Big Bird,Jadarian Price,RB,unknown,,,,2,8,3,18,18,5.7,858751028768686080,2,13286
+Sleeper,2026,Jake Parsons,Big Bird,Kenyon Sadiq,TE,unknown,,,,2,1,1,3.7,3.7,0,858751028768686080,2,13330
+Sleeper,2026,Jake Parsons,Big Bird,San Francisco 49ers,DEF,unknown,,,,2,2,2,10,10,0,858751028768686080,2,SF
+Sleeper,2026,Jake Parsons,Big Bird,Dontayvion Wicks,WR,unknown,,,,2,4,0,0,0,33.7,858751028768686080,2,9486
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Devin Singletary,RB,unknown,,,,2,2,0,0,0,0.9,1001557048196222976,14,6130
+Sleeper,2026,Nathan Richards,Nater Taterz,Demarcus Robinson,WR,unknown,,,,2,1,0,0,0,6.4,1253419240711540736,8,3286
+Sleeper,2026,Nathan Richards,Nater Taterz,Mack Hollins,WR,unknown,,,,2,1,0,0,0,3.8,1253419240711540736,8,4177
+Sleeper,2026,Nathan Richards,Nater Taterz,Mike Gesicki,TE,unknown,,,,2,2,1,3.1,3.1,0,1253419240711540736,8,4993
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Cincinnati Bengals,DEF,unknown,,,,2,8,7,51,51,0,1134329802619793408,12,CIN
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Pat Freiermuth,TE,unknown,,,,2,8,1,11.6,11.6,51.8,1134329802619793408,12,7600
+Sleeper,2026,Austin Abegg,Kissin TDs,Minnesota Vikings,DEF,unknown,,,,3,7,6,62,62,0,716158801597767680,3,MIN
+Sleeper,2026,Austin Abegg,Kissin TDs,Emmett Johnson,RB,unknown,,,,3,7,0,0,0,49.5,716158801597767680,3,13337
+Sleeper,2026,Austin Abegg,Kissin TDs,Bryce Young,QB,unknown,,,,3,7,3,46.6,46.6,45.46,716158801597767680,3,9228
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Emanuel Wilson,RB,unknown,,,,3,1,0,0,0,1.4,734112111084630016,9,11435
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Tyreek Hill,WR,unknown,,,,3,7,0,0,0,0,734112111084630016,9,3321
+Sleeper,2026,Billy Rose,Snooki's Cookie,Jameis Winston,QB,unknown,,,,3,2,2,12.6,12.6,0,1248314494598270976,1,2306
+Sleeper,2026,Billy Rose,Snooki's Cookie,Malik Willis,QB,unknown,,,,3,2,0,0,0,12.5,1248314494598270976,1,8161
+Sleeper,2026,Chris McKinney,Uncle Tito,Darren Waller,TE,unknown,,,,3,3,0,0,0,16.7,1253417044339068928,6,2505
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Spencer Shrader,K,unknown,,,,3,7,7,84,84,0,1253415068964503552,4,12185
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Ryan Flournoy,WR,unknown,,,,3,2,0,0,0,11.9,1134324957397438464,7,11783
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,C.J. Stroud,QB,unknown,,,,3,7,1,23.08,23.08,109.48,1134324957397438464,7,9758
+Sleeper,2026,Hayden Ward,Bear Force One,Tyler Bass,K,unknown,,,,3,1,1,6,6,0,895410371974983680,5,7042
+Sleeper,2026,Hayden Ward,Bear Force One,Woody Marks,RB,unknown,,,,3,7,3,27.6,27.6,29.8,895410371974983680,5,12474
+Sleeper,2026,Jake Parsons,Big Bird,Oronde Gadsden,TE,unknown,,,,3,3,1,0,0,8.8,858751028768686080,2,12493
+Sleeper,2026,Jake Parsons,Big Bird,Demond Claiborne,RB,unknown,,,,3,1,0,0,0,0.1,858751028768686080,2,13347
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Carolina Panthers,DEF,unknown,,,,3,1,1,5,5,0,1001557048196222976,14,CAR
+Sleeper,2026,Nathan Richards,Nater Taterz,Kirk Cousins,QB,unknown,,,,3,4,4,77.06,77.06,0,1253419240711540736,8,1166
+Sleeper,2026,Nathan Richards,Nater Taterz,Rashod Bateman,WR,unknown,,,,3,2,1,5.7,5.7,6.6,1253419240711540736,8,7571
+Sleeper,2026,Nathan Richards,Nater Taterz,New York Giants,DEF,unknown,,,,3,1,1,9,9,0,1253419240711540736,8,NYG
+Sleeper,2026,Nathan Richards,Nater Taterz,Keon Coleman,WR,unknown,,,,3,7,3,25,25,35,1253419240711540736,8,11637
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Adonai Mitchell,WR,unknown,,,,3,2,0,0,0,0,1134329802619793408,12,11625
+Sleeper,2026,Austin Abegg,Kissin TDs,Kendre Miller,RB,unknown,,,,4,6,4,25.7,25.7,0,716158801597767680,3,9757
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Mack Hollins,WR,unknown,,,,4,1,0,0,0,8.3,734112111084630016,9,4177
+Sleeper,2026,Billy Rose,Snooki's Cookie,Sam Darnold,QB,unknown,,,,4,6,3,39.14,39.14,25,1248314494598270976,1,4943
+Sleeper,2026,Billy Rose,Snooki's Cookie,Emanuel Wilson,RB,unknown,,,,4,5,2,18.4,18.4,47.5,1248314494598270976,1,11435
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Will Reichard,K,unknown,,,,4,6,5,58,58,0,1253422363878375424,10,11792
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Chicago Bears,DEF,unknown,,,,4,6,6,52,52,0,1253422363878375424,10,CHI
+Sleeper,2026,Chris McKinney,Uncle Tito,Jaylen Wright,RB,unknown,,,,4,5,1,0.5,0.5,2.6,1253417044339068928,6,11643
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kenyon Sadiq,TE,unknown,,,,4,4,1,0,0,4.1,1253476821127671808,11,13330
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Baltimore Ravens,DEF,unknown,,,,4,4,4,20,20,0,1253476821127671808,11,BAL
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Isaiah Davis,RB,unknown,,,,4,1,0,0,0,0,1253415068964503552,4,11571
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Konata Mumpfield,WR,unknown,,,,4,1,0,0,0,1.7,1253415068964503552,4,12718
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Ollie Gordon II,RB,unknown,,,,4,6,5,68.4,68.4,0,1134324957397438464,7,12495
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Matt Gay,K,unknown,,,,4,6,6,59,59,0,1134324957397438464,7,6083
+Sleeper,2026,Hayden Ward,Bear Force One,Ryan Fitzgerald,K,unknown,,,,4,1,1,7,7,0,895410371974983680,5,12961
+Sleeper,2026,Hayden Ward,Bear Force One,Jacksonville Jaguars,DEF,unknown,,,,4,6,5,47,47,0,895410371974983680,5,JAX
+Sleeper,2026,Hayden Ward,Bear Force One,Mike Washington Jr.,RB,unknown,,,,4,1,0,0,0,2.7,895410371974983680,5,13305
+Sleeper,2026,Hayden Ward,Bear Force One,Keaton Mitchell,RB,unknown,,,,4,2,1,5.9,5.9,11.3,895410371974983680,5,9511
+Sleeper,2026,Jake Parsons,Big Bird,Brian Robinson Jr.,RB,unknown,,,,4,2,2,27.3,27.3,0,858751028768686080,2,8154
+Sleeper,2026,Jake Parsons,Big Bird,Colston Loveland,TE,unknown,,,,4,6,6,74.9,74.9,0,858751028768686080,2,12517
+Sleeper,2026,Jake Parsons,Big Bird,Indianapolis Colts,DEF,unknown,,,,4,3,3,13,13,0,858751028768686080,2,IND
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Las Vegas Raiders,DEF,unknown,,,,4,1,1,2,2,0,1001557048196222976,14,LV
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Raheim Sanders,RB,unknown,,,,4,1,0,0,0,3.6,1001557048196222976,14,12472
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Kalif Raymond,WR,unknown,,,,4,4,0,0,0,9.8,1001557048196222976,14,3634
+Sleeper,2026,Nathan Richards,Nater Taterz,Deebo Samuel Sr.,WR,unknown,,,,4,6,2,20.5,20.5,0,1253419240711540736,8,5872
+Sleeper,2026,Nathan Richards,Nater Taterz,AJ Barner,TE,unknown,,,,4,2,0,0,0,7.2,1253419240711540736,8,11603
+Sleeper,2026,Austin Abegg,Kissin TDs,Jacoby Brissett,QB,unknown,,,,5,1,1,25.28,25.28,0,716158801597767680,3,3257
+Sleeper,2026,Austin Abegg,Kissin TDs,Austin Ekeler,RB,unknown,,,,5,1,1,2.4,2.4,0,716158801597767680,3,4663
+Sleeper,2026,Austin Abegg,Kissin TDs,Tyler Bass,K,unknown,,,,5,2,2,29,29,0,716158801597767680,3,7042
+Sleeper,2026,Austin Abegg,Kissin TDs,Kansas City Chiefs,DEF,unknown,,,,5,2,1,17,17,0,716158801597767680,3,KC
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Will Shipley,RB,unknown,,,,5,1,0,0,0,8.3,734112111084630016,9,11577
+Sleeper,2026,Billy Rose,Snooki's Cookie,Harrison Mevis,K,unknown,,,,5,1,1,3,3,0,1248314494598270976,1,12015
+Sleeper,2026,Billy Rose,Snooki's Cookie,Dohnte Meyers,WR,unknown,,,,5,1,0,0,0,3.2,1248314494598270976,1,13264
+Sleeper,2026,Bryce Poisson,Bushy Beavers,T.J. Hockenson,TE,unknown,,,,5,5,4,38.3,38.3,0,1253422363878375424,10,5844
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Deshaun Watson,QB,unknown,,,,5,1,1,12.2,12.2,0,1253415068964503552,4,4017
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Mike Gesicki,TE,unknown,,,,5,2,0,0,0,7.4,1253415068964503552,4,4993
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Cade Otton,TE,unknown,,,,5,1,1,5.5,5.5,0,1134324957397438464,7,8111
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,New York Jets,DEF,unknown,,,,5,2,2,19,19,0,1134324957397438464,7,NYJ
+Sleeper,2026,Hayden Ward,Bear Force One,Tyler Higbee,TE,unknown,,,,5,5,3,10,10,15.6,895410371974983680,5,3271
+Sleeper,2026,Jake Parsons,Big Bird,Joey Slye,K,unknown,,,,5,1,1,3,3,0,858751028768686080,2,6528
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Efton Chism III,WR,unknown,,,,5,1,1,10.9,10.9,0,1001557048196222976,14,12542
+Sleeper,2026,Joey Roberts,Shoobie Flojo,New England Patriots,DEF,unknown,,,,5,5,5,26,26,0,1001557048196222976,14,NE
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Mike Washington Jr.,RB,unknown,,,,5,1,0,0,0,2,1001557048196222976,14,13305
+Sleeper,2026,Nathan Richards,Nater Taterz,Roschon Johnson,RB,unknown,,,,5,2,1,1.3,1.3,9,1253419240711540736,8,10235
+Sleeper,2026,Tyler Rose,Unverified Sources,Roman Wilson,WR,unknown,,,,5,5,0,0,0,0,1253479720855535616,13,11630
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Aaron Rodgers,QB,unknown,,,,5,5,4,56.98,56.98,0,1134329802619793408,12,96
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Keenan Allen,WR,unknown,,,,6,2,1,16.2,16.2,6.1,734112111084630016,9,1479
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Eddy Pineiro,K,unknown,,,,6,1,1,4,4,0,1253422363878375424,10,5189
+Sleeper,2026,Chris McKinney,Uncle Tito,Cam Ward,QB,unknown,,,,6,1,1,6.78,6.78,0,1253417044339068928,6,12522
+Sleeper,2026,Chris McKinney,Uncle Tito,Nick Folk,K,unknown,,,,6,2,2,11,11,0,1253417044339068928,6,650
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,MarShawn Lloyd,RB,unknown,,,,6,3,1,1,1,8.1,1253415068964503552,4,11581
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Garrett Wilson,WR,unknown,,,,6,4,3,27.3,27.3,0,1253415068964503552,4,8146
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Michael Mayer,TE,unknown,,,,6,4,3,27.4,27.4,10.3,1253415068964503552,4,9482
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Germie Bernard,WR,unknown,,,,6,4,3,39.4,39.4,0,1253415068964503552,4,13274
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Brian Robinson Jr.,RB,unknown,,,,6,3,0,0,0,3,1253415068964503552,4,8154
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,San Francisco 49ers,DEF,unknown,,,,6,1,1,7,7,0,1134324957397438464,7,SF
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Kendrick Bourne,WR,unknown,,,,6,4,1,3.9,3.9,13.6,1134324957397438464,7,4454
+Sleeper,2026,Hayden Ward,Bear Force One,Kimani Vidal,RB,unknown,,,,6,4,2,12,12,4.6,895410371974983680,5,11647
+Sleeper,2026,Hayden Ward,Bear Force One,Jacoby Brissett,QB,unknown,,,,6,1,0,0,0,6.92,895410371974983680,5,3257
+Sleeper,2026,Jake Parsons,Big Bird,James Cook III,RB,unknown,,,,6,4,3,61.1,61.1,0,858751028768686080,2,8138
+Sleeper,2026,Jake Parsons,Big Bird,Emeka Egbuka,WR,unknown,,,,6,4,1,17.8,17.8,6.9,858751028768686080,2,12514
+Sleeper,2026,Jake Parsons,Big Bird,Chris Boswell,K,unknown,,,,6,4,3,37,37,0,858751028768686080,2,1945
+Sleeper,2026,Jake Parsons,Big Bird,Jaleel McLaughlin,RB,unknown,,,,6,1,0,0,0,9.5,858751028768686080,2,11439
+Sleeper,2026,Jake Parsons,Big Bird,AJ Barner,TE,unknown,,,,6,3,0,0,0,17.5,858751028768686080,2,11603
+Sleeper,2026,Jake Parsons,Big Bird,Tre' Harris,WR,unknown,,,,6,1,0,0,0,0,858751028768686080,2,12509
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Keaton Mitchell,RB,unknown,,,,6,1,1,0.4,0.4,0,1001557048196222976,14,9511
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Evan McPherson,K,unknown,,,,6,4,3,23,23,0,1001557048196222976,14,7839
+Sleeper,2026,Nathan Richards,Nater Taterz,Dameon Pierce,RB,unknown,,,,6,2,2,26.8,26.8,0,1253419240711540736,8,8129
+Sleeper,2026,Nathan Richards,Nater Taterz,Evan Engram,TE,unknown,,,,6,1,1,3.3,3.3,0,1253419240711540736,8,4066
+Sleeper,2026,Nathan Richards,Nater Taterz,Brandin Cooks,WR,unknown,,,,6,2,0,0,0,4.6,1253419240711540736,8,2197
+Sleeper,2026,Tyler Rose,Unverified Sources,Dominic Zvada,K,unknown,,,,6,1,1,8,8,0,1253479720855535616,13,13833
+Sleeper,2026,Tyler Rose,Unverified Sources,Jake Bates,K,unknown,,,,6,4,3,30,30,0,1253479720855535616,13,11539
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Chase McLaughlin,K,unknown,,,,6,4,4,51,51,0,1134329802619793408,12,6650
+Sleeper,2026,Walter Mitchell,Dirty Sherm,New York Giants,DEF,unknown,,,,6,1,1,1,1,0,1134329802619793408,12,NYG
+Sleeper,2026,Austin Abegg,Kissin TDs,Trey Smack,K,unknown,,,,7,1,1,4,4,0,716158801597767680,3,13545
+Sleeper,2026,Austin Abegg,Kissin TDs,Ja'Kobi Lane,WR,unknown,,,,7,2,0,0,0,7.8,716158801597767680,3,13293
+Sleeper,2026,Billy Rose,Snooki's Cookie,Baker Mayfield,QB,unknown,,,,7,1,1,6.66,6.66,0,1248314494598270976,1,4892
+Sleeper,2026,Billy Rose,Snooki's Cookie,Tyrone Tracy Jr.,RB,unknown,,,,7,3,0,0,0,8.7,1248314494598270976,1,11655
+Sleeper,2026,Billy Rose,Snooki's Cookie,Cam Little,K,unknown,,,,7,3,2,23,23,0,1248314494598270976,1,11786
+Sleeper,2026,Bryce Poisson,Bushy Beavers,Michael Penix Jr.,QB,unknown,,,,7,3,1,20.42,20.42,11.58,1253422363878375424,10,11559
+Sleeper,2026,Chris McKinney,Uncle Tito,Geno Smith,QB,unknown,,,,7,3,3,48.88,48.88,0,1253417044339068928,6,1373
+Sleeper,2026,Chris McKinney,Uncle Tito,Tanner McKee,QB,unknown,,,,7,1,0,0,0,10.54,1253417044339068928,6,9230
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Omar Cooper Jr.,WR,draft,,12,164,7,3,2,13.8,13.8,24.5,1253476821127671808,11,13276
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Seth McGowan,RB,unknown,,,,7,3,0,0,0,19.9,1253415068964503552,4,13424
+Sleeper,2026,Hayden Ward,Bear Force One,Kirk Cousins,QB,unknown,,,,7,3,1,20.4,20.4,40.82,895410371974983680,5,1166
+Sleeper,2026,Hayden Ward,Bear Force One,Cleveland Browns,DEF,unknown,,,,7,1,1,6,6,0,895410371974983680,5,CLE
+Sleeper,2026,Jake Parsons,Big Bird,Makai Lemon,WR,unknown,,,,7,2,2,31.4,31.4,0,858751028768686080,2,13294
+Sleeper,2026,Jake Parsons,Big Bird,Tennessee Titans,DEF,unknown,,,,7,1,1,5,5,0,858751028768686080,2,TEN
+Sleeper,2026,Jake Parsons,Big Bird,Jaylin Noel,WR,unknown,,,,7,1,0,0,0,1.7,858751028768686080,2,12536
+Sleeper,2026,Nathan Richards,Nater Taterz,Christian Kirk,WR,unknown,,,,7,1,1,0,0,0,1253419240711540736,8,4950
+Sleeper,2026,Nathan Richards,Nater Taterz,Samaje Perine,RB,unknown,,,,7,3,1,2.9,2.9,11.9,1253419240711540736,8,4147
+Sleeper,2026,Nathan Richards,Nater Taterz,Treylon Burks,WR,unknown,,,,7,2,1,11.1,11.1,0,1253419240711540736,8,8135
+Sleeper,2026,Tyler Rose,Unverified Sources,Zonovan Knight,RB,unknown,,,,7,1,1,9.3,9.3,0,1253479720855535616,13,8122
+Sleeper,2026,Tyler Rose,Unverified Sources,Antonio Williams,WR,unknown,,,,7,3,0,0,0,15.9,1253479720855535616,13,13301
+Sleeper,2026,Tyler Rose,Unverified Sources,Jonah Coleman,RB,unknown,,,,7,3,1,18.8,18.8,29.3,1253479720855535616,13,13345
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Ryan Flournoy,WR,unknown,,,,7,3,0,0,0,31.4,1134329802619793408,12,11783
+Sleeper,2026,Austin Abegg,Kissin TDs,Kenny Gainwell,RB,unknown,,,,8,2,2,26.6,26.6,0,716158801597767680,3,7567
+Sleeper,2026,Austin Abegg,Kissin TDs,Mason Taylor,TE,unknown,,,,8,2,2,7,7,0,716158801597767680,3,12498
+Sleeper,2026,Austin Abegg,Kissin TDs,Jason Myers,K,unknown,,,,8,2,2,7,7,0,716158801597767680,3,2747
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Drew Stevens,K,unknown,,,,8,1,1,16,16,0,734112111084630016,9,13968
+Sleeper,2026,Billy Rose,Snooki's Cookie,Tre' Harris,WR,unknown,,,,8,1,1,6.1,6.1,0,1248314494598270976,1,12509
+Sleeper,2026,Billy Rose,Snooki's Cookie,Tyler Shough,QB,unknown,,,,8,2,1,19.7,19.7,0,1248314494598270976,1,12545
+Sleeper,2026,Billy Rose,Snooki's Cookie,Malachi Fields,WR,unknown,,,,8,2,0,0,0,7,1248314494598270976,1,13285
+Sleeper,2026,Chris McKinney,Uncle Tito,Elic Ayomanor,WR,unknown,,,,8,1,1,6.4,6.4,0,1253417044339068928,6,12499
+Sleeper,2026,Chris McKinney,Uncle Tito,Tyler Bass,K,unknown,,,,8,2,2,29,29,0,1253417044339068928,6,7042
+Sleeper,2026,Chris McKinney,Uncle Tito,Tampa Bay Buccaneers,DEF,unknown,,,,8,2,2,32,32,0,1253417044339068928,6,TB
+Sleeper,2026,Chris McKinney,Uncle Tito,Devin Singletary,RB,unknown,,,,8,2,1,5.9,5.9,0,1253417044339068928,6,6130
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Kansas City Chiefs,DEF,unknown,,,,8,2,2,13,13,0,1253476821127671808,11,KC
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Keenan Allen,WR,unknown,,,,8,2,1,6.6,6.6,13.7,1253476821127671808,11,1479
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Washington Commanders,DEF,unknown,,,,8,1,1,14,14,0,1253415068964503552,4,WAS
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Caleb Douglas,WR,unknown,,,,8,2,1,13,13,8.3,1253415068964503552,4,13296
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Las Vegas Raiders,DEF,unknown,,,,8,1,1,9,9,0,1134324957397438464,7,LV
+Sleeper,2026,Harlan Lane,Coast Trash Cowboy,Houston Texans,DEF,unknown,,,,8,2,1,14,14,0,1134324957397438464,7,HOU
+Sleeper,2026,Hayden Ward,Bear Force One,Chad Ryland,K,unknown,,,,8,2,2,12,12,0,895410371974983680,5,10955
+Sleeper,2026,Jake Parsons,Big Bird,Green Bay Packers,DEF,unknown,,,,8,2,2,25,25,0,858751028768686080,2,GB
+Sleeper,2026,Jake Parsons,Big Bird,Ladd McConkey,WR,unknown,,,,8,2,1,0,0,12.6,858751028768686080,2,11635
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Jacoby Brissett,QB,unknown,,,,8,1,1,3.46,3.46,0,1001557048196222976,14,3257
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Dylan Sampson,RB,unknown,,,,8,2,0,0,0,20.7,1001557048196222976,14,12469
+Sleeper,2026,Nathan Richards,Nater Taterz,Darnell Washington,TE,unknown,,,,8,2,1,12.4,12.4,0,1253419240711540736,8,9479
+Sleeper,2026,Nathan Richards,Nater Taterz,Austin Ekeler,RB,unknown,,,,8,2,1,5.4,5.4,5.6,1253419240711540736,8,4663
+Sleeper,2026,Nathan Richards,Nater Taterz,Colby Parkinson,TE,unknown,,,,8,1,0,0,0,0,1253419240711540736,8,6865
+Sleeper,2026,Nathan Richards,Nater Taterz,Cade Otton,TE,unknown,,,,8,1,0,0,0,0,1253419240711540736,8,8111
+Sleeper,2026,Tyler Rose,Unverified Sources,Mike Washington Jr.,RB,unknown,,,,8,2,0,0,0,8,1253479720855535616,13,13305
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Malik Willis,QB,unknown,,,,8,2,1,3.82,3.82,14.64,1134329802619793408,12,8161
+Sleeper,2026,Austin Joannes,Doctor Fantasy,Demarcus Robinson,WR,unknown,,,,9,1,0,0,0,5.2,734112111084630016,9,3286
+Sleeper,2026,Billy Rose,Snooki's Cookie,New Orleans Saints,DEF,unknown,,,,9,1,1,7,7,0,1248314494598270976,1,NO
+Sleeper,2026,Bryce Poisson,Bushy Beavers,DJ Moore,WR,unknown,,,,9,1,1,6.6,6.6,0,1253422363878375424,10,4983
+Sleeper,2026,Chris McKinney,Uncle Tito,Chris Rodriguez Jr.,RB,unknown,,,,9,1,0,0,0,11.2,1253417044339068928,6,10219
+Sleeper,2026,Chris McKinney,Uncle Tito,Adonai Mitchell,WR,unknown,,,,9,1,0,0,0,0,1253417044339068928,6,11625
+Sleeper,2026,Connor Schwartz,SMOKIN DARTS,Eddy Pineiro,K,unknown,,,,9,1,1,8,8,0,1253476821127671808,11,5189
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,Buffalo Bills,DEF,unknown,,,,9,1,1,17,17,0,1253415068964503552,4,BUF
+Sleeper,2026,Griffin Gaule,Tsutomu Yamaguchi,San Francisco 49ers,DEF,unknown,,,,9,1,0,0,0,18,1253415068964503552,4,SF
+Sleeper,2026,Jake Parsons,Big Bird,Cairo Santos,K,unknown,,,,9,1,1,9,9,0,858751028768686080,2,2020
+Sleeper,2026,Jake Parsons,Big Bird,Ja'Kobi Lane,WR,unknown,,,,9,1,0,0,0,0,858751028768686080,2,13293
+Sleeper,2026,Jake Parsons,Big Bird,De'Zhaun Stribling,WR,unknown,,,,9,1,0,0,0,0,858751028768686080,2,13417
+Sleeper,2026,Joey Roberts,Shoobie Flojo,DeMario Douglas,WR,unknown,,,,9,1,0,0,0,17.2,1001557048196222976,14,9501
+Sleeper,2026,Joey Roberts,Shoobie Flojo,Zach Charbonnet,RB,unknown,,,,9,1,0,0,0,9.6,1001557048196222976,14,9753
+Sleeper,2026,Nathan Richards,Nater Taterz,Jordan Watkins,WR,unknown,,,,9,1,1,18.6,18.6,0,1253419240711540736,8,12634
+Sleeper,2026,Nathan Richards,Nater Taterz,Jahan Dotson,WR,unknown,,,,9,1,1,3.6,3.6,0,1253419240711540736,8,8119
+Sleeper,2026,Nathan Richards,Nater Taterz,Detroit Lions,DEF,unknown,,,,9,1,1,10,10,0,1253419240711540736,8,DET
+Sleeper,2026,Walter Mitchell,Dirty Sherm,Sione Vaki,RB,unknown,,,,9,1,0,0,0,4.1,1134329802619793408,12,11729
